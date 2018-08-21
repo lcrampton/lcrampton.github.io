@@ -1,2 +1,0 @@
-# lcrampton.github.io
-Showcase
