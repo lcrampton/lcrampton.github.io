@@ -4,17 +4,39 @@
         <meta charset="utf-8">
         <title>Magookas Collective Concert Calendar</title>
         <style>
+			body {
+				padding: 4%;
+				padding-top: 0%;
+				background: rgb(256,198,188);  }
             h1 {
-                text-align: center;
+                text-align: left;
                 font-family: georgia, serif;
                 text-decoration: underline sienna dotted;
-                font-style: italic;
-            }
+                font-style: italic; }
+			iframe {
+				box-shadow: 10px 5px 5px olive; }
+			#GoogleCal {
+				margin-left: 11%;  }
+			.navigation {
+				text-align: right;
+				list-style: none;
+				line-height: 1.5em;  }
+			.navigation a {
+				text-decoration: none;
+				color: sienna;  }
         </style>
-        <h1>Recommendations of the Magookas Collective</h1>
+				
+        <h1>Recommendations of the Magookas Collective</h1><br>
         
-        <iframe src="https://calendar.google.com/calendar/embed?src=vkq4ki65uk1ctgq2vsqglmkesg%40group.calendar.google.com&ctz=America
-        %2FNew_York" style="border: 0" width="1200" height="900" frameborder="4" scrolling="no" align="center"></iframe>
+		<iframe id="GoogleCal" src="https://calendar.google.com/calendar/embed?src=vkq4ki65uk1ctgq2vsqglmkesg%40group.calendar.google.com&ctz=America
+		%2FNew_York" style="border: 0" width="1000" height="750" frameborder="4" scrolling="no"></iframe>
         
+		<br>
+		<ul class="navigation">
+			<li><a href="https://lcrampton.github.io">Home</a></li>
+			<li><a href="https://lcrampton.github.io/story.html">Story</a></li>
+			<li><a href="mailto:cramptonlucas@gmail.com">Contact</a></li>
+		</ul>
+		
     </body>
 </html>
