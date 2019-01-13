@@ -41,19 +41,60 @@
 				color: rgb(256,150,256);  }
 			nav a:hover {
 				background-color: rgb(100,50,0);	}
+			.dropbtn {
+				background-color: rgb(0, 0, 56);
+				color: rgb(256,150,256);
+				text-align: justify;
+				font-family: Century, Georgia, serif;
+				letter-spacing: 5px;
+				font-size: 1.1em;
+				border: none;	}
+			.dropdown {
+				position: relative;
+				display: inline-block;	}
+			.dropdown-content {
+				display: none;
+				position: absolute;
+				background-color: rgb(0, 0, 156);
+				min-width: 175px;
+				z-index: 1;	}
+			.dropdown-content a {
+				color: color: rgb(256,150,256);
+				padding: 30px 30px;
+				text-align: left;
+				display: block;	}
+			.dropdown-content a:hover {background-color: rgb(100,50,0);	}
+			.dropdown:hover .dropdown-content {display: block;}
+			.dropdown:hover .dropbtn {background-color: rgb(100,50,0);	}
         </style>
     </head>
     <body>
-        
+      
 		<nav>
 			<a href="https://lcrampton.github.io">Home</a>
-			<a href="https://lcrampton.github.io/story.html">Story</a>
-			<a href="https://lcrampton.github.io/Message.html">The Message</a>
-			<a href="https://lcrampton.github.io/Food.html">Food</a>
-			<a href="https://lcrampton.github.io/concert-calendar.html">ConcertCalendar</a>
-			<a href="mailto:cramptonlucas@gmail.com">Contact</a>
+			<div class="dropdown">
+			<button class="dropbtn">Culture<sub>+</sub></button>
+			<div class="dropdown-content">
+				<a href="https://lcrampton.github.io/Culture.html">Music</a>
+				<a href="https://lcrampton.github.io/Food.html">Food</a>
+				<a href="https://lcrampton.github.io/concert-calendar.html">Concerts</a>
+			</div>
+			</div>
+			<div class="dropdown">
+			<button class="dropbtn">Politics<sub>+</sub></button>
+			<div class="dropdown-content">
+				<a href="https://lcrampton.github.io/Message.html">The Message</a>	
+			</div>
+			</div>
+			<div class="dropdown">
+			<button class="dropbtn">About<sub>+</sub></button>
+			<div class="dropdown-content">
+				<a href="https://lcrampton.github.io/story.html">Story</a>
+				<a href="https://lcrampton.github.io/Rèsumè.html">Rèsumè</a>
+				<a href="mailto:cramptonlucas@gmail.com">Contact</a>
+			</div>
 		</nav>
-		
+        
         <h1>Culture</h1><hr>
 		<h2>TC Superstar, Palette, and Model Homes at ~dwell~</h2>
 		<h3>2/11/18</h3>
