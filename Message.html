@@ -45,29 +45,67 @@
 				color: sienna;  }
 			nav a:hover {
 				background-color: rgb(256,206,50);	}
-      .gtext {
-        color: green;
-        font-weight:bold; }
+			.dropbtn {
+				background-color: rgb(150, 235, 256);
+				color: sienna;
+				text-align: justify;
+				font-family: Century, Georgia, serif;
+				letter-spacing: 5px;
+				font-size: 1.1em;
+				border: none;	}
+			.dropdown {
+				position: relative;
+				display: inline-block;	}
+			.dropdown-content {
+				display: none;
+				position: absolute;
+				background-color: rgb(200, 245, 256);
+				min-width: 175px;
+				z-index: 1;	}
+			.dropdown-content a {
+				color: sienna;
+				padding: 30px 30px;
+				text-align: left;
+				display: block;	}
+			.dropdown-content a:hover {background-color: rgb(256,206,50);	}
+			.dropdown:hover .dropdown-content {display: block;}
+			.dropdown:hover .dropbtn {background-color: rgb(256,206,50);	}
         </style>
     </head>
     <body>
-        
+      
 		<nav>
 			<a href="https://lcrampton.github.io">Home</a>
-			<a href="https://lcrampton.github.io/story.html">Story</a>
-			<a href="https://lcrampton.github.io/Culture.html">Culture</a>
-			<a href="https://lcrampton.github.io/Food.html">Food</a>			
-			<a href="https://lcrampton.github.io/concert-calendar.html">Concerts</a>
-			<a href="mailto:cramptonlucas@gmail.com">Contact</a>
+			<div class="dropdown">
+			<button class="dropbtn">Culture<sub>+</sub></button>
+			<div class="dropdown-content">
+				<a href="https://lcrampton.github.io/Culture.html">Music</a>
+				<a href="https://lcrampton.github.io/Food.html">Food</a>
+				<a href="https://lcrampton.github.io/concert-calendar.html">Concerts</a>
+			</div>
+			</div>
+			<div class="dropdown">
+			<button class="dropbtn">Politics<sub>+</sub></button>
+			<div class="dropdown-content">
+				<a href="https://lcrampton.github.io/Message.html">The Message</a>	
+			</div>
+			</div>
+			<div class="dropdown">
+			<button class="dropbtn">About<sub>+</sub></button>
+			<div class="dropdown-content">
+				<a href="https://lcrampton.github.io/Story.html">Story</a>
+				<a href="https://lcrampton.github.io/Rèsumè.html">Rèsumè</a>
+				<a href="mailto:cramptonlucas@gmail.com">Contact</a>
+			</div>
 		</nav>
-		
-        <h1>Messages</h1>
+        
+	<h1>Messages</h1>
         <h2>On the Green New Deal</h2>
 		<p>Hello <strong><a href="https://www.house.gov/representatives/find-your-representative">[Your Member of Congress]:</a></strong><br><br>
 		The time for preventive action on climate change has come and gone.  On October 8, 2018, the IPCC published a <a href="https://ipcc.ch/report/sr15/">
 		special report</a> outlining in stark clarity the consequences of further warming on our planet.  Please support a Green New Deal with substantive
 		legislation and support the formation of a powerful Special Committee on Climate Change.
-		<p>I do not need a response.  [This saves the office time.  Delete this if you want a response.]
+		<p>I do not need a response.  [This saves the office time.  Delete this if you want a response.] My zip code is <strong>[your zip code]</strong>
 		<p>Your constituent,<br>
 		<strong>[your name]</strong></p>
 		<hr><h2>On Styrofoam Containers</h2>        
@@ -89,7 +127,7 @@ Here are some (inexpensive) alternatives to polystyrene containers:</p>
 <li><a href="http://www.primelinksolution.com/wpcproduct/hinged-lid-containers/">PrimeWare sugarcane containers</a> <br>
 </ul><p>
 While you are at it, you may want to get ahead of the curve and stock up on plant-based cutlery as well.  The future is, 
-after all, <span class="gtext">green</span>. <br><br>
+after all, green. <br><br>
 
 <strong>[your name]</strong>
 		</p>
