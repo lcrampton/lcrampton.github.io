@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Platform and Vision and Mission and Doctrine</title>
+        <style>
+            body {
+                padding-top: 10%;
+				padding-bottom: 10%;
+				padding-right:30%;
+				padding-left:30%;
+                background: rgb(36, 56, 32);}
+			p {
+				font-family: calibri, sans-serif;}
+			a {
+				color: black;}
+			a:hover, a:active, a:focus {
+				background-color: lavender;}
+            h1 {
+                text-align: center;
+                font-family: Century, georgia, serif;
+                text-decoration: underline sienna dotted;
+                font-style: italic;}
+            h1 a {
+                text-decoration: underline sienna dotted;
+				font-size: 3em;}
+        </style>
+    </head>
+    <body>
+        
+        <hr><h1><a href="https://www.amazon.com/Gasman-Cometh-Casper-Reiter/dp/153713888X/ref=sr_1_3?keywords=the+gasman+cometh&qid=1551931546&s=books&sr=1-3-catcorr">This is my platform, bitches.</h1></a>
+		<hr>
+        
+        
+    </body>
+</html>
