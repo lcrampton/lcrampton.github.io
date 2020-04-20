@@ -60,7 +60,7 @@
 				min-width: 175px;
 				z-index: 1;	}
 			.dropdown-content a {
-				color: color: rgb(256,150,256);
+				color: rgb(256,150,256);
 				padding: 30px 30px;
 				text-align: left;
 				display: block;	}
@@ -76,6 +76,7 @@
 				margin-bottom: 50px;
 				margin-top: 30px;
 				height: 300px;
+				width: 182px;
 				<!--overflow-y: scroll;-->
 				border: 2px solid white;
 				float: left;
@@ -83,29 +84,57 @@
 			.list a:hover {
 				background-color: rgb(0, 0, 56);
 				color: rgb(241,94,34);	}
-			.spotify-embed {
+			<!--.spotify-embed {
 				margin-right: 20px;
 				float: left;	}
 			.review-image {
-				<!--position: absolute;-->
+				<!--position: absolute;--
 				z-index: 1;
 				box-shadow: none;
 				width: 200px;}
 			.review-button	{
 				background-color: rgb(0, 0, 56);
-				<!--border: none;	-->}
+				cursor: pointer;
+				<!--border: none;	--}
 			.review-dropdown {
 				position: relative;
-				display: inline-block;	}
+				align: center;
+				<!--display: inline-block;--	}
 			.review-content {
 				display: none;
 				position: absolute;
 				background-color: rgb(0, 0, 156);
 				min-width: 175px;
 				z-index: 1;	}
-			.review-button:hover .review-content {
+			.review-content a	{
+				color: rgb(256,150,256);
 				display: block;	}
-				
+			.review-dropdown:visited,.review-dropdown:active .review-content {
+				display: block;	}-->
+
+			.accordion {
+			  background-color: rgb(0,0,56);
+			  color: white;
+			  font-family: Century, Georgia, serif;
+			  letter-spacing: 5px;
+			  font-size: 1.1em;
+			  cursor: pointer;
+			  padding: 18px;
+			  width: 70%;
+			  text-align: left;
+			  border: none;
+			  outline: none;
+			  transition: 0.4s;	}
+
+			.active, .accordion:hover {
+			  background-color: rgb(20,20,76);	}
+
+			.panel {
+			  padding: 18px;
+			  background-color: rgb(0,0,56);
+			  display: none;
+			  overflow: visible;	}
+
         </style>
     </head>
     <body>
@@ -113,7 +142,7 @@
 		<nav>
 			<a href="https://lcrampton.github.io">Home</a>
 			<div class="dropdown">
-			<button class="dropbtn">Culture<sub>+</sub></button>
+				<button class="dropbtn">Culture<sub>+</sub></button>
 				<div class="dropdown-content">
 					<a href="https://lcrampton.github.io/Culture.html">Music</a>
 					<a href="https://lcrampton.github.io/Food.html">Food</a>
@@ -121,18 +150,18 @@
 				</div>
 			</div>
 			<div class="dropdown">
-			<button class="dropbtn">Politics<sub>+</sub></button>
+				<button class="dropbtn">Politics<sub>+</sub></button>
 				<div class="dropdown-content">
 					<a href="https://lcrampton.github.io/Message.html">The Message</a>
 					<a href="https://lcrampton.github.io/Platform.html">Platform</a>
 				</div>
 			</div>
 			<div class="dropdown">
-			<button class="dropbtn">About<sub>+</sub></button>
+				<button class="dropbtn">About<sub>+</sub></button>
 				<div class="dropdown-content">
 					<a href="https://lcrampton.github.io/story.html">Story</a>
 					<a href="https://lcrampton.github.io/Rèsumè.html">Rèsumè</a>
-					<a href="mailto:cramptonlucas@gmail.com">Contact</a>
+					<a href="https://lcrampton.github.io/Contact.html">Contact</a>
 				</div>
 			</div>
 		</nav>
@@ -160,61 +189,57 @@
 			<a class="index" href=#tsushi>Tsuhimamire</a>
 		</nav><hr>
 		
-<!--New Cycle/Suokas
-Bantou Mentale
-Caterina Barbieri
-Electro Guzzi: On the surface, Polybrass sounds like another collection of weird Euro club tracks.  But realize that Electro Guzzi actually play live instrusments, and we can frame this as a boundary-defying Krautrock album.&nbsp Frenetic sounds of dawn supermarket panic.
-Jlin Black Origami-->
+<!--<table>	<tbody>	<tr> <td align="center"><iframe src="https://open.spotify.com/embed/album/2IKSISdC9ZRkSiHRuYDcIo" width="270" height="180" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe></td>	<td align="center"><iframe src="https://open.spotify.com/embed/album/1NnfO8eRsaEadEzd3hMkVb" width="270" height="180" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe></td>	<td align="center"><iframe src="https://open.spotify.com/embed/album/4fKVh0mSM2hkQnEFpivPjm" width="280" height="180" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe></td></tr>	<tr><td align="center"><iframe src="https://open.spotify.com/embed/album/6m5Jy89Af4LWormzjaMPKd" width="270" height="180" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe></td>	<td align="center"><iframe src="https://open.spotify.com/embed/album/6r3m78TxOl6Drqi7dVP5o4" width="270" height="180" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe></td>	<td align="center"><iframe src="https://open.spotify.com/embed/album/22vKtJ1rfOz0CLrHPdompe" width="270" height="180" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe></td></tr></tbody></table></div><hr>-->
+		
 		<h2 id="Teens">Innovative Albums From the Twenty-Teens You May Have Missed</h2>
 		<h3>1/1/20</h3>
-		<table>
-			<tbody>
-				<tr>
-					<td align="center">
-						<iframe src="https://open.spotify.com/embed/album/2IKSISdC9ZRkSiHRuYDcIo" width="270" height="180" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
-					</td>
-					<td align="center">
-						<iframe src="https://open.spotify.com/embed/album/1NnfO8eRsaEadEzd3hMkVb" width="270" height="180" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe></td>
-					<td align="center"><iframe src="https://open.spotify.com/embed/album/4fKVh0mSM2hkQnEFpivPjm" width="280" height="180" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe></td>
-				</tr>
-				<tr>
-					<td align="center"><iframe src="https://open.spotify.com/embed/album/6m5Jy89Af4LWormzjaMPKd" width="270" height="180" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe></td>
-					<td align="center"><iframe src="https://open.spotify.com/embed/album/6r3m78TxOl6Drqi7dVP5o4" width="270" height="180" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe></td>
-					<td align="center"><iframe src="https://open.spotify.com/embed/album/22vKtJ1rfOz0CLrHPdompe" width="270" height="180" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe></td>
-				</tr>
-			</tbody>
-		</table>
-		</div>
-		<hr>
+		<button class="accordion">Bantou Mentale - Bantou Mentale</button>
+			<div class="panel">
+				<iframe src="https://open.spotify.com/embed/album/2IKSISdC9ZRkSiHRuYDcIo" width="70%" height="155" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+			</div>
+		<button class="accordion">Elektro Guzzi - Polybrass</button>
+			<div class="panel">
+				<iframe src="https://open.spotify.com/embed/album/1NnfO8eRsaEadEzd3hMkVb" width="70%" height="155" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+				<p>On the surface, Polybrass sounds like another collection of weird Euro club tracks.  But realize that Electro Guzzi actually play live instrusments, and we can frame this as a boundary-defying Krautrock album.&nbsp Bewitched sounds of dawn supermarket panic.</p>
+			</div>
+		<button class="accordion">Caterina Barbieri - Patterns of Consciousness</button>
+			<div class="panel">
+				<iframe src="https://open.spotify.com/embed/album/4fKVh0mSM2hkQnEFpivPjm" width="70%" height="155" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+				<p>...the kind of electronica that strikes to the heart of what music is.  At once energetic and ruminative.</p>
+			</div>
+		<button class="accordion">Jlin - Black Origami</button>
+			<div class="panel">
+				<iframe src="https://open.spotify.com/embed/album/6m5Jy89Af4LWormzjaMPKd" width="70%" height="155" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+			</div>
+		<button class="accordion">Suokas - The New Cycle</button>
+			<div class="panel">
+				<iframe src="https://open.spotify.com/embed/album/6r3m78TxOl6Drqi7dVP5o4" width="70%" height="155" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+			</div>
+		<button class="accordion">Sleaford Mods - English Tapas</button>
+			<div class="panel">
+				<iframe src="https://open.spotify.com/embed/album/22vKtJ1rfOz0CLrHPdompe" width="70%" height="155" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+			</div>
+		
+		<script>
+			var acc = document.getElementsByClassName("accordion");
+			var i;
 
-		<!--<div align="center">	
-		<table>
-			<tbody>
-				<tr>
-					<td align="center"><div class="review-dropdown"><button class="review-button"><img src="C:\Users\cramp\Pictures\Github_Images\2010s Albums\Bantou Mentale.jpg" class="review-image"></a></button></div>
-						<div class="review-content">
-							<p>yo yo yo yo</p>
-							<iframe src="https://open.spotify.com/embed/album/2IKSISdC9ZRkSiHRuYDcIo" width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
-						</div>
-					</td>
-					
-					<td align="center"><button><a href="https://open.spotify.com/album/2IKSISdC9ZRkSiHRuYDcIo?si=36Iu3e3nQluaBh0kHYbxjQ"><img src="C:\Users\cramp\Pictures\Github_Images\2010s Albums\Bantou Mentale.jpg" class="review-image"></a></button></td>
-					<td align="center"><button><a href="https://open.spotify.com/album/2IKSISdC9ZRkSiHRuYDcIo?si=36Iu3e3nQluaBh0kHYbxjQ"><img src="C:\Users\cramp\Pictures\Github_Images\2010s Albums\Bantou Mentale.jpg" class="review-image"></a></button></td>
-				</tr>
-				<tr>
-					<td align="center"><button><a href="https://open.spotify.com/album/2IKSISdC9ZRkSiHRuYDcIo?si=36Iu3e3nQluaBh0kHYbxjQ"><img src="C:\Users\cramp\Pictures\Github_Images\2010s Albums\Bantou Mentale.jpg" class="review-image"></a></button></td>
-					<td align="center"><button><a href="https://open.spotify.com/album/2IKSISdC9ZRkSiHRuYDcIo?si=36Iu3e3nQluaBh0kHYbxjQ"><img src="C:\Users\cramp\Pictures\Github_Images\2010s Albums\Bantou Mentale.jpg" class="review-image"></a></button></td>
-					<td align="center"><button><a href="https://open.spotify.com/album/2IKSISdC9ZRkSiHRuYDcIo?si=36Iu3e3nQluaBh0kHYbxjQ"><img src="C:\Users\cramp\Pictures\Github_Images\2010s Albums\Bantou Mentale.jpg" class="review-image"></a></button></td>
-				</tr>
-				<tr>
-					<td align="center"><button><a href="https://open.spotify.com/album/2IKSISdC9ZRkSiHRuYDcIo?si=36Iu3e3nQluaBh0kHYbxjQ"><img src="C:\Users\cramp\Pictures\Github_Images\2010s Albums\Bantou Mentale.jpg" class="review-image"></a></button></td>
-					<td align="center"><button><a href="https://open.spotify.com/album/2IKSISdC9ZRkSiHRuYDcIo?si=36Iu3e3nQluaBh0kHYbxjQ"><img src="C:\Users\cramp\Pictures\Github_Images\2010s Albums\Bantou Mentale.jpg" class="review-image"></a></button></td>
-					<td align="center"><button><a href="https://open.spotify.com/album/2IKSISdC9ZRkSiHRuYDcIo?si=36Iu3e3nQluaBh0kHYbxjQ"><img src="C:\Users\cramp\Pictures\Github_Images\2010s Albums\Bantou Mentale.jpg" class="review-image"></a></button></td>
-				</tr>
-			</tbody>
-		</table>
-		</div>	
-		<p>...the kind of electronica that strikes to the heart of what music is.  At once energetic and ruminative.</p>-->
+			for (i = 0; i < acc.length; i++) {
+			  acc[i].addEventListener("click", function() {
+				/* Toggle between adding and removing the "active" class,
+				to highlight the button that controls the panel */
+				this.classList.toggle("active");
+
+				/* Toggle between hiding and showing the active panel */
+				var panel = this.nextElementSibling;
+				if (panel.style.display === "block") {
+				  panel.style.display = "none";
+				} else {
+				  panel.style.display = "block";
+				}
+			  });
+			}
+		</script><hr>
 
 		<h2 id="Midi">Black Midi and Fat Tony at U Street Music Hall</h2>
 		<h3>13/11/19</h3>
@@ -234,7 +259,7 @@ Jlin Black Origami-->
 		<p>What Ami Dang lacks in sitar chops she makes up in raw, bona fide <a href="https://amidang.bandcamp.com/releases">mastery</a> of low-frequency oscillators, sequencing, sampling, and production.&nbsp Her soundscapes are dark and deep.&nbsp They are a sperm whale's throat, swallowing you.
 		<p>—Lucas Magookas</p><hr>
 		
-		<h2 id="Coriky">Coriky at Georgetown Community Library</h2>
+		<br><h2 id="Coriky">Coriky at Georgetown Community Library</h2>
 		<h3>12/10/19</h3>
 		<img src="Github_Images/Coriky Lyric Sheet.jpg" align="right" width="400px" alt="Coriky had lyric sheets passed around.">
 		<p>Coriky played a free (true to Positive Force style) show at the Georgetown Community Library outside on Book Hill one fall afternoon.</p>
@@ -278,10 +303,10 @@ Jlin Black Origami-->
 		<h2 id="XK">XK Scenario at DC9</h2>
 		<h3>29/6/19</h3>
 		<img src="Github_Images/XK Scenario.jpg" align="left" width="300px" alt="XK Scenario onstage at DC9">
-		<p>If you ever wanted to see Rage Against the Machine play a grimy bar, XK Scenario is for you.&nbsp  They wear their influences on their sleeves: the aforementioned Rage, Red Hot Chili Peppers, Bad Brains, et cetera.&nbsp  This was the most aggressive pit to which i have ever been a party.</p>
+		<p>If you ever wanted to see Rage Against the Machine play a grimy bar, XK Scenario is for you.&nbsp  They wear their influences on their sleeves: the aforementioned Rage, Red Hot Chili Peppers, Bad Brains, et cetera.&nbsp  This was the most aggressive pit to which i have ever been a party.&nbsp I learned what crowd killing is here!</p>
 		<p>—Lucas Magookas</p><hr>
 		
-		<h2 id="KnifeWife">Knife Wife and Boston Cream at Rhizome</h2>
+		<br><h2 id="KnifeWife">Knife Wife and Boston Cream at Rhizome</h2>
 		<h3>27/6/19</h3>
 		<img src="Github_Images/Knife Wife at Rhizome.jpg" align="left" width="250px" alt="Knife Wife at Rhizome">
 		<img src="Github_Images/Boston Cream at Rhizome.jpg" align="left" width="250px" alt="Boston Cream at Rhizome">
