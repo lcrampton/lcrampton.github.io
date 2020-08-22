@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Masks</title>
+		<link rel="shortcut icon" href="Github_Images/Website Favicon.ico">
+        <style>
+            body {
+				margin: 10%;
+				background: rgb(256, 250, 250);
+				font-family: Heraldsquare Regular, Georgia, Times New Roman, serif;
+				color: rgb(0,0,0);			}
+			h1 {
+				font-family: Heraldsquare Regular, Georgia, Times New Roman, serif;
+				text-decoration: underline;			}
+			h2 {
+				font-family: Heraldsquare Regular, Georgia, Times New Roman, serif;
+				font-style: italic;
+				color: rgb(150,150,150);
+				font-size: 1.2em;	}
+			p {
+				margin-left: 2%;
+				font-family: Century, Georgia, serif;
+				text-indent: 20px;			}
+			img {
+				margin-left: 20px;
+				margin-bottom: 20px;	}
+			p a {
+				text-decoration: none;
+				color: rgb(0,156,0); }
+			p a:hover, a:active, a:focus {
+				background-color: rgb(256,100,256);
+				color: black;	}
+			nav {
+				letter-spacing: 4px;
+				font-size: 1.1em;
+				text-align: right;
+				list-style: none;  }
+			nav a {
+				text-decoration: none;
+				margin-left: 8px;
+				color: rgb(256,150,256);  }
+			nav a:hover {
+				background-color: rgb(50,25,0);
+				color: white;	}
+			.dropbtn {
+				background-color: rgb(256, 250, 250);
+				color: rgb(256,150,256);
+				text-align: justify;
+				font-family: Century, Georgia, serif;
+				letter-spacing: 5px;
+				font-size: 1.1em;
+				border: none;	}
+			.dropdown {
+				position: relative;
+				display: inline-block;	}
+			.dropdown-content {
+				display: none;
+				position: absolute;
+				background-color: rgb(250, 250, 246);
+				min-width: 175px;
+				z-index: 1;	}
+			.dropdown-content a {
+				color: rgb(256,150,256);
+				padding: 30px 30px;
+				text-align: left;
+				display: block;	}
+			.dropdown-content a:hover {background-color: rgb(50,25,0); color: white;	}
+			.dropdown:hover .dropdown-content {
+				display: block;	}
+			.dropdown:hover .dropbtn {background-color: rgb(50,25,0); color: white;	}
+
+		</style>
+    </head>
+    <body>
+      
+		<nav>
+			<a href="https://lcrampton.github.io">Home</a>
+			<div class="dropdown">
+				<button class="dropbtn">Culture<sub>+</sub></button>
+				<div class="dropdown-content">
+					<a href="https://lcrampton.github.io/Culture.html">Music</a>
+					<a href="https://lcrampton.github.io/Food.html">Food</a>
+					<a href="https://lcrampton.github.io/concert-calendar.html">Concerts</a>
+				</div>
+			</div>
+			<div class="dropdown">
+				<button class="dropbtn">Politics<sub>+</sub></button>
+				<div class="dropdown-content">
+					<a href="https://lcrampton.github.io/Message.html">The Message</a>
+					<a href="https://lcrampton.github.io/Platform.html">Platform</a>
+				</div>
+			</div>
+			<div class="dropdown">
+				<button class="dropbtn">About<sub>+</sub></button>
+				<div class="dropdown-content">
+					<a href="https://lcrampton.github.io/story.html">Story</a>
+					<a href="https://lcrampton.github.io/Rèsumè.html">Rèsumè</a>
+					<a href="https://lcrampton.github.io/Contact.html">Contact</a>
+				</div>
+			</div>
+		</nav>
+			
+        <h1>Standing Still</h1>
+		<p>There exists a hidden symmetry between those who <a href="https://www.youtube.com/watch?v=BfHlYnEr_f4">paint over</a> Black Lives Matter street murals and those who would pull down statues.&nbsp Both react to public displays of collective values.&nbsp And collective values have shifted over time.&nbsp They are, of course, bound to do so.</p>
+
+		<p>I do not want to make a claim or delineate any stance, except that if we are doing statues, Ulysses S. Grant deserves a statue.&nbsp He inherited a slave, William Jones, and manumitted him within less than a year.&nbsp He sometimes displayed a disregard for human life in his battle tactics, refusing to retreat or surrender when it might have mitigated casualties.&nbsp Neither of these can outweigh how he feverishly worked to destroy the institution of chattel slavery in the United States, and presided over one of our largest leaps in civil rights.&nbsp There is no time or will for that discussion here, and no need to subject an audience, captive or otherwise, to it.</p>
+
+		<p>We are sick of it anyway.&nbsp The discussion over who belongs in glorified effigy and (more often) who does not distracts from the issues of the wealth gap, lingering colonialism, and languid education.&nbsp Statues did not bring us into the street in the midst of an infectious pandemic.&nbsp No bust deprives Indian reservations of Internet and Postal access.&nbsp In first grade, <a href="https://twitter.com/somekindoflucas/status/1296841836191985665">teachers told me</a> that when Columbus sailed the ocean blue, everyone thought he would fall off the edge of the world!&nbsp In ninth grade, we read Lost Cause-sympathetic novel <em>The Killer Angels</em>.&nbsp We need to stop deceiving ourselves.&nbsp We can only cycle into higher consciousness and conscientiousness if we shed our fear of impressing reality on the impressionable, if we have the open forums of reconciliation for which our society has pleaded consistently, if we admit our whole—i mean <em>whole</em>—history.</p>
+        
+		<p>—Lucas</p>
+    </body>
+</html>
