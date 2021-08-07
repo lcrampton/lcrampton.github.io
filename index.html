@@ -2,7 +2,7 @@
 <html>
     <head>
         <meta charset="utf-8">
-        <title>Crampton</title>
+        <title>Lucas</title>
 		<link rel="shortcut icon" href="Github_Images/Website Favicon.ico">
         <style>
             body {
@@ -46,6 +46,24 @@
         </style>
     </head>
     <body>
+		
+	<script>
+			var mouseCount = 0;
+			var draw = function() {
+				if (mouseCount===30) {
+					background(0, 238, 255);
+					mouseCount=0;
+				}
+				stroke(189, 0, 0);
+				line(mouseX, mouseY+20, mouseX, mouseY+30);
+				line(mouseX, mouseY-20, mouseX, mouseY-30);
+				line(mouseX+20, mouseY, mouseX+30, mouseY);
+				line(mouseX-20, mouseY, mouseX-30, mouseY);
+				mouseCount++;
+			};
+
+	</script>
+		
         <br><br><br><br><br><br><br>
 		<div align="center">
         <h1><a href="https://lcrampton.github.io/story.html">Lucas Crampton</h1></a>
@@ -54,7 +72,7 @@
         </div><br>
 		
 		<div align="center">
-			<iframe width="1120" height="630" src="https://www.youtube.com/embed/2Oa4St48duU?start=49" title="Luca Scrapple Live From the American Wasteland" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+			<iframe width="80%" height="476" src="https://www.youtube.com/embed/2Oa4St48duU?start=49" title="Luca Scrapple Live From the American Wasteland" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 		</div>
 		
 	<div align="center">	
@@ -63,19 +81,20 @@
 				<tr>
 					<td align="center"><a href="https://lcrampton.github.io/story.html">Story</a></td>
 					<td align="center"><a href="https://lcrampton.github.io/Rèsumè.html">Résumé</a></td>
-					<td align="center"><a href="https://lcrampton.github.io/Contact.html">Contact</a></td></tr>
-				<tr>
-					<td align="center"><a href="https://lcrampton.github.io/Culture.html">Music</a></td>
-					<td align="center"><a href="https://lcrampton.github.io/Food.html">Food</a></td>
 					<td align="center"><a href="https://lcrampton.github.io/concert-calendar.html">Concerts</a></td></tr>
 				<tr>
+					<td align="center"><a href="https://lcrampton.github.io/Culture.html">Culture Review</a></td>
+					<td align="center"><a href="https://lcrampton.github.io/Food.html">Food</a></td>
+					<td align="center"><a href="https://lcrampton.github.io/Recipes.html">Cookbook</a></td></tr>
+				<tr>
 					<td align="center"><a href="https://lcrampton.github.io/Platform.html">Platform</a></td>
-					<td align="center"><a href="https://lcrampton.github.io/Message.html">The Message</a></td></tr>
+					<td align="center"><a href="https://lcrampton.github.io/Message.html">The Message</a></td>
+					<td align="center"><a href="https://lcrampton.github.io/Contact.html">Contact</a></td></tr>
 			</tbody>
 		</table>
 	</div>	
 		
-		
+	
 		
     </body>
 </html>
