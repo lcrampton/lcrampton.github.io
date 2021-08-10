@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8">
         <title>Lucas</title>
-		<link rel="shortcut icon" href="Github_Images/Website Favicon.ico">
+		<link rel="shortcut icon" href="https://raw.githubusercontent.com/lcrampton/lcrampton.github.io/master/Github_Images/Website%20Favicon.ico">
         <style>
             body {
                 padding-top: 5%;
@@ -14,35 +14,82 @@
 			p {
 				font-family: calibri, sans-serif;	}
 			a {
-				color: black;}
-			a:hover, a:active, a:focus {
-				background-color: lavender;}
+				color: black;
+				text-decoration: none;}
             h1 {
                 text-align: center;
                 font-family: Century, georgia, serif;
-                text-decoration: underline sienna dotted;
                 font-style: italic;}
-            h1 a {
+			h1 a {
+				text-decoration: none;	}
+            h1 a:hover, a:active, a:focus {
                 text-decoration: underline sienna dotted;}
             h4  {
                 text-align: center;
                 font-family: Century, georgia, serif;}	
 			h4 a {
                 text-decoration: none;}
-			#indextable	{
-				margin-top: 80px;
+			h4 a:hover, a:active, a:focus {
+                text-decoration: underline sienna dotted;}
+			
+			.grid-container	{
+				display: grid;
+				grid-template-columns: auto auto auto;
 				align: center;
-				text-align: center;
+				color: #ffffff;
+				background-color: transparent;
+				background-image: linear-gradient(180deg, #FF5E00, #FF5E00)
+				,linear-gradient(225deg, #FF5E00, #FF5E00)
+				,linear-gradient(0deg, #FF5E00, #FF5E00)
+				,linear-gradient(90deg, #FF5E00, #FF5E00)
+				,linear-gradient(135deg, transparent 9px, #FF5E00 10px, #FF5E00 12px, transparent 12px)
+				;
+				background-position: top right
+					,top right
+					,bottom left
+					,bottom left
+					,top left;
+				background-size: calc(100% - 15px) 2px
+					,2px 100%
+					,100% 2px
+					,2px calc(100% - 15px)
+					,15px 15px;
+				background-repeat: no-repeat;
                 font-family: Century, georgia, serif;
-				font-size: 28px;
-				border: 1px solid gray;}
-			#indextable a {
-				text-decoration: none;
+				font-size: 28px;	
+				margin-top: 2em;
+				padding: 1em;	}
+			
+			.topic	{
 				color: sienna;
+				margin: 20px;
+				padding: 20px;
+				padding: 1rem 2rem;
+				}
+			.topic a {
+				text-decoration: none;
 				margin: 20px;	}
-			#indextable a:hover, a:active, a:focus {
-				background-color: rgb(236, 256, 232);
+			.topic:hover, .topic:active, .topic:focus {
+				background-color: transparent;
+				background-image: linear-gradient(180deg, #ffdc00, #ffdc00)
+				,linear-gradient(225deg, #ffdc00, #ffdc00)
+				,linear-gradient(0deg, #ffdc00, #ffdc00)
+				,linear-gradient(90deg, #ffdc00, #ffdc00)
+				,linear-gradient(135deg, transparent 9px, #ffdc00 10px, #ffdc00 12px, transparent 12px)
+				;
+				background-position: top right
+					,top right
+					,bottom left
+					,bottom left
+					,top left;
+				background-size: calc(100% - 15px) 2px
+					,2px 100%
+					,100% 2px
+					,2px calc(100% - 15px)
+					,15px 15px;
+				background-repeat: no-repeat;
 				color: black;	}
+						
         </style>
     </head>
     <body>
@@ -71,11 +118,23 @@
         <h4><a href="Contact.html">†† contact ††</h4></a>
         </div><br>
 		
-		<div align="center">
+		<!--<div align="center">
 			<iframe width="80%" height="476" src="https://www.youtube.com/embed/2Oa4St48duU?start=49" title="Luca Scrapple Live From the American Wasteland" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-		</div>
+		</div>-->
 		
-	<div align="center">	
+	<div class="grid-container">	
+		<a class="topic" href="https://lcrampton.github.io/story.html">Story</a>
+		<a class="topic" href="https://lcrampton.github.io/Rèsumè.html">Résumé</a>
+		<a class="topic" href="https://lcrampton.github.io/concert-calendar.html">Concerts</a>
+		<a class="topic" href="https://lcrampton.github.io/Culture.html">Culture Review</a>
+		<a class="topic" href="https://lcrampton.github.io/Food.html">Food</a>
+		<a class="topic" href="https://lcrampton.github.io/Recipes.html">Cookbook</a>
+		<a class="topic" href="https://lcrampton.github.io/Platform.html">Platform</a>
+		<a class="topic" href="https://lcrampton.github.io/Message.html">The Message</a>
+		<a class="topic" href="https://lcrampton.github.io/Contact.html">Contact</a>
+	</div>
+		
+	<!--<div align="center">	
 		<table id="indextable">
 			<tbody>
 				<tr>
@@ -92,7 +151,7 @@
 					<td align="center"><a href="https://lcrampton.github.io/Contact.html">Contact</a></td></tr>
 			</tbody>
 		</table>
-	</div>	
+	</div>	-->
 		
 	
 		
