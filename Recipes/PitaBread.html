@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8">
         <title>Bread</title>
-		<link rel="shortcut icon" href="Github_Images/Website Favicon.ico">
+		<link rel="shortcut icon" href="https://raw.githubusercontent.com/lcrampton/lcrampton.github.io/master/Github_Images/Website%20Favicon.ico">
         <style>
             body {
 				margin: 10%;
@@ -22,6 +22,8 @@
 				margin-left: 2%;
 				font-family: calibri, sans-serif;
 				text-indent: 20px;			}
+			ol {
+				font-family: calibri, sans-serif;	}
 			img {
 				margin-right: 20px;
 				margin-bottom: 20px;	}
@@ -51,6 +53,34 @@
 			nav a:hover {
 				background-color: rgb(256,206,50);
 				color: DarkGreen;	}
+			figure { 
+				display: block; 
+				float: right;
+				position: relative; 
+				overflow: hidden;
+			}
+			figcaption { 
+				position: absolute; 
+				background: rgba(0,0,0,0.75); 
+				color: white; 
+				padding: 10px 20px; 
+				opacity: 0;
+				bottom: 0; 
+				left: -30%;
+				-webkit-transition: all 0.6s ease;
+				-moz-transition:    all 0.6s ease;
+				-o-transition:      all 0.6s ease;
+			}
+			figure:hover figcaption {
+				opacity: 1;
+				left: 0;
+			}
+			figure:hover {
+				-moz-transform: scale(2);
+				-webkit-transform: scale(2);
+				transform: scale(2);
+			}
+				
 			.dropbtn {
 				background-color: bisque;
 				color: DarkGreen;
@@ -73,16 +103,25 @@
 				padding: 30px 30px;
 				text-align: left;
 				display: block;	}
-			.dropdown-content a:hover {background-color: rgb(256,206,50);	}
+			.dropdown-content a:hover {
+				background-color: rgb(256,206,50);	}
 			.dropdown:hover .dropdown-content {
 				display: block;	}
-			.dropdown:hover .dropbtn {background-color: rgb(256,206,50);	}
-			
+			.dropdown:hover .dropbtn {
+				background-color: rgb(256,206,50);	}
 			.grid-container	{
 				display: grid;
 				grid-template-columns: auto auto;
 				margin-top: 2em;
+				border-radius: 1.5em;
+				background-image: linear-gradient(90deg, BlanchedAlmond 40%, bisque 80%);
 				padding: 1em;	}
+			.ingredients {
+				padding: 0.2em;			}
+			.directions {
+				paddin: 0.2em;	}
+			.grid-item {
+				padding: .8em;	}
 
 		</style>
     </head>
@@ -140,7 +179,10 @@
 		
 		<h1>Pita Bread</h1>
 		
-		<img src="https://raw.githubusercontent.com/lcrampton/lcrampton.github.io/master/Github_Images/Pita%20Bread%202.jpg" width="300px" align="right" alt="Lucas' Pita Bread hot off the pan">
+		<figure>
+			<img src="https://raw.githubusercontent.com/lcrampton/lcrampton.github.io/master/Github_Images/Pita%20Bread%202.jpg" width="300px" align="right" alt="Lucas' Pita Bread hot off the pan">
+			<figcaption>Lucas' Pita Bread hot off the pan</figcaption>
+		</figure>
 		
 		<div class="grid-container">
 			<div class="ingredients">
@@ -155,17 +197,15 @@
 			</div>
 			
 			<div class="directions">
-				<ol>
-					<li>You gotta have starter.</li>
-					<li>Pour sourdough and 1 cup flour into large bowl.</li>
-					<li>Heat water to warm but not piping hot, about 90-100°F.</li>
-					<li>Dissolve sugar or molasses in water and stir gradually into flour mixture. Let rest fifteen to thirty minutes.</li>
-					<li>Place  1 3/4 flour on counter.&nbsp Grind rosemary, salt, and coriander and add to flour.</li>
-					<li>Excavate a divot into the flour, pour the starter mixture into the divot, and fold the dry flour into the wet mixture.&nbsp Mix and knead until a firm doughball retains its shape.</li>
-					<li>Allow to rest for two to three hours at room temperature.&nbsp You may also leave this overnight in the refrigerator and remove from the refrigerator two hours before working.</li>
-					<li>Divide dough into eight or ten parts and roll into balls.&nbsp Let rest for fifteen to thirty minutes.</li>
-					<li>Smack, roll out, stretch, and shape doughballs into a disk and pan-fry in EVOO on medium-high heat until golden brown.</li>
-				</ol>
+				<div class="grid-item">1. You gotta have starter.</div>
+				<div class="grid-item">2. Pour starter and 1 cup flour into large bowl.</div>
+				<div class="grid-item">3. Heat water to warm but not piping hot, about 90-100°F.</div>
+				<div class="grid-item">4. Dissolve sugar or molasses in water and stir gradually into flour mixture. Let rest fifteen to thirty minutes.</div>
+				<div class="grid-item">5. Place  1 3/4 flour on counter.&nbsp Grind rosemary, salt, and coriander and add to flour.</div>
+				<div class="grid-item">6. Excavate a divot into the flour, pour the starter mixture into the divot, and fold the dry flour into the wet mixture.&nbsp Mix and knead with oil until a firm doughball retains its shape.</div>
+				<div class="grid-item">7. Allow to rest in a greased bowl for two to three hours at room temperature.&nbsp You may also leave this overnight in the refrigerator and remove from the refrigerator two hours before working.</div>
+				<div class="grid-item">8. Divide dough into eight or ten parts and roll into balls.&nbsp Let rest for fifteen to thirty minutes.</div>
+				<div class="grid-item">9. Smack, roll out, stretch, and shape doughballs into a disk and pan-fry in EVOO on medium-high heat until golden brown.</div>
 			</div>
 		</div>
 		
