@@ -10,9 +10,7 @@
 				padding-bottom: 10%;
 				padding-left: 10%;
 				padding-right: 10%;
-                background: rgb(236, 256, 232);}
-			p {
-				font-family: calibri, sans-serif;	}
+                background: rgb(232, 256, 236);}
 			a {
 				color: black;
 				text-decoration: none;}
@@ -36,22 +34,23 @@
 				display: grid;
 				grid-template-columns: auto auto auto;
 				align: center;
-				color: #ffffff;
 				background-color: transparent;
-				background-image: linear-gradient(180deg, #FF5E00, #FF5E00)
-				,linear-gradient(225deg, #FF5E00, #FF5E00)
-				,linear-gradient(0deg, #FF5E00, #FF5E00)
-				,linear-gradient(90deg, #FF5E00, #FF5E00)
-				,linear-gradient(135deg, transparent 9px, #FF5E00 10px, #FF5E00 12px, transparent 12px)
-				;
+				background-image: linear-gradient(180deg, #ff6600, #ff6600)
+					,linear-gradient(225deg, #ff6600, #ff6600)
+					,linear-gradient(315deg, transparent 0px, #ff6600 1px, #ff6600 25px, transparent 25px)
+					,linear-gradient(0deg, #ff6600, #ff6600)
+					,linear-gradient(90deg, #ff6600, #ff6600)
+					,linear-gradient(135deg, transparent 9px, #ff6600 10px, #ff6600 12px, transparent 12px);
 				background-position: top right
 					,top right
+					,bottom right
 					,bottom left
 					,bottom left
 					,top left;
 				background-size: calc(100% - 15px) 2px
-					,2px 100%
-					,100% 2px
+					,2px calc(100% - 15px)
+					,15px 15px
+					,calc(100% - 15px) 2px
 					,2px calc(100% - 15px)
 					,15px 15px;
 				background-repeat: no-repeat;
@@ -95,28 +94,28 @@
     <body>
 		
 	<script>
-			var mouseCount = 0;
-			var draw = function() {
-				if (mouseCount===30) {
-					background(0, 238, 255);
-					mouseCount=0;
-				}
-				stroke(189, 0, 0);
-				line(mouseX, mouseY+20, mouseX, mouseY+30);
-				line(mouseX, mouseY-20, mouseX, mouseY-30);
-				line(mouseX+20, mouseY, mouseX+30, mouseY);
-				line(mouseX-20, mouseY, mouseX-30, mouseY);
-				mouseCount++;
-			};
+		var mouseCount = 0;
+		var draw = function() {
+			if (mouseCount===30) {
+				background(0, 238, 255);
+				mouseCount=0;
+			}
+			stroke(189, 0, 0);
+			line(mouseX, mouseY+20, mouseX, mouseY+30);
+			line(mouseX, mouseY-20, mouseX, mouseY-30);
+			line(mouseX+20, mouseY, mouseX+30, mouseY);
+			line(mouseX-20, mouseY, mouseX-30, mouseY);
+			mouseCount++;
+		};
 
 	</script>
 		
         <br><br><br><br><br><br><br>
 		<div align="center">
-        <h1><a href="https://lcrampton.github.io/story.html">Lucas Crampton</h1></a>
-		<p>_____</p>
-        <h4><a href="Contact.html">†† contact ††</h4></a>
-        </div><br>
+			<h1><a href="https://lcrampton.github.io/story.html">Lucas Crampton</h1></a>
+			<p>_____</p>
+			<h4><a href="Contact.html">†† contact ††</h4></a>
+        </div>
 		
 		<!--<div align="center">
 			<iframe width="80%" height="476" src="https://www.youtube.com/embed/2Oa4St48duU?start=49" title="Luca Scrapple Live From the American Wasteland" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -131,7 +130,7 @@
 		<a class="topic" href="https://lcrampton.github.io/Recipes.html">Cookbook</a>
 		<a class="topic" href="https://lcrampton.github.io/Platform.html">Platform</a>
 		<a class="topic" href="https://lcrampton.github.io/Message.html">The Message</a>
-		<a class="topic" href="https://lcrampton.github.io/Contact.html">Contact</a>
+		<a class="topic" href="https://lcrampton.github.io/MyMusic.html">Original Music</a>
 	</div>
 		
 	<!--<div align="center">	
