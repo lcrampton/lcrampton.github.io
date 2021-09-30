@@ -22,9 +22,6 @@
 				margin-left: 2%;
 				font-family: Century, Georgia, serif;
 				text-indent: 20px;			}
-			img {
-				margin-left: 20px;
-				margin-bottom: 20px;	}
 			a	{
 				text-decoration: none;
 				color: rgb(0,156,0); }
@@ -49,70 +46,47 @@
 			nav a:hover {
 				background-color: rgb(50,25,0);
 				color: white;	}
-			.dropbtn {
-				background-color: rgb(256, 250, 250);
-				color: rgb(256,150,256);
-				text-align: justify;
-				font-family: Century, Georgia, serif;
-				letter-spacing: 5px;
-				font-size: 1.1em;
-				border: none;	}
-			.dropdown {
+			figure { 
+				display: block;
 				position: relative;
-				display: inline-block;	}
-			.dropdown-content {
-				display: none;
+				float: right;
+				overflow: hidden;
+			}
+			figcaption { 
 				position: absolute;
-				background-color: rgb(250, 250, 246);
-				min-width: 175px;
-				z-index: 1;	}
-			.dropdown-content a {
-				color: rgb(256,150,256);
-				padding: 30px 30px;
-				text-align: left;
-				display: block;	}
-			.dropdown-content a:hover {background-color: rgb(50,25,0); color: white;	}
-			.dropdown:hover .dropdown-content {
-				display: block;	}
-			.dropdown:hover .dropbtn {background-color: rgb(50,25,0); color: white;	}
+				background: rgba(0,0,0,0.75); 
+				color: white; 
+				padding: 10px 20px; 
+				opacity: 0;
+				bottom: 0; 
+				left: -30%;
+				-webkit-transition: all 0.6s ease;
+				-moz-transition:    all 0.6s ease;
+				-o-transition:      all 0.6s ease;
+			}
+			figure:hover figcaption {
+				opacity: 1;
+				left: 0;
+			}
+			
+			#back {
+				font-size: 2em;
+				font-weight: bold;
+			}
 
 		</style>
     </head>
     <body>
       
-		<nav>
-			<a href="https://lcrampton.github.io">Home</a>
-			<div class="dropdown">
-				<button class="dropbtn">Culture<sub>+</sub></button>
-				<div class="dropdown-content">
-				<a href="https://lcrampton.github.io/Culture.html">Music</a>
-				<a href="https://lcrampton.github.io/concert-calendar.html">Concerts</a>
-				<a href="https://lcrampton.github.io/Food.html">Food</a>
-				<a href="https://lcrampton.github.io/Recipes.html">Cookbook</a>
-				</div>
-			</div>
-			<div class="dropdown">
-				<button class="dropbtn">Politics<sub>+</sub></button>
-				<div class="dropdown-content">
-					<a href="https://lcrampton.github.io/Message.html">The Message</a>
-					<a href="https://lcrampton.github.io/Platform.html">Platform</a>
-				</div>
-			</div>
-			<div class="dropdown">
-				<button class="dropbtn">About<sub>+</sub></button>
-				<div class="dropdown-content">
-					<a href="https://lcrampton.github.io/story.html">Story</a>
-					<a href="https://lcrampton.github.io/Rèsumè.html">Rèsumè</a>
-					<a href="https://lcrampton.github.io/Contact.html">Contact</a>
-				</div>
-			</div>
-		</nav>
 			
-		<a href="https://lcrampton.github.io/Message.html">←</a>
+		<a id="back" href="https://lcrampton.github.io/Message.html">←</a>
 		
         <h1>Mask Up</h1>
 		<h2>It is fortunate for us that we can override our instinct.</h2>
-		<img src="https://raw.githubusercontent.com/lcrampton/lcrampton.github.io/master/Messages/Lucas%20In%20Mask.jpg" align="right" width="400px" alt="Lucas wearing a blue cloth mask"></img>
+		<figure>
+			<img src="https://raw.githubusercontent.com/lcrampton/lcrampton.github.io/master/Messages/Lucas%20In%20Mask.jpg" width="400px" alt="Lucas wearing a blue cloth mask"></img>
+			<figcaption>Lucas wearing a blue cloth mask</figcaption>
+		</figure>
 		<p>The United States' response to the pandemic looks more like the behavior of a cargo cult than of a technologically advanced wealthy nation.&nbsp The narrative spellbook, the political <a href="https://aelkus.github.io/glitch/2020/03/13/narrative.html">discoursive incantation</a>, has <a href="https://www.axios.com/full-axios-hbo-interview-donald-trump-cd5a67e1-6ba1-46c8-bb3d-8717ab9f3cc5.html">let us down</a>.</p>
 		
 		<p>Wearing a mask sucks.&nbsp It gets hot, it reaches up into your nostrils, it obscures your vision of the ground (yes i have tripped while wearing a mask, no i am not hurt, thank you).&nbsp All of this is certainly more bearable than personally risking other peoples' lives.</p>
