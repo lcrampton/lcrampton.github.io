@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8">
         <title>Lucas: A Living Being</title>
-		<link rel="shortcut icon" href="Github_Images/Website Favicon.ico">
+		<link rel="shortcut icon" href="https://raw.githubusercontent.com/lcrampton/lcrampton.github.io/master/Github_Images/Website%20Favicon.ico">
         <style>
             body {
 				margin: 10%;
@@ -44,6 +44,69 @@
 				box-shadow: 10px 5px 5px gray;
 				margin-bottom: 20px;
 				margin-left: 20px;		}
+			nav {
+				letter-spacing: 4px;
+				text-align: right;
+				list-style: none;  }
+			nav a {
+				text-decoration: none;
+				font-size: 1.25em;
+				color: sienna;  }
+			nav a:hover {
+				background-color: rgb(160,256,200);	}
+				figure { 
+				margin-left: 0%;
+				display: block; 
+				float: left;
+				position: relative; 
+				overflow: hidden;
+			}
+			
+			.rightFigure { 
+				display: block; 
+				float: right;
+				position: relative; 
+				overflow: hidden;
+			}
+			.rightFigCaption { 
+				position: absolute; 
+				background: rgba(0,0,0,0.75); 
+				color: white; 
+				padding: 10px 20px; 
+				opacity: 0;
+				bottom: 0; 
+				right: -30%;
+				-webkit-transition: all 0.6s ease;
+				-moz-transition:    all 0.6s ease;
+				-o-transition:      all 0.6s ease;
+			}
+			.rightFigure:hover figcaption {
+				opacity: 1;
+				right: 0;
+			}
+			.leftFigure { 
+				display: block; 
+				float: left;
+				position: relative; 
+				overflow: hidden;
+			}
+			.leftFigCaption { 
+				position: absolute; 
+				background: rgba(0,0,0,0.75); 
+				color: white; 
+				padding: 10px 20px; 
+				opacity: 0;
+				bottom: 0; 
+				left: -30%;
+				-webkit-transition: all 0.6s ease;
+				-moz-transition:    all 0.6s ease;
+				-o-transition:      all 0.6s ease;
+			}
+			.leftFigure:hover figcaption {
+				opacity: 1;
+				left: 0;
+			}
+			
 			.dropbtn {
 				background-color: rgb(255, 235, 150);
 				color: sienna;
@@ -69,16 +132,6 @@
 			.dropdown-content a:hover {background-color: rgb(160,256,200);	}
 			.dropdown:hover .dropdown-content {display: block;}
 			.dropdown:hover .dropbtn {background-color: rgb(160,256,200);	}
-			nav {
-				letter-spacing: 4px;
-				text-align: right;
-				list-style: none;  }
-			nav a {
-				text-decoration: none;
-				font-size: 1.25em;
-				color: sienna;  }
-			nav a:hover {
-				background-color: rgb(160,256,200);	}
 			.bc-embed {
 				float: left;
 				margin-right: 20px; }
@@ -93,8 +146,9 @@
 			<button class="dropbtn">Culture<sub>+</sub></button>
 			<div class="dropdown-content">
 				<a href="https://lcrampton.github.io/Culture.html">Music</a>
-				<a href="https://lcrampton.github.io/Food.html">Food</a>
 				<a href="https://lcrampton.github.io/concert-calendar.html">Concerts</a>
+				<a href="https://lcrampton.github.io/Food.html">Food</a>
+				<a href="https://lcrampton.github.io/Recipes.html">Cookbook</a>
 			</div>
 			</div>
 			<div class="dropdown">
@@ -108,6 +162,7 @@
 			<button class="dropbtn">About<sub>+</sub></button>
 			<div class="dropdown-content">
 				<a href="https://lcrampton.github.io/story.html">Story</a>
+				<a href="https://lcrampton.github.io/MyMusic.html">Original Music</a>
 				<a href="https://lcrampton.github.io/Rèsumè.html">Rèsumè</a>
 				<a href="https://lcrampton.github.io/Contact.html">Contact</a>
 			</div>
@@ -115,22 +170,25 @@
         
 <h1>The Story So Far</h1>
         
-        <img src="https://raw.githubusercontent.com/lcrampton/lcrampton.github.io/master/Github_Images/Lucas%20Pittsburgh%20Botanical.jpg" width="400px" align="right" alt="Lucas in Pittsburgh, PA.  Vikas Gupta took this picture.">
         
+        <figure class="rightFigure">
+			<img src="https://raw.githubusercontent.com/lcrampton/lcrampton.github.io/master/Github_Images/Lucas%20Pittsburgh%20Botanical.jpg" width="400px" alt="Lucas in Pittsburgh, PA.  Vikas Gupta took this picture.">
+			<figcaption class="rightFigCaption">Lucas in Pittsburgh, PA.  Vikas Gupta took this picture.</figcaption>
+		</figure>
+		
+		
 		<p>Howdy everybody.&nbsp  My name is Lucas.&nbsp At some point we stop "going home" and start "visiting our parents."  I lived in the District of Columbia—where people ostensibly make policy—for six years.&nbsp It is Chocolate City, Hollywood for nerds, the smallest big city this side of the Mississippi, where the Mumbo sauce flows freely.&nbsp Now i do not live anywhere.</p>
 		<p>I grew up near Allentown, Pennsylvania.&nbsp I left for DC first to study, then to find work.&nbsp  The Allentown area is an American microcosm, with declining industry, consolidating agriculture, booming warehousing, some high-technology, split politics, and immigration.&nbsp  As a commercial pilot's son who moved towns twice, i used to find difficulty calling it "home" with a great deal of confidence.&nbsp  But after twelve years nestled in the Appalachians, it earned the appellation.&nbsp  When once i talked down on it, i now defend Allentown earnestly from vebal attack in the mean streets.&nbsp  I shoot down pejoratives with statistical flak, historical gunfire, and anecdotal torpedoes.&nbsp  Allentown is my family.&nbsp  Nobody talks about her like that (except me).</p>
-		<p>I studied Global Health and Sustainability at the George Washington University.&nbsp  When i graduated, i lived with my parents for a few months and
-		made <a href="https://ifbm.bandcamp.com/album/the-bibimbap-bop">The Bibimbap Bop</a> with Big Bill.&nbsp  When the energy grew too restless, i packed a
-		couple bags and took a bus back to Washington.&nbsp  There, i began cooking at a restaurant owned by a celebrity chef.&nbsp  After six months, i left to protest poor and unethical new management.&nbsp  The restaurant folded ten days later.&nbsp  I switched to a catering start-up.&nbsp  My time there indulged my work ethic and tested my physical and mental endurance.&nbsp  Prominently, i recall loading seventy pound CaterGators up a steep hill into a van in a steady downpour while a rivulet flowed through the holes in my shoes.&nbsp  Some people do this every week for decades.&nbsp  I lasted three and a half months.</p>
+		<p>I studied Global Health and Sustainability at the George Washington University.&nbsp  When i graduated, i lived with my parents for a few months and	made <a href="https://ifbm.bandcamp.com/album/the-bibimbap-bop">The Bibimbap Bop</a> with Big Bill.&nbsp When the energy grew too restless, i packed a	couple bags and took a bus back to Washington.&nbsp  There, i began cooking at a restaurant owned by a celebrity chef.&nbsp  After six months, i left to protest poor and unethical new management.&nbsp  The restaurant folded ten days later.&nbsp I switched to a catering start-up.&nbsp My time there indulged my work ethic and tested my physical and mental endurance.&nbsp Prominently, i recall loading seventy pound CaterGators up a steep hill into a van in a steady downpour while a rivulet flowed through the holes in my shoes.&nbsp  Some people do this every week for decades.&nbsp I lasted three and a half months.</p>
+		
 		<div class="bc-embed"><iframe style="border: 0; width: 100%; height: 120px;" src="https://bandcamp.com/EmbeddedPlayer/album=367508234/size=large/bgcol
 		=ffffff/linkcol=de270f/tracklist=false/artwork=small/track=1124246603/transparent=true/" seamless><a 
 		href="http://ifbm.bandcamp.com/album/the-bibimbap-bop">The Bibimbap Bop by Investment Fraud Bingo Monday</a></iframe></div>
-		<p>By July of 2018, i felt the need to make moves into the office world of Washington, to continue chasing the dream.&nbsp  College was my springboard
-		to enhance my power to make the world a better place.&nbsp  The time i spent in kitchens and schlepping food was time i could do little to ameliorate 
-		the condition of the world's most vulnerable or to slow anthropogenic climate change.&nbsp  So i leapt.&nbsp  Without a job lined up, i amicably quit my catering job.&nbsp  I dusted off the suit and passed out rèsumès.&nbsp After a few weeks, i became...an office temporary!&nbsp At least i was on the right ladder, though, even if i remained at the bottom rung.
-		<p>My temporary workings bounced me around a few mailing assistant positions downtown before i landed at a long-term (three months) assignment at 
-		the <a href="https://www.kidney.org/">National Kidney Foundation</a> Serving the National Capital Area.&nbsp I worked on organizing their walk and gala events.&nbsp  Also, they liked my writing enough to let me compose segments for their monthly newsletter.&nbsp As my termination date would grow nearer, they would extend my assignment.&nbsp This continued as they encouraged me to apply to the full-time Community Outreach Coordinator position.</p>
-		<p>And that is what i do now!&nbsp  Nearly two years after graduation, i have landed a real job that requires a degree.&nbsp This walk took a long time—longer than i imagined while sitting in the library or the residence hall.&nbsp Whoever you are, wherever you are going, keep your eye on the future and never stop pushing.&nbsp  Reflect on your strategy and work cleverly.&nbsp You are not above anything.&nbsp Have the patience to let your work speak for itself.&nbsp There are ten thousand lessons in peeling shrimp.
+		
+		<p>By July of 2018, i felt the need to make moves into the office world of Washington, to continue chasing the dream.&nbsp  College was my springboard to enhance my power to make the world a better place.&nbsp  The time i spent in kitchens and schlepping food was time i could do little to ameliorate the condition of the world's most vulnerable or to slow anthropogenic climate change.&nbsp  So i leapt.&nbsp  Without a job lined up, i amicably quit my catering job.&nbsp  I dusted off the suit and passed out rèsumès.&nbsp After a few weeks, i became...an office temporary!&nbsp At least i was on the right ladder, though, even if i remained at the bottom rung.</p>
+		<p>My temporary workings bounced me around a few mailing assistant positions downtown before i landed at a long-term (three months) assignment at the <a href="https://www.kidney.org/">National Kidney Foundation</a> Serving the National Capital Area.&nbsp I worked on organizing their walk and gala events.&nbsp  Also, they liked my writing enough to let me compose segments for their monthly newsletter.&nbsp As my termination date would grow nearer, they would extend my assignment.&nbsp This continued as they encouraged me to apply to the full-time Community Outreach Coordinator position.</p>
+		<p>And that is what i did!&nbsp  Nearly two years after graduation, i had landed a real job that required a degree.&nbsp That walk took a long time—longer than i imagined while sitting in the library or the residence hall.&nbsp Whoever you are, wherever you are going, keep your eye on the future and never stop pushing.&nbsp Reflect on your strategy and work cleverly.&nbsp You are not above anything.&nbsp Have the patience to let your work speak for itself.&nbsp There are ten thousand lessons in peeling shrimp.</p>
+		<p>I worked that job longer than i thought i would, but i suppose the pandemic dashed everyone's plans.&nbsp I quit at the end of July, not realizing i was part of "The Great Resignation."&nbsp Now the future is a black box; every day is a mystery.</p>
 		
 		<h3>College</h3>
 		<p>College is useful for challenging your beliefs, granting an ethical education, and sampling true intellectual rigor.&nbsp Is it the place to learn <em>skills</em>, like html or Spanish?&nbsp No.&nbsp A classroom with grades, career ramifications, and social pressures is not necessarily the nurturing, forgiving, open environment to quickly pick up hard skills.&nbsp You can learn these for free on the Internet.&nbsp In a world oversaturated with information, do yourself a favor and pick up some of the practical signals.</p>
@@ -140,9 +198,15 @@
 		<!--<p>If i had not attended or completed college, i would likely be cooking in some restaurant.&nbsp I would have had to start back in the deli section of the grocery store, but moved as quickly and often as i could to the fryer at a wings place, then maybe running the stove, and then maybe snag a garde manger position at a nice restaurant.&nbsp From there, it is a straight shot over the course of a few years to the stove and sous chef.&nbsp I would have begun in spring 2014, and it is conceivable that by 2021, with the right work ethic, i could have made it.&nbsp Though this assumes that i jump over people.</p>-->
 			
 		<h3>Africa</h3>
-		<p>Let me take us back to Africa for a little while.&nbsp  In 2016, i took a sixteen-hour plane ride to Gaborone, Botswana for a semester abroad.&nbsp  This is something i had really wanted to do, but it is also something we just do.&nbsp  Doubt began swirling even before my plane ride and compounded after i landed.&nbsp  Why was i here?  What was i to do with no language to learn and a bleak semi-arid zone stretched out before me?&nbsp I planned a trip east toward Mozambique, hoping that would be the cure, but ten to sixteen men jumped us in Johannesburg.&nbsp  I ended up in a pretty dark place—an angry, despondent, anxious place—for a lot of that trip.&nbsp  Even so, there are few elations like those of ziplining across gorges in Swaziland's Malolotja National Park, or spilling from an eight-hour cramped bus ride onto the pristine white sand of Tofo Beach.&nbsp  Life can be a wild ride sometimes.</p>
-		<img src="Github_Images/Red Dunes in Namibia.JPG" align="right" width="400px" alt="Red Dunes in the Sossusvlei">
-		<p>My mood started clearing up towards the end of my stay, perhaps partly because it was coming to a close, perhaps because it is exceedingly difficult to frown while tracking rhinoceroses.&nbsp But i also made a ten-day excursion into Namibia, and that was exciting.&nbsp  <!--Donald Trump won the presidency and the motherfucking Republican party took the House and Senate while i was on the Atlantic coast in Swakopmund, which sullied an otherwise rapturous trip.&nbsp -->Namibia utterly changed me.&nbsp The Earth is a magnificent place.&nbsp  I asked myself if the sky looks bigger in Africa; it is difficult to explain because it is difficult to comprehend.&nbsp  Standing in the Sossusvlei, or sitting six feet from flamingos in Walvis Bay, or watching a thunderstorm tumble over the mountains around Windhoek and overtake you, you cannot shake the sense that this planet will one day rise up around you and swallow whole everything humanity holds dear.&nbsp  The sun beats down.&nbsp  The frigid ocean rolls in and out.&nbsp  The wind blows orange sand across your arms and legs, scrubbing away the old you.</p>
+		<p>Let me take us back to Africa for a little while.&nbsp In 2016, i took a sixteen-hour plane ride to Gaborone, Botswana for a semester abroad.&nbsp  This is something i had really wanted to do, but it is also something we just do.&nbsp  Doubt began swirling even before my plane ride and compounded after i landed.&nbsp  Why was i here?  What was i to do with no language to learn and a bleak semi-arid zone stretched out before me?&nbsp I planned a trip east toward Mozambique, hoping that would be the cure, but ten to sixteen men jumped us in Johannesburg.&nbsp  I ended up in a pretty dark place—an angry, despondent, anxious place—for a lot of that trip.&nbsp Even so, there are few elations like those of ziplining across gorges in Swaziland's Malolotja National Park, or spilling from an eight-hour cramped bus ride onto the pristine white sand of Tofo Beach.&nbsp  Life can be a wild ride sometimes.</p>
+		
+		<figure class="rightFigure">
+			<img src="https://raw.githubusercontent.com/lcrampton/lcrampton.github.io/master/Github_Images/Red%20Dunes%20in%20Namibia.JPG" width="400px" alt="Red Dunes in the Sossusvlei">
+			<figcaption class="rightFigCaption">Red Dunes in the Sossusvlei</figcaption>
+		</figure>
+		
+		
+		<p>My mood started clearing up towards the end of my stay, perhaps partly because it was coming to a close, perhaps because it is exceedingly difficult to frown while tracking rhinoceroses.&nbsp But i also made a ten-day excursion into Namibia, and that was exciting.&nbsp  <!--Donald Trump won the presidency and the motherfucking Republican party took the House and Senate while i was on the Atlantic coast in Swakopmund, which sullied an otherwise rapturous trip.&nbsp -->Namibia utterly changed me.&nbsp The Earth is a magnificent place.&nbsp I asked myself if the sky looks bigger in Africa; it is difficult to explain because it is difficult to comprehend.&nbsp Standing in the Sossusvlei, or sitting six feet from flamingos in Walvis Bay, or watching a thunderstorm tumble over the mountains around Windhoek and overtake you, you cannot shake the sense that this planet will one day rise up around you and swallow whole everything humanity holds dear.&nbsp The sun beats down.&nbsp The frigid ocean rolls in and out.&nbsp The wind blows orange sand across your arms and legs, scrubbing away the old you.</p>
 		
 		<h3>Pittsburgh</h3>
 		<p>I visited Pittsburgh in October 2018.&nbsp Pittsburgh is a neat city with blue collar vibes and educated energy.&nbsp  At least several people of whom you have heard have origins in Pittsburgh: Rachel Carson, Andy Warhol, Mister Rogers, Mac Miller.&nbsp It is also the setting of the 1983 box-office smash <em>Flashdance</em>.&nbsp You might consider it the Grand Rapids of Pennsylvania.&nbsp  While there, i had the opportunity to go for a couple runs.&nbsp  Always run on vacation; these parts are some of the most memorable—not for being the best parts, but for the brain chemistry.&nbsp  And what a way to explore a place.&nbsp  Anyway, my man VG Money took me around town and showed me the Andy Warhol Museum, the botanical gardens, and some hip spots for pierogies and izakaya.</p>
@@ -157,18 +221,37 @@
 		<p>A part of me hopes they will remember me.&nbsp Or at least think on occasion, "Whatever happened to that handsome runner?"&nbsp We are irreversibly tied to the geographic areas we and our forefathers inhabit, and i expect to make returns, both by obligation and accident.</p>
 		
 		<h3>Brightwood</h3>
-		<p>I lived in Petworth for a spell.&nbsp Then i lived in Glover Park for a triple spell.&nbsp Then i lived in Brightwood for a sextuple spell.&nbsp Brightwood strikes an eclectic tone, in multiple ways.&nbsp It has a lot of different kinds of architecture and housing for a range of income groups.&nbsp There are low-income apartments on Georgia and Colorado Avenues, mansions on sixteenth street, aging wacky standalones and fresh luxury dwellings in Takoma, and series of duplexii on our cross-streets.&nbsp Black and white, cat and dog rub shoulders.&nbsp We spent so much time looking at our lawns that we forgot we lived in the shadow of DC's Eiffel Tower.</p>
-		<p>Here is where i weathered a pandemic and learned about <strong>mutual aid</strong>.
+		<p>I lived in Petworth for a spell.&nbsp Then i lived in Glover Park for a triple spell.&nbsp Then i lived in Brightwood for a septuple spell.&nbsp Brightwood strikes an eclectic tone, in multiple ways.&nbsp It has a lot of different kinds of architecture and housing for a range of income groups.&nbsp There are low-income apartments on Georgia and Colorado Avenues, mansions on sixteenth street, aging wacky standalones and fresh luxury dwellings in Takoma, and series of duplexii on our cross-streets.&nbsp Black and white, cat and dog rub shoulders.&nbsp We spent so much time looking at our lawns that we forgot we lived in the shadow of DC's Eiffel Tower.</p>
+		<p>Here is where i weathered a pandemic and learned about <strong>mutual aid</strong>.&nbsp We let our four-legged friend, Bobby, stay for a few days.</p>
+		<figure class="rightFigure">
+			<img src="https://raw.githubusercontent.com/lcrampton/lcrampton.github.io/master/Github_Images/Bobby%20at%20617.jpg" align="right" width="300px" alt="Bobby (dog) in our back yard">
+			<figcaption class="rightFigCaption">Bobby (dog) in our back yard</figcaption>
+		</figure>
+		
 		
 		<h3>Buddhism</h3>
 		<p>Eastern philosophy came into my life at a young age via the martial arts.&nbsp My senseis emphasized the ethical and philosophical sides of the martial arts, inspired especially by Bruce Lee.&nbsp It was far from enough to become strong.&nbsp Without direction, you will run all of your strength off the path.&nbsp They did not want a couple hundred Cobra Kai running around testing all of their strikes and holds on other teens and children, because they were good people (and that would create...liabilities).&nbsp Nearly as often as they instructed us how to quickly break wrists and inflict acute pain, they guided us in group chats toward the modest way of the peaceful warrior and intelligent self-defense.</p>
-		<p>It caught on with me, and i <a href="http://www.buddhanet.net/pdf_file/scrndhamma.pdf">read</a> <a href="https://terebess.hu/zen/101ZenStones.pdf">some</a> <a href="https://www.goodreads.com/book/show/514210.The_Way_of_Zen">books</a>.&nbsp The wisdom in it rings true.&nbsp The first noble truth—that life entails suffering, that you will encounter aging, sickness, and death, that <em>shit happens</em>—grows increasingly salient as one enters adulthood, as the twenty-first century world unfolds and unravels.&nbsp <!--Life is going to hit us with many blows; what can we do but cry when we have to, and make it to the other end?-->
-		<p>Maybe i am not a <em>Buddhist</em>, because i do not really buy into reincarnation or anything supernatural.&nbsp If everything is impermanent and there is no self, what is reincarnated?&nbsp But where in the core of the system is a mention of reincarnation?&nbsp It does not appear in the Noble Truths, nor the marks of existence, nor in the prescriptive Eightfold Path.&nbsp The Buddha set out to solve the problem of <em>dukkha</em>—existential suffering.&nbsp He did not set out to uncover the mysteries of the universe.&nbsp He was primarily interested in helping us remove the arrows from our chests.	</p>
+		<p>It caught on with me, and i <a href="http://www.buddhanet.net/pdf_file/scrndhamma.pdf">read</a> <a href="https://terebess.hu/zen/101ZenStones.pdf">some</a> <a href="https://www.goodreads.com/book/show/514210.The_Way_of_Zen">books</a>.&nbsp The wisdom in it rings true.&nbsp The first Noble Truth—that life entails suffering; that you will encounter aging, sickness, and death; that <em>shit happens</em>—grows increasingly salient as one enters adulthood, as the twenty-first century world unfolds and unravels.&nbsp <!--Life is going to hit us with many blows.-->
+		<p>Maybe i am not a <em>Buddhist</em>.&nbsp I do not really buy into reincarnation or anything supernatural.&nbsp If everything is impermanent and there is no self, what is reincarnated?&nbsp But where in the core of the system is a mention of reincarnation?&nbsp It does not appear in the Noble Truths, nor the marks of existence, nor in the prescriptive Eightfold Path.&nbsp The Buddha set out to solve the problem of <em>dukkha</em>—existential suffering.&nbsp He did not set out to uncover the mysteries of the universe.&nbsp He was primarily interested in helping us remove the arrows from our chests.</p>
 		<p>We will end our lives with nothing, and we can uncover our own liberation if we learn to desire nothing.&nbsp 
 		</p>
 		
+		<h3>Atheism</h3>
+		<p>I grew up in Methodist churches thinking often about God and Jesus of Nazareth.&nbsp I have known what it is like to fear God and admire the Bible.</p>
+		<p>The claims of the Christian faith began to really unravel for me, honestly, with my first exposure to the most commonly-cited arguments and counter-arguments for and against the existence of God as presented in <a href="https://www.thriftbooks.com/w/50-philosophy-ideas-you-really-should-know-ideas-you-really-need-to-know_ben-dupr_ben-dupre/267324/item/12545176/?mkwid=W0CF7rqG%7cdc&pcrid=76897251305754&pkw=&pmt=be&slid=&product=12545176&plc=&pgrid=1230353754879173&ptaid=pla-4580496733720783&utm_source=bing&utm_medium=cpc&utm_campaign=Bing+Shopping+%7c+History+%7c+LOW&utm_term=&utm_content=W0CF7rqG%7cdc%7cpcrid%7c76897251305754%7cpkw%7c%7cpmt%7cbe%7cproduct%7c12545176%7cslid%7c%7cpgrid%7c1230353754879173%7cptaid%7cpla-4580496733720783%7c&msclkid=d66c855fa60b1cc848c7e427096dcd0b#idiq=12545176&edition=7893922"><em>Fifty Philosophy Ideas You Really Need To Know</em></a>.&nbsp I kept thinking about the cosmological argument.&nbsp Atheists have a tough time trying to explain the origins of reality.&nbsp But theists have an exponentially more difficult time explaining the contradictions and assumptions implicit in their position.</p>
+		<p>Unfortunately, a lot of public atheists come across as belligerent assholes, who double down on that pattern in an attempt to profit from their atheism.&nbsp We do benefit from a public atheist intelligentsia, but an attitude of superiority could repel people, or might at least help explain the lack of community among atheists.&nbsp The unaffiliated (who are not necessarily atheist) are the fastest-growing religious group in the United States, but they and their interests are grossly underrepresented in the halls of power.&nbsp To any extent there is an atheist community, it must be fractured and dispersed.</p>
+		<p>To any burgeoning skeptic, i would say</p>
+			<ul>
+				<li>Keep applying your skepticism.&nbsp Seeking the truth vigorously will not lead you astray.</li>
+				<li>Be prepared to question your beliefs again.&nbsp There are theists more intelligent than you, and you will probably hear compelling arguments for theism in your lifetime.&nbsp Entertaining these arguments can make you a better-informed atheist.</li>
+				<li>Life can seem absurd without divine purpose, and that can get difficult.&nbsp Make sure you take care of your brain.&nbsp Replace that Sunday morning or Friday evening worship with something meaningful to you, and ideally social.&nbsp You can volunteer or work at a time most Christians would not!</li>
+				<li>Life will also get better once you shed the delusions of religion.&nbsp Naturalist explanations will become more intuitive.&nbsp You will not have to worry about how other people behave, or a divine karmic scorekeeper, or an omniscient entity reading your thoughts.&nbsp The reasons the world is as it is will become clearer.&nbsp When you understand that not everything happens for a reason, and that human consciousness is incomplete and accidental, you know that the future contains multitudes.&nbsp You have a responsibility to collapse those possible futures into fewer, better ones.&nbsp The arc of justice is unwritten.&nbsp God will not deliver your hopes and dreams.&nbsp No deity will step in to turn back climate change.&nbsp Prayer will not care for your community, and it is certainly not a health plan.</li>
+			</ul>
+		<p>I enjoy discussing this issue; please reach out with any questions or apologetics.</p>
+		
 		<h3>Running</h3>
-		<p>I began running competitively in eighth grade.&nbsp It keeps me sane and offers a little taste of wild living.&nbsp Our ancestors in the African savannah likely utilized persistence hunting methods to acquire protein.&nbsp Our bodies are at least somewhat attuned to running long distances in hot weather.&nbsp We sweat unlike any other animal.</p>
+		<p>I began running competitively in eighth grade.&nbsp It keeps me sane and offers a little taste of <a href="https://www.youtube.com/watch?v=b-iGZPtWXzE">wild</a> living.&nbsp Moving quickly on one's feet potentiates freedom.&nbsp I know that at any given moment, i can put several miles between myself and my point of origination within an hour, should the need arise.</p>
+		<p>Our ancestors in the African savannah likely utilized persistence hunting methods to acquire protein.&nbsp Our bodies are at least somewhat attuned to running long distances in hot weather.&nbsp We sweat unlike any other animal.</p>
 		<p>Here are my personal records:</p>
 		<table>
 			<tr><td><a href="https://runsignup.com/Race/Results/86044/IndividualResult/xSgM?resultSetId=229343#U47246100">50 mile</a></td><td>9:04:57</td><td>2020</td></tr>
