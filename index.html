@@ -26,7 +26,7 @@
 			h4 a {
                 text-decoration: none;}
 			h4 a:hover, a:active, a:focus {
-                text-decoration: underline sienna dotted;}
+                background: red;}
 				
 			section {
 				display: flex;
@@ -96,7 +96,7 @@
 				color: white;	}
 			
 			#wrapper {
-				width: 103%;
+				width: 104%;
 				height: 100%;
 				overflow-y: scroll;
 				scroll-behavior: smooth;
@@ -107,14 +107,15 @@
 			}
 						
         </style>
+		
     </head>
     <body>
 	
 	<div id="wrapper">
 		<section id="home">
 			<a href="https://lcrampton.github.io/story.html"><h1>Lucas Crampton</h1></a>
-			<p>_____</p>
-			<h4><a href="#menu">†† menu ††</h4></a>
+			<!--<p>_____</p>-->
+			<h4><a href="#menu">|||</h4></a>
 		</section>
 		
 		<section id="menu">
@@ -131,22 +132,6 @@
 			</div>
 		</section>
 	</div>
-	
-	<script>
-		var mouseCount = 0;
-		var draw = function() {
-			if (mouseCount===30) {
-				background(0, 238, 255);
-				mouseCount=0;
-			} else {
-			stroke(189, 0, 0);
-			line(mouseX, mouseY+20, mouseX, mouseY+30);
-			line(mouseX, mouseY-20, mouseX, mouseY-30);
-			line(mouseX+20, mouseY, mouseX+30, mouseY);
-			line(mouseX-20, mouseY, mouseX-30, mouseY);
-			mouseCount++;	}
-		};
-	</script>
 
     </body>
 </html>
