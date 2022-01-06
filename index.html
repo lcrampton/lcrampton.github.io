@@ -6,19 +6,17 @@
 		<link rel="shortcut icon" href="https://raw.githubusercontent.com/lcrampton/lcrampton.github.io/master/Github_Images/Website%20Favicon.ico">
         <style>
             body {
-                padding-top: 5%;
-				padding-bottom: 10%;
-				padding-left: 10%;
-				padding-right: 10%;
+				height: 100vh;
+				overflow: hidden;
                 background: rgb(232, 256, 236);}
 			a {
 				color: black;
 				text-decoration: none;}
             h1 {
-                text-align: center;
                 font-family: Century, georgia, serif;
                 font-style: italic;}
 			h1 a {
+                text-size: 2em;
 				text-decoration: none;	}
             h1 a:hover, a:active, a:focus {
                 text-decoration: underline sienna dotted;}
@@ -29,6 +27,17 @@
                 text-decoration: none;}
 			h4 a:hover, a:active, a:focus {
                 text-decoration: underline sienna dotted;}
+				
+			section {
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+				justify-content: center;
+				text-align: center;
+				width: 100%;
+				height: 100vh;
+				scroll-snap-align: center;
+			}
 			
 			.grid-container	{
 				display: grid;
@@ -55,9 +64,7 @@
 					,15px 15px;
 				background-repeat: no-repeat;
                 font-family: Century, georgia, serif;
-				font-size: 28px;	
-				margin-top: 2em;
-				padding: 1em;	}
+				font-size: 28px;	}
 			
 			.topic	{
 				color: sienna;
@@ -70,12 +77,11 @@
 				margin: 20px;	}
 			.topic:hover, .topic:active, .topic:focus {
 				background-color: transparent;
-				background-image: linear-gradient(180deg, #ffdc00, #ffdc00)
-				,linear-gradient(225deg, #ffdc00, #ffdc00)
-				,linear-gradient(0deg, #ffdc00, #ffdc00)
-				,linear-gradient(90deg, #ffdc00, #ffdc00)
-				,linear-gradient(135deg, transparent 9px, #ffdc00 10px, #ffdc00 12px, transparent 12px)
-				;
+				background-image: linear-gradient(180deg, #ffdc00, #ffdc00),
+				linear-gradient(225deg, #ffdc00, #ffdc00),
+				linear-gradient(0deg, #ffdc00, #ffdc00),
+				linear-gradient(90deg, #ffdc00, #ffdc00),
+				linear-gradient(135deg, transparent 9px, #ffdc00 10px, #ffdc00 12px, transparent 12px);
 				background-position: top right
 					,top right
 					,bottom left
@@ -88,71 +94,59 @@
 					,15px 15px;
 				background-repeat: no-repeat;
 				color: black;	}
+			
+			#wrapper {
+				width: 105%;
+				height: 100%;
+				overflow-y: scroll;
+				scroll-behavior: smooth;
+				scroll-snap-type: y mandatory;
+			}
+			#menu {
+				background: rgb(0,0,0);
+			}
 						
         </style>
     </head>
     <body>
+	
+	<div id="wrapper">
+		<section id="home">
+			<a href="https://lcrampton.github.io/story.html"><h1>Lucas Crampton</h1></a>
+			<p>_____</p>
+			<h4><a href="#menu">†† menu ††</h4></a>
+		</section>
 		
+		<section id="menu">
+			<div class="grid-container">	
+				<a class="topic" href="https://lcrampton.github.io/story.html">Story</a>
+				<a class="topic" href="https://lcrampton.github.io/Rèsumè.html">Résumé</a>
+				<a class="topic" href="https://lcrampton.github.io/concert-calendar.html">Concerts</a>
+				<a class="topic" href="https://lcrampton.github.io/Culture.html">Culture Review</a>
+				<a class="topic" href="https://lcrampton.github.io/Food.html">Food</a>
+				<a class="topic" href="https://lcrampton.github.io/Recipes.html">Cookbook</a>
+				<a class="topic" href="https://lcrampton.github.io/Platform.html">Platform</a>
+				<a class="topic" href="https://lcrampton.github.io/Message.html">The Message</a>
+				<a class="topic" href="https://lcrampton.github.io/MyMusic.html">Original Music</a>
+			</div>
+		</section>
+	</div>
+	
 	<script>
 		var mouseCount = 0;
 		var draw = function() {
 			if (mouseCount===30) {
 				background(0, 238, 255);
 				mouseCount=0;
-			}
+			} else {
 			stroke(189, 0, 0);
 			line(mouseX, mouseY+20, mouseX, mouseY+30);
 			line(mouseX, mouseY-20, mouseX, mouseY-30);
 			line(mouseX+20, mouseY, mouseX+30, mouseY);
 			line(mouseX-20, mouseY, mouseX-30, mouseY);
-			mouseCount++;
+			mouseCount++;	}
 		};
-
 	</script>
-		
-        <br><br><br><br><br><br><br>
-		<div align="center">
-			<h1><a href="https://lcrampton.github.io/story.html">Lucas Crampton</h1></a>
-			<p>_____</p>
-			<h4><a href="Contact.html">†† contact ††</h4></a>
-        </div>
-		
-		<!--<div align="center">
-			<iframe width="80%" height="476" src="https://www.youtube.com/embed/2Oa4St48duU?start=49" title="Luca Scrapple Live From the American Wasteland" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-		</div>-->
-		
-	<div class="grid-container">	
-		<a class="topic" href="https://lcrampton.github.io/story.html">Story</a>
-		<a class="topic" href="https://lcrampton.github.io/Rèsumè.html">Résumé</a>
-		<a class="topic" href="https://lcrampton.github.io/concert-calendar.html">Concerts</a>
-		<a class="topic" href="https://lcrampton.github.io/Culture.html">Culture Review</a>
-		<a class="topic" href="https://lcrampton.github.io/Food.html">Food</a>
-		<a class="topic" href="https://lcrampton.github.io/Recipes.html">Cookbook</a>
-		<a class="topic" href="https://lcrampton.github.io/Platform.html">Platform</a>
-		<a class="topic" href="https://lcrampton.github.io/Message.html">The Message</a>
-		<a class="topic" href="https://lcrampton.github.io/MyMusic.html">Original Music</a>
-	</div>
-		
-	<!--<div align="center">	
-		<table id="indextable">
-			<tbody>
-				<tr>
-					<td align="center"><a href="https://lcrampton.github.io/story.html">Story</a></td>
-					<td align="center"><a href="https://lcrampton.github.io/Rèsumè.html">Résumé</a></td>
-					<td align="center"><a href="https://lcrampton.github.io/concert-calendar.html">Concerts</a></td></tr>
-				<tr>
-					<td align="center"><a href="https://lcrampton.github.io/Culture.html">Culture Review</a></td>
-					<td align="center"><a href="https://lcrampton.github.io/Food.html">Food</a></td>
-					<td align="center"><a href="https://lcrampton.github.io/Recipes.html">Cookbook</a></td></tr>
-				<tr>
-					<td align="center"><a href="https://lcrampton.github.io/Platform.html">Platform</a></td>
-					<td align="center"><a href="https://lcrampton.github.io/Message.html">The Message</a></td>
-					<td align="center"><a href="https://lcrampton.github.io/Contact.html">Contact</a></td></tr>
-			</tbody>
-		</table>
-	</div>	-->
-		
-	
-		
+
     </body>
 </html>
