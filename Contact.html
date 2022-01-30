@@ -41,6 +41,9 @@
 				letter-spacing: 3px;
 				list-style: none;
 				line-height: 2.5em;	}
+			input	{
+				font-family: monospace;
+				}
 			nav {
 				letter-spacing: 4px;
 				text-align: right;
@@ -116,33 +119,58 @@
 			</div>
 		</nav><br><br>
 		
-<h2>Lucas Crampton</h2><br>
+		<h2>Lucas Crampton</h2><br>
 
-<h4><a href="mailto:cramptonlucas@gmail.com">electronic mail</a></h4>
+		<h4><a href="mailto:cramptonlucas@gmail.com">electronic mail</a></h4>
 
-<div class="section">_____</div><br>
+		<div class="section">_____</div><br>
 
-<h3>social medias</h3>
-<h4><a href="https://www.linkedin.com/in/cramptonlucas/">LinkedIn</a></h4>
-<h4><a href="https://magookas.bandcamp.com/">punk Bandcamp</a></h4>
-<h4><a href="https://circuitcity.bandcamp.com/">electronica Bandcamp</a></h4>
-<h4><a href="https://lucascrapple.bandcamp.com/">folk Bandcamp</a></h4>
-<h4><a href="https://ifbm.bandcamp.com/">collaborative Bandcamp</a></h4>
-<h4><a href="https://open.spotify.com/user/12170644568">Spotify playlists</a></h4>
+		<h3>social medias</h3>
+		<h4><a href="https://www.linkedin.com/in/cramptonlucas/">LinkedIn</a></h4>
+		<h4><a href="https://twitter.com/somekindoflucas/">Twitter</a></h4>
 
-<div class="section">_____</div><br>
-<!--
-<h3>mailing list</h3>
-<p>Never miss an update.</p>
-<div id="formwrap">
-	<form action="ListServ.php" method="post" autocomplete="off">
-		<label for="nameinput">name&nbsp&nbsp</label>
-		<input type="text" id="nameinput" name="nameinput"><br>
-		<label for="mailinput">e-mail</label>
-		<input type="text" id="mailinput" name="nameinput"><br>
-		<input type="submit" value="SUBMIT TO AUTHORITY">
-	</form>
-</div>
-	-->
+		<div class="section">_____</div><br>
+		
+		<h3>mailing list</h3>
+		<p>Never miss an update.</p>
+		<p>(under construction)</p>
+		<div id="formwrap">
+			<form id="submissionForm" autocomplete="off"><!--action="LS.php" method="post"
+				<label for="nameinput">name&nbsp&nbsp</label>
+				<input type="text" id="nameinput" name="nameinput"><br>
+				<label for="mailinput">e-mail</label>
+				<input type="text" id="mailinput" name="nameinput"><br>
+				<input type="submit" value="SUBMIT TO AUTHORITY" id="bigButton">-->
+				<input type="submit" value="subscribe">
+			</form>
+		</div>
+
+		<script>
+			
+			document.addEventListener("DOMContentLoaded", function() {
+				
+				var subButton = document.getElementById("bigButton");
+				subButton.disabled = true;
+			});
+				(function() {
+				"use strict";
+					
+					document.getElementById("submissionForm").addEventListener("submit", newsletterSubscribe);
+					
+					function newsletterSubscribe(event) {
+						event.preventDefault();
+						console.log("yeah");
+						window.alert("It is under construction.");
+						
+						var subscriberName = document.getElementById("nameinput");
+						
+						if (subscriberName === "") {
+							window.alert("Please enter a name.");
+							subscriberName.focus;
+							return;
+						}
+					}
+				})();
+		</script>
 	</body>
 </html>
