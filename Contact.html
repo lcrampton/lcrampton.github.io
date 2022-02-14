@@ -43,6 +43,7 @@
 				line-height: 2.5em;	}
 			input	{
 				font-family: monospace;
+				line-height: 2.5em;				
 				}
 			nav {
 				letter-spacing: 4px;
@@ -117,33 +118,38 @@
 				<a href="https://lcrampton.github.io/Rèsumè.html">Rèsumè</a>
 				<a href="https://lcrampton.github.io/Contact.html">Contact</a>
 			</div>
-		</nav><br><br>
+		</nav>
 		
-		<h2>Lucas Crampton</h2><br>
+		<h2>Lucas Crampton</h2>
 
-		<h4><a href="mailto:cramptonlucas@gmail.com">electronic mail</a></h4>
+			<h4><a href="mailto:cramptonlucas@gmail.com">electronic mail</a></h4>
 
-		<div class="section">_____</div><br>
+			<div class="section">_____</div><br>
 
-		<h3>social medias</h3>
-		<h4><a href="https://www.linkedin.com/in/cramptonlucas/">LinkedIn</a></h4>
-		<h4><a href="https://twitter.com/somekindoflucas/">Twitter</a></h4>
+			<h3>social medias</h3>
+			<h4><a href="https://www.linkedin.com/in/cramptonlucas/">LinkedIn</a></h4>
+			<h4><a href="https://www.instagram.com/circuitcityyy/">Instagram</a></h4>
+			<h4><a href="https://twitter.com/somekindoflucas/">Twitter</a></h4>
 
-		<div class="section">_____</div><br>
-		
-		<h3>mailing list</h3>
-		<p>Never miss an update.</p>
-		<p>(under construction)</p>
-		<div id="formwrap">
-			<form id="submissionForm" autocomplete="off"><!--action="LS.php" method="post"
-				<label for="nameinput">name&nbsp&nbsp</label>
-				<input type="text" id="nameinput" name="nameinput"><br>
-				<label for="mailinput">e-mail</label>
-				<input type="text" id="mailinput" name="nameinput"><br>
-				<input type="submit" value="SUBMIT TO AUTHORITY" id="bigButton">-->
-				<input type="submit" value="subscribe">
-			</form>
-		</div>
+			<div class="section">_____</div><br>
+			
+			<h3>mailing list</h3>
+			<p>Never miss an update.</p>
+			<p>(under construction)</p>
+			<div id="formwrap">
+				<form id="submissionForm" autocomplete="off" action="https://formsubmit.co/cramptonlucas@gmail.com" method="post">
+					<label for="nameinput">name&nbsp&nbsp</label>
+					<input type="text" id="nameinput" name="nameinput" required><br>
+					<label for="mailinput">e-mail</label>
+					<input type="email" id="mailinput" name="mailinput" required><br>
+					<input type="text" id="note" name="note" placeholder="Leave a note." required><br>
+					<input type="submit" value="SUBMIT TO AUTHORITY" id="bigButton">
+					<input type="hidden" name="_subject" value="blog subordinate">
+					<input type="hidden" name="_next" value="https://lcrampton.github.io/ContactThankYou.html">
+					<input type="hidden" name="_captcha" value="false">
+					<input type="text" name="_honey" style="display:none">
+				</form>
+			</div>
 
 		<script>
 			
@@ -160,14 +166,27 @@
 					function newsletterSubscribe(event) {
 						event.preventDefault();
 						console.log("yeah");
-						window.alert("It is under construction.");
 						
 						var subscriberName = document.getElementById("nameinput");
+						var subscriberEmail = document.getElementById("mailinput");
 						
 						if (subscriberName === "") {
 							window.alert("Please enter a name.");
 							subscriberName.focus;
 							return;
+						} 
+						
+						if (subscriberEmail === "") {
+							window.alert("Please enter an electronic mailing address.");
+							subscriberEmail.focus;
+							return;
+						} 
+						
+						subscriberEmail.addEventListener('change', function() {
+							subButton.disabled = false;
+							var element = document.createElement('div');
+							element.innerText = String(subscriberName);
+							var sanitizedHTML = element.innerHTML;
 						}
 					}
 				})();
