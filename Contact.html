@@ -137,12 +137,13 @@
 			<p>Never miss an update.</p>
 			<p>(under construction)</p>
 			<div id="formwrap">
-				<form id="submissionForm" autocomplete="off" action="https://formsubmit.co/cramptonlucas@gmail.com" method="post">
+				<form id="submissionForm" autocomplete="off" action="https://formsubmit.co/fd2acbbda6872737df7167bf1aa3e60e" method="post">
 					<label for="nameinput">name&nbsp&nbsp</label>
 					<input type="text" id="nameinput" name="nameinput" required><br>
 					<label for="mailinput">e-mail</label>
-					<input type="email" id="mailinput" name="mailinput" required><br>
-					<input type="text" id="note" name="note" placeholder="Leave a note." required><br>
+					<input type="email" id="mailinput" name="mailinput" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" required><br>
+					<label for="note">a note</label>
+					<textarea id="note" name="note"></textarea><br>
 					<input type="submit" value="SUBMIT TO AUTHORITY" id="bigButton">
 					<input type="hidden" name="_subject" value="blog subordinate">
 					<input type="hidden" name="_next" value="https://lcrampton.github.io/ContactThankYou.html">
@@ -153,11 +154,10 @@
 
 		<script>
 			
-			document.addEventListener("DOMContentLoaded", function() {
-				
+			/*document.addEventListener("DOMContentLoaded", function() {
 				var subButton = document.getElementById("bigButton");
 				subButton.disabled = true;
-			});
+			
 				(function() {
 				"use strict";
 					
@@ -182,14 +182,14 @@
 							return;
 						} 
 						
-						subscriberEmail.addEventListener('change', function() {
-							subButton.disabled = false;
+						subscriberEmail.addEventListener('input', function() {
 							var element = document.createElement('div');
 							element.innerText = String(subscriberName);
 							var sanitizedHTML = element.innerHTML;
 						}
 					}
 				})();
+			});		*/
 		</script>
 	</body>
 </html>
