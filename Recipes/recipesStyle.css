@@ -74,35 +74,6 @@ figure:hover {
 	transform: scale(2);
 }
 	
-.dropbtn {
-	background-color: bisque;
-	color: DarkGreen;
-	text-align: justify;
-	font-family: Century, Georgia, serif;
-	letter-spacing: 5px;
-	font-size: 1em;
-	border: none;	}
-.dropdown {
-	position: relative;
-	display: inline-block;	}
-.dropdown-content {
-	display: none;
-	position: absolute;
-	background-color: chartreuse;
-	min-width: 175px;
-	z-index: 1;	}
-.dropdown-content a {
-	color: DarkGreen;
-	padding: 30px 30px;
-	text-align: left;
-	display: block;	}
-.dropdown-content a:hover {
-	background-color: rgb(256,206,50);	}
-.dropdown:hover .dropdown-content {
-	display: block;	}
-.dropdown:hover .dropbtn {
-	background-color: rgb(256,206,50);	}
-	
 .grid-container	{
 	display: grid;
 	grid-template-columns: auto auto;
