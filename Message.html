@@ -2,109 +2,123 @@
 <html>
     <head>
         <meta charset="utf-8">
-        <title>Russia Invades Ukraine</title>
-		<link rel="shortcut icon" href="https://raw.githubusercontent.com/lcrampton/lcrampton.github.io/master/Github_Images/Website%20Favicon.ico">
+        <title>The Message</title>
+		<link rel="shortcut icon" href="Github_Images/Website Favicon.ico">
         <style>
             body {
 				margin: 10%;
-				background: rgb(256, 250, 250);
-				font-family: Heraldsquare Regular, Georgia, Times New Roman, serif;
-				color: rgb(0,0,0);			}
+				background: rgb(150, 235, 256);
+				font-family: monospace;			}
 			h1 {
-				font-family: Heraldsquare Regular, Georgia, Times New Roman, serif;
-				text-decoration: underline;			}
-			h2 {
-				font-family: Heraldsquare Regular, Georgia, Times New Roman, serif;
-				font-style: italic;
-				color: rgb(150,150,150);
-				font-size: 1.2em;	}
+				font-family: monospace;
+				font-size: 2.5em; }
+			table {
+				font-size: 2em;	}
 			p {
 				margin-left: 2%;
-				font-family: Century, Georgia, serif;
-				text-indent: 20px;			}
-			a	{
-				text-decoration: none;
-				color: rgb(0,156,0); }
-			a:hover, a:active, a:focus	{
-				background-color: rgb(256,100,256);
-				color: black; }
+				font-family: Century, Georgia, serif;			}
 			p a {
 				text-decoration: none;
-				color: rgb(0,156,0); }
+				color: sienna; }
 			p a:hover, a:active, a:focus {
-				background-color: rgb(256,100,256);
-				color: black;	}
+				background-color: rgb(200,256,160);
+				}
+			table a {
+				text-decoration: none;
+				color: sienna; }
+			table a:hover, a:active, a:focus {
+				background-color: rgb(200,256,160);		}
+			ul a:hover, a:active, a:focus {
+				background-color: rgb(200,256,160);				}
+			ul {
+				font-family: Century, Georgia, Times New Roman, serif;
+				margin-left: 3%;
+                list-style: square;				}
+			ul a {
+				text-decoration: none;
+				color: sienna; }
 			nav {
 				letter-spacing: 4px;
-				font-size: 1.1em;
 				text-align: right;
 				list-style: none;  }
 			nav a {
 				text-decoration: none;
 				margin-left: 8px;
-				color: rgb(256,150,256);  }
+				font-family: Century, Georgia, serif;
+				font-size: 1.1em;
+				color: sienna;  }
 			nav a:hover {
-				background-color: rgb(50,25,0);
-				color: white;	}
-			figure { 
-				display: block;
-				margin: 1%;
+				background-color: rgb(256,206,50);	}
+			.dropbtn {
+				background-color: rgb(150, 235, 256);
+				color: sienna;
+				text-align: justify;
+				font-family: Century, Georgia, serif;
+				letter-spacing: 5px;
+				font-size: 1.1em;
+				border: none;	}
+			.dropdown {
 				position: relative;
-				float: right;
-				overflow: hidden;
-			}
-			figcaption { 
+				display: inline-block;	}
+			.dropdown-content {
+				display: none;
 				position: absolute;
-				background: rgba(0,0,0,0.75); 
-				color: white; 
-				padding: 10px 20px; 
-				opacity: 0;
-				bottom: 0; 
-				left: -30%;
-				-webkit-transition: all 0.6s ease;
-				-moz-transition:    all 0.6s ease;
-				-o-transition:      all 0.6s ease;
-			}
-			figure:hover figcaption {
-				opacity: 1;
-				left: 0;
-			}
+				background-color: rgb(200, 245, 256);
+				min-width: 175px;
+				z-index: 1;	}
+			.dropdown-content a {
+				color: sienna;
+				padding: 30px 30px;
+				text-align: left;
+				display: block;	}
+			.dropdown-content a:hover {background-color: rgb(256,206,50);	}
+			.dropdown:hover .dropdown-content {display: block;}
+			.dropdown:hover .dropbtn {background-color: rgb(256,206,50);	}
+			.pics {
+				align: center;	}
 			
-			#back {
-				font-size: 2em;
-				font-weight: bold;
-			}
-
-		</style>
+        </style>
     </head>
     <body>
-			
-		<a id="back" href="https://lcrampton.github.io/Message.html">←</a>
+      
+		<nav>
+			<a href="https://lcrampton.github.io">Home</a>
+			<div class="dropdown">
+			<button class="dropbtn">Culture<sub>+</sub></button>
+			<div class="dropdown-content">				
+				<a href="https://lcrampton.github.io/Culture.html">Music</a>
+				<a href="https://lcrampton.github.io/concert-calendar.html">Concerts</a>
+				<a href="https://lcrampton.github.io/Food.html">Food</a>
+				<a href="https://lcrampton.github.io/Recipes.html">Cookbook</a>
+			</div>
+			</div>
+			<div class="dropdown">
+			<button class="dropbtn">Politics<sub>+</sub></button>
+			<div class="dropdown-content">
+				<a href="https://lcrampton.github.io/Message.html">The Message</a>
+				<a href="https://lcrampton.github.io/Platform.html">Platform</a>
+			</div>
+			</div>
+			<div class="dropdown">
+			<button class="dropbtn">About<sub>+</sub></button>
+			<div class="dropdown-content">
+				<a href="https://lcrampton.github.io/story.html">Story</a>
+				<a href="https://lcrampton.github.io/MyMusic.html">Original Music</a>
+				<a href="https://lcrampton.github.io/Rèsumè.html">Rèsumè</a>
+				<a href="https://lcrampton.github.io/Contact.html">Contact</a>
+			</div>
+		</nav>
+        
+	<h1>Messages</h1>
+	<hr>
+	<table>
+		<tr><td class="date">04.3.22 | </td><td><a href="https://lcrampton.github.io/Messages/Ukraine.html">Putin May Groznyfy Ukraine</a></td></tr>
+		<tr><td class="date">30.9.21 | </td><td><a href="https://lcrampton.github.io/Messages/MilleyNuclearWeapons.html">General Milley and Civilian Control of Nuclear Weapons</a></td></tr>
+		<tr><td class="date">&nbsp1.9.21 | </td><td><a href="https://lcrampton.github.io/Messages/ClimateFatalism.html">Climate Fatalism and Free Will</a></td></tr>
+		<tr><td class="date">14.1.21 | </td><td><a href="https://lcrampton.github.io/Messages/TheCapitol.html">The Capitol</a></td></tr>
+		<tr><td class="date">22.8.20 | </td><td><a href="https://lcrampton.github.io/Messages/Statues.html">Statues</a></td></tr>
+		<tr><td class="date">&nbsp8.8.20 | </td><td><a href="https://lcrampton.github.io/Messages/Masks.html">Masks</a></td></tr>
+	</table>
 		
-        <h1>What Will Happen to Ukraine?</h1>
-		
-		<figure>
-			<img src="https://upload.wikimedia.org/wikipedia/commons/b/b3/Grozny%2C_Russia%2C_Grozny_at_night.jpg" width="400px" alt="view of gleaming Grozny near present day"></img>
-			<figcaption>Grozny after</figcaption>
-		</figure>
-		
-		<figure>
-			<img src="https://upload.wikimedia.org/wikipedia/commons/7/77/Grozny_-_Bazaar_%282006%29.jpg" width="355px" alt="bombed out apartment blocks"></img>
-			<figcaption>Grozny before investment</figcaption>
-		</figure>
-				
-		<h2></h2>
-		<p>We have seen a number of optimistic predictions of guerilla or partisan warfare sinking Russia in Ukraine.&nbsp And with little doubt, Putin will be unable to extinguish Ukrainian nationalism/patriotism.&nbsp But perhaps those pieces underestimate the brutality of which the Russian army is capable.&nbsp They and Putin have no shortage of experience from which to draw, from Chechnya to Georgia to Syria.</p>
-		<p>Boris Yeltsin attacked Chechnya in the early nineties to quell Islamic separatism there.&nbsp Chechens were able to use the urban environment and anti-tank weapons to their ultimate advantage and repel the attack.&nbsp But three years later, Russian forces returned under Putin's leadership, and <a href="https://www.youtube.com/watch?v=RcK9Mami3H8">bombed</a> out the entire capital of Grozny, making it unlivable, and ultimately subduing the resistance at massive cost.&nbsp Later, Russia introduced massive state investment to bury the rubble in a gleaming monument to Russia's neighborly charity.
-		</p>
-		<p>We fear that Chechnya may be the model here.&nbsp After what will likely amount to considerable losses and delay, Putin may <b>Groznyfy</b> Ukraine.
-		</p>
-		<p>What appears to be the early success of Ukraine's resistance may have resulted in part from <a href="https://twitter.com/sbreakintl/status/1498619303717142529">logistical blunders</a> on the part of Russia's military.&nbsp What look like initial pivotal victories for Ukraine might be speed bumps for Russian forces—or, worse, <a href="https://www.youtube.com/watch?v=K5BAZ2bBUzM">part of the plan</a>.&nbsp Evidence <a href="https://liveuamap.com/">indicates</a> that the Russian army is beginning to draw back to encircle Ukrainian metropolitan areas.&nbsp This echoes the way the Red Army encircled and laid siege to Berlin.&nbsp Glad as we may be that the Soviets put an end to the Nazi regime, Berlin was not a hospitable place for civilians in the spring of 1945.&nbsp Nor was it particularly free from anxieties <a href="https://www.youtube.com/watch?v=R5i9k7s9X_A">afterwards</a>.&nbsp It looks like phase one of Groznyfication.
-		</p>
-		<p>We hope Ukraine's forces are able to turn back this invasion.&nbsp We hope this war comes to a swift end with minimal casualties.&nbsp But remaining realistic will prove more productive than projecting the West's hopes—and its own recent experiences in neo-imperialism and insurgency—onto this novel interstate conflict.
-		<h2>a word about whataboutism</h2>
-		<p>There is a baffling current of "Where was this energy for Syria?" or "Everybody pays attention when the victims are white."&nbsp We understand that online folks in the West might feel helpless or powerless, but this is unhelpful, not to mention selective.&nbsp Whenever somebody talks about "the media" not covering content, we wonder to what media they are referring.&nbsp If they were tuned in to cable news in 2011 or 2012, they would have seen coverage of the Arab Spring, particularly in Egypt, Libya, and then Syria and Yemen.&nbsp They may have also selectively forgotten the coverage of Afghanistan in the summer of 2021, or waves of refugees moving from Haiti and elsewhere through South and Central America towards the United States.
-		</p>
-        <p>—Lucas</p>
     </body>
 </html>
