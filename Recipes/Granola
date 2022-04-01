@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Granola</title>
+		<link rel="shortcut icon" href="https://raw.githubusercontent.com/lcrampton/lcrampton.github.io/master/Github_Images/Website%20Favicon.ico">
+		<link href="recipesStyle.css" rel="stylesheet" type="text/css">
+    </head>
+    <body>
+      
+		<nav>
+			<a href="https://lcrampton.github.io/Recipes.html">←</a>
+		</nav>
+		
+		<script type="application/ld+json">
+			{
+				"@context": "http://schema.org",
+				"@type": "Recipe",
+				"name": "Lucas' Granola",
+				"recipeIngredient": [
+					"rolled oats",
+					"sunflower seeds, unsalted",
+					"flaxseed",
+					"hulled millet",
+					"shredded coconut",
+					"water",
+					"brown sugar",
+					"molasses",
+					"salt",
+					"cinnamon",
+					"nutmeg",
+					"butter",
+				] 
+				"recipeInstructions": "",
+				"recipeYield": "a big bag"
+			// more fields
+		  }
+		</script>
+		
+		<h1>Hearty Waffles</h1>
+		<h2>yield: six waffles</h2>
+		
+		<div class="grid-container">
+			<div class="ingredients">
+				<div class="grid-item"><input type="checkbox"> rolled oats</div>
+				<div class="grid-item"><input type="checkbox"> sunflower seeds, unsalted</div>
+				<div class="grid-item"><input type="checkbox"> shredded coconut</div>
+				<div class="grid-item"><input type="checkbox"> flaxseed</div>
+				<div class="grid-item"><input type="checkbox"> hulled millet</div>
+				<div class="grid-item"><input type="checkbox"> raisins</div>
+				<div class="grid-item"><input type="checkbox"> 2 cup water</div>
+				<div class="grid-item"><input type="checkbox"> brown sugar</div>
+				<div class="grid-item"><input type="checkbox"> molasses</div>
+				<div class="grid-item"><input type="checkbox"> salt</div>
+				<div class="grid-item"><input type="checkbox"> cinnamon</div>
+				<div class="grid-item"><input type="checkbox"> nutmeg</div>
+				<div class="grid-item"><input type="checkbox"> butter</div>
+			</div>
+			
+			<div class="directions">
+				<div class="grid-item">1. Toast oats, sunflower seeds, and coconut in an oven, around 375 degrees fahrenheit.</div>
+				<div class="grid-item">2. Toast spices briefly in a saucepan, then add water and salt.&nbsp Bring that water to a boil and add brown sugar and molasses.&nbsp Use taste to determine the proper balance of salt, sugar, and spice.&nbsp Allow this mixture to simmer and reduce to the viscosity of syrup.</div>
+				<div class="grid-item">3. When oats have acquired a golden color, remove from oven and place in a large pot or bowl.</div>
+				<div class="grid-item">4. Add butter to syrup mixture and sternly stir.</div>
+				<div class="grid-item">5. Stir together oats, sunflower seeds, coconut, and syrup mixture until homogeneous.</div>
+				<div class="grid-item">5. Add flaxseed, millet, and raisins and stir.</div>
+			</div>
+		</div>
+		
+    </body>
+</html>
