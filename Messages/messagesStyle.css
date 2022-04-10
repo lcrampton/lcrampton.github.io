@@ -28,7 +28,11 @@ body {
 				background-color: rgb(256,100,256);
 				color: black;	}
 			ul {
+				margin-left: 25px;	}	
+			ol {
 				margin-left: 25px;	}		
+			li {
+				margin: 1em;	}
 			nav {
 				letter-spacing: 4px;
 				font-size: 1.1em;
