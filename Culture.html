@@ -3,9 +3,12 @@
     <head>
         <meta charset="utf-8">
         <title>DC Cultcha</title>
-		<link rel="shortcut icon" href="Github_Images/Website Favicon.ico">
+		<link rel="shortcut icon" href="https://raw.githubusercontent.com/lcrampton/lcrampton.github.io/master/Github_Images/Website%20Favicon.ico">
         <style>
-            body {
+            html {
+				scroll-behavior: smooth;
+			}
+			body {
 				margin: 10%;
 				background: rgb(0, 0, 56);
 				font-family: Heraldsquare Regular, garamond, Georgia, Times New Roman, serif;
@@ -27,9 +30,6 @@
 				color: rgb(241,94,34); }
 			p a:hover, a:active, a:focus {
 				background-color: rgb(200,256,160);				}
-			img {
-				margin: 20px;
-				box-shadow: -7px 7px 5px gray;	}
 			nav {
 				letter-spacing: 4px;
 				font-size: 1.1em;
@@ -41,9 +41,11 @@
 				color: rgb(256,150,256);  }
 			nav a:hover {
 				background-color: rgb(100,50,0);	}
+				
 			.whisper {
 				font-size: 8px;
 				line-height: 0px;}
+				
 			.dropbtn {
 				background-color: rgb(0, 0, 56);
 				color: rgb(256,150,256);
@@ -70,31 +72,67 @@
 			.dropdown:hover .dropdown-content {
 				display: block;	}
 			.dropdown:hover .dropbtn {background-color: rgb(100,50,0);	}
+			
+			.rightFigure { 
+				margin-bottom: 20px;
+				margin-left: 20px;	
+				display: block; 
+				float: right;
+				box-shadow: -7px 7px 5px gray;
+				position: relative; 
+				overflow: hidden;
+			}
+			.rightFigCaption { 
+				position: absolute; 
+				background: rgba(0,0,0,0.75); 
+				color: white; 
+				padding: 10px 20px; 
+				opacity: 0;
+				bottom: 0; 
+				right: -30%;
+				-webkit-transition: all 0.6s ease;
+				-moz-transition:    all 0.6s ease;
+			}
+			.rightFigure:hover figcaption {
+				opacity: 1;
+				right: 0;
+			}
+			.leftFigure { 
+				margin-bottom: 20px;
+				margin-left: 20px;	
+				display: block; 
+				float: left;
+				box-shadow: 7px 7px 5px gray;
+				position: relative; 
+				overflow: hidden;
+			}
+			.leftFigCaption { 
+				position: absolute; 
+				background: rgba(0,0,0,0.75); 
+				color: white; 
+				padding: 10px 20px; 
+				opacity: 0;
+				bottom: 0; 
+				left: -30%;
+				-webkit-transition: all 0.6s ease;
+				-moz-transition:    all 0.6s ease;
+			}
+			.leftFigure:hover figcaption {
+				opacity: 1;
+				left: 0;
+			}
+			
 			.index {
 				text-decoration: none;
 				color: gray; }			
-			.list {
-				margin-right: 50px;
-				font-size: 1em;
-				margin-bottom: 50px;
-				margin-top: 30px;
-				height: 300px;
-				width: 227px;
-				overflow-y: scroll;
-				border: 2px solid white;
-				float: left;
-				display: block flow;}
-			.list a:hover {
-				background-color: rgb(0, 0, 56);
-				color: rgb(241,94,34);	}
-
+			
 			.spotify-embed	{
 				float: left;
 				margin: 20px;			}
 			.YoutubeEmbed	{
 				float: right;
 				margin: 20px;			}
-
+				
 			.accordion {
 			  background-color: rgb(0,0,56);
 			  color: white;
@@ -113,11 +151,27 @@
 			  background-color: rgb(20,20,76);	}
 
 			.panel {
-			  padding: 12px;
-			  background-color: rgb(0,0,56);
-			  display: none;
-			  width: 70%;
-			  overflow: visible;	}
+				padding: 12px;
+				background-color: rgb(0,0,56);
+				display: none;
+				width: 70%;
+				overflow: visible;	}
+			
+			#navList {
+				margin-right: 50px;
+				font-size: 1em;
+				margin-bottom: 50px;
+				margin-top: 30px;
+				height: 300px;
+				width: 227px;
+				overflow-y: scroll;
+				border: 2px solid white;
+				float: left;
+				display: block flow;}
+			#navList a:hover {
+				background-color: rgb(0, 0, 56);
+				color: rgb(241,94,34);	}
+				
 
         </style>
     </head>
@@ -144,38 +198,59 @@
 			<div class="dropdown">
 				<button class="dropbtn">About<sub>+</sub></button>
 				<div class="dropdown-content">
-					<a href="https://lcrampton.github.io/story.html">Story</a>
-					<a href="https://lcrampton.github.io/Rèsumè.html">Rèsumè</a>
-					<a href="https://lcrampton.github.io/Contact.html">Contact</a>
+				<a href="https://lcrampton.github.io/story.html">Story</a>
+				<a href="https://lcrampton.github.io/MyMusic.html">Original Music</a>
+				<a href="https://lcrampton.github.io/Rèsumè.html">Rèsumè</a>
+				<a href="https://lcrampton.github.io/Contact.html">Contact</a>
 				</div>
 			</div>
 		</nav>
 			
         <h1>Culture</h1>
         
-		<nav class="list">
-			<a class="index" href=#Exotiq>Exotiq Int'l</a><br>
-			<a class="index" href=#Hips>The Hips</a><br>
-			<a class="index" href=#Teens>Albums 2010-2019</a><br>
-			<a class="index" href=#Midi>Black Midi</a><br>
-			<a class="index" href=#Dang>Ami Dang</a><br>
-			<a class="index" href=#Coriky>Coriky</a><br>
-			<a class="index" href=#Fuck>Tropical Fstorm</a><br>
-			<a class="index" href=#Joyner>Simon Joyner</a><br>
-			<a class="index" href=#Bill>Big Bill</a><br>
-			<a class="index" href=#Amyl>Amyl & Sniffers</a><br>
-			<a class="index" href=#XK>XK Scenario</a><br>
-			<a class="index" href=#KnifeWife>Knife Wife</a><br>
-			<a class="index" href=#Tuttle>Molly Tuttle</a><br>
-			<a class="index" href=#ExHex>Ex Hex</a><br>
-			<a class="index" href=#mormor>Mor Mor</a><br>
-			<a class="index" href=#rubell>Ivanka</a><br>
-			<a class="index" href=#poppy>Poppy</a><br>
-			<a class="index" href=#moctar>Mdou Moctar</a><br>
-			<a class="index" href=#TC>TC Superstar</a><br>
-			<a class="index" href=#zula>Zula</a><br>
-			<a class="index" href=#tsushi>Tsuhimamire</a>
-		</nav><hr>
+			<nav id="navList">
+				<a class="index" href=#AcidDad>Acid Dad</a><br>
+				<a class="index" href=#Exotiq>Exotiq Int'l</a><br>
+				<a class="index" href=#Hips>The Hips</a><br>
+				<a class="index" href=#Teens>Albums 2010-2019</a><br>
+				<a class="index" href=#Midi>Black Midi</a><br>
+				<a class="index" href=#Dang>Ami Dang</a><br>
+				<a class="index" href=#Coriky>Coriky</a><br>
+				<a class="index" href=#Fuck>Tropical Fstorm</a><br>
+				<a class="index" href=#Joyner>Simon Joyner</a><br>
+				<a class="index" href=#Bill>Big Bill</a><br>
+				<a class="index" href=#Amyl>Amyl & Sniffers</a><br>
+				<a class="index" href=#XK>XK Scenario</a><br>
+				<a class="index" href=#KnifeWife>Knife Wife</a><br>
+				<a class="index" href=#Tuttle>Molly Tuttle</a><br>
+				<a class="index" href=#ExHex>Ex Hex</a><br>
+				<a class="index" href=#mormor>Mor Mor</a><br>
+				<a class="index" href=#rubell>Ivanka</a><br>
+				<a class="index" href=#poppy>Poppy</a><br>
+				<a class="index" href=#moctar>Mdou Moctar</a><br>
+				<a class="index" href=#TC>TC Superstar</a><br>
+				<a class="index" href=#zula>Zula</a><br>
+				<a class="index" href=#tsushi>Tsuhimamire</a>
+			</nav>
+		
+		<hr>
+		
+		<h2 id="AcidDad">Acid Dad and Catatonic Suns at Muhlenberg</h2>
+		<h3>21/4/22</h3>
+			<figure class="rightFigure">
+				<img src="https://raw.githubusercontent.com/lcrampton/lcrampton.github.io/master/Github_Images/Acid%20Dad.jpg" width="250px" alt="Acid Dad and psychedelic projections on stage">
+				<figcaption class="rightFigCaption">Acid Dad and psychedelic projections on stage</figcaption>
+			</figure>
+			<figure class="rightFigure">
+				<img src="https://raw.githubusercontent.com/lcrampton/lcrampton.github.io/master/Github_Images/Catatonic%20Suns.jpg"  width="250px" alt="Catatonic Suns">
+				<figcaption class="rightFigCaption">Catatonic Suns</figcaption>
+			</figure>
+		<p>WMUH—the only station that matters—invited <a href="https://aciddad666.com/">Acid Dad</a> from Brooklyn and <a href="https://catatonicsuns.com/">Catatonic Suns</a> of Allentown to rock the Seeger student union.
+		</p>
+		<p>So this is what a show is like in Allentown.&nbsp Tickets were ten dollars, and we got two acts and two complementary drink stubs.&nbsp <em>My</em> DC-addled brain thought "They must be losing money on every ticket?"</p>
+		<p>Obligatorily, i thought i saw my sixth-grade social studies teacher at the gig.&nbsp Obligatorily, there was a long-hair dude drunkenly yelling encouragement at the opener.&nbsp 
+		</p>
+		<p>—Lucas Magookas</p><hr>
 		
 		<h2 id="Exotiq">Exotiq Int'l and Too Free at the Black Cat</h2>
 		<h3>16/7/21</h3>
@@ -229,7 +304,7 @@
 			<button class="accordion">Clea Vincent - Retiens mon désir</button>
 				<div class="panel">
 					<iframe src="https://open.spotify.com/embed/album/676iOuT4izeqjn9UTv9OLJ" width="70%" height="155" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
-					<p>Organ layers on Vincent's earworm pop anthems link them to classic tropes of French pop on 2016's <em>Retiens mon désir</em>.&nbsp Crystal clear vocals and staunch drums keep it propulsive, cute, and fresh throughout.</p>
+					<p>Organ layers on Vincent's earworm pop anthems link them to classic tropes of French pop on 2016's <i>Retiens mon désir</i>.&nbsp Crystal clear vocals and staunch drums keep it propulsive, cute, and fresh throughout.</p>
 				</div>
 		
 		<script>
@@ -254,43 +329,43 @@
 
 		<h2 id="Midi">Black Midi and Fat Tony at U Street Music Hall</h2>
 		<h3>13/11/19</h3>
-		<img src="Github_Images/Black Midi.jpg" align="right" width="400px" alt="Black Midi play U Street Music Hall">
+		<img src="https://raw.githubusercontent.com/lcrampton/lcrampton.github.io/master/Github_Images/Black%20Midi.jpg" align="right" width="400px" alt="Black Midi play U Street Music Hall">
 		<p>I thought i watched Fat Tony walk on stage and light a huge blunt.&nbsp It turned out to be incense.&nbsp And he continued to surprise.&nbsp Fat Tony demonstrates what a solo artist can accomplish in the hip hop vein.&nbsp He had a heartfelt vegetarianism song, and shouted out to "All my creative types."&nbsp Is he corny?&nbsp <span class="whisper">Yes, a little.</span></p>
 		<p>Tony's subby beats shake the club, he sings on key, and he raps; he is a triple threat!</p>
-		<p>Black Midi's disjointed and tight sound recalls Primus, Swans, and David Bowie's Blackstar.  All the stops, starts, waves, and math can exhaust you.&nbsp But those <em>payoffs</em> make it worth it.&nbsp They look young.&nbsp i itch to read their biography, but that also may dispel the magic for me.&nbsp At one point i thought i heard them speak Dutch and thought "Are they European?&nbsp Could they be?".</p>
+		<p>Black Midi's disjointed and tight sound recalls Primus, Swans, and David Bowie's Blackstar.&nbsp All the stops, starts, waves, and math can exhaust you.&nbsp But those <em>payoffs</em> make it worth it.&nbsp They look young.&nbsp i itch to read their biography, but that also may dispel the magic for me.&nbsp At one point i thought i heard them speak Dutch and thought "Are they European?&nbsp Could they be?".</p>
 		<p>Our expansive domain of mosh cleared a circle during a buildup.&nbsp i thought somebody had gotten hurt.&nbsp Then the song dropped and we all leaped in.</p>
 		<p>Were i a touring musician, i would want to surprise people with genre but you cannot do that because as a concertgoer you want to get the mood right.&nbsp And you could not ask the audience because the response would be "bglgheheib."&nbsp Everyone would want something different.&nbsp People want to know what they are getting into. &nbspAnd with Black MIDI, you do.&nbsp But then, Fat Tony is a curveball.&nbsp So the show as a whole is for music lovers.</p>
 		<p>—Lucas Magookas</p><hr>
 		
 		<h2 id="Dang">Ami Dang and Aaron Leitko at Rhizome</h2>
 		<h3>5/11/19</h3>
-		<img src="Github_Images/Ami Dang.jpg" align="left" width="200px" alt="Ami Dang seated with her sitar at Rhizome">
-		<img src="Github_Images/Aaron Leitko.jpg" align="left" width="200px" alt="Aaron Leitko seated with his synthesizer at Rhizome">
+		<img src="https://raw.githubusercontent.com/lcrampton/lcrampton.github.io/master/Github_Images/Ami%20Dang.jpg" align="left" width="200px" alt="Ami Dang seated with her sitar at Rhizome">
+		<img src="https://raw.githubusercontent.com/lcrampton/lcrampton.github.io/master/Github_Images/Aaron%20Leitko.jpg" align="left" width="200px" alt="Aaron Leitko seated with his synthesizer at Rhizome">
 		<p>Aaron Leitko towed us through tumultuous electrosonic fronts.&nbsp He guided us through thick clouds and turbulence with aplomb.</p>
 		<p>What Ami Dang lacks in sitar chops she makes up in raw, bona fide <a href="https://amidang.bandcamp.com/releases">mastery</a> of low-frequency oscillators, sequencing, sampling, and production.&nbsp Her soundscapes are dark and deep.&nbsp They are a sperm whale's throat, swallowing you.
 		<p>—Lucas Magookas</p><hr>
 		
 		<br><h2 id="Coriky">Coriky at Georgetown Community Library</h2>
 		<h3>12/10/19</h3>
-		<img src="Github_Images/Coriky Lyric Sheet.jpg" align="right" width="400px" alt="Coriky had lyric sheets passed around.">
+		<img src="https://raw.githubusercontent.com/lcrampton/lcrampton.github.io/master/Github_Images/Coriky%20Lyric%20Sheet.jpg" align="right" width="400px" alt="Coriky had lyric sheets passed around.">
 		<p>Coriky played a free (true to Positive Force style) show at the Georgetown Community Library outside on Book Hill one fall afternoon.</p>
-		<p>i enjoyed myself, but i was not blown away.&nbsp i had the creeping feeling that i was watching a <a href="https://www.youtube.com/watch?v=Hxg8F22Vv44">dad band reunite</a> with material to <em>smash</em> the Trump administration.&nbsp Maybe i should have closed my eyes, though.</p>
+		<p>I enjoyed myself, but i was not blown away.&nbsp I had the creeping feeling that i was watching a <a href="https://www.youtube.com/watch?v=Hxg8F22Vv44">dad band reunite</a> with material to <em>smash</em> the Trump administration.&nbsp Maybe i should have closed my eyes, though.</p>
 		<p>Most of the time they held back and put the lyrics forward.&nbsp But when they stop sweetly harmonizing, their talent comes through.&nbsp Lally lays down cool grooves with tense intervals.&nbsp MacKaye still bends his little harmonic sounds; his detuned style carries over from the Fugazi days.&nbsp Farina pops unexpected rim-shots and fills fluidly.</p>
 		<p>—Lucas Magookas</p><hr>
 		
 		<h2 id="Fuck">Tropical Fuckstorm and The Effects at Comet Ping Pong</h2>
 		<h3>6/9/19</h3>
-		<img src="Github_Images/Tropical Fuckstorm at Comet.jpg" align="left" width="400px" alt="Tropical Fuckstorm blowing through Comet">
-		<p>The Effects turn out to be a cool math rock band experimenting with unconventional rhythms and patterns.&nbsp  We want to see them grip those odd meters with more courage.&nbsp But it is good to see a tight math rock band in the DC area, and <a href="https://www.dischord.com/band/the-effects">on Dischord</a>, no less.</p>
-		<p>Tropical Fuckstorm shovels classic/arena rock voices and twisted guitars into a heaving, sweaty, emotive tide.&nbsp  They kind of drag on, but less like a dying animal and more like a child shuffling their feet across the carpet, building up static.&nbsp  Their competitive advantage is that they possess the ability to play tracks that <em>should</em> get boring and not just make them bearable, but dive through the <a href="https://www.nationalgeographic.com/magazine/2010/08/bahamas-caves-underwater-blue-holes/">toxic clouds</a> and sample nutrient-rich sand beneath.&nbsp  The Fuckstorm might exist outside genre, incorporating elements of ambient in their guitar noise and hip hop in their drums.&nbsp  Indeed, their choruses sound like high speed drone.&nbsp  
+		<img src="https://raw.githubusercontent.com/lcrampton/lcrampton.github.io/master/Github_Images/Tropical%20Fuckstorm%20at%20Comet.jpg" align="left" width="400px" alt="Tropical Fuckstorm blowing through Comet">
+		<p>The Effects turn out to be a cool math rock band experimenting with unconventional rhythms and patterns.&nbsp We want to see them grip those odd meters with more courage.&nbsp But it is good to see a tight math rock band in the DC area, and <a href="https://www.dischord.com/band/the-effects">on Dischord</a>, no less.</p>
+		<p>Tropical Fuckstorm shovels classic/arena rock voices and twisted guitars into a heaving, sweaty, emotive tide.&nbsp They kind of drag on, but less like a dying animal and more like a child shuffling their feet across the carpet, building up static.&nbsp Their competitive advantage is that they possess the ability to play tracks that <em>should</em> get boring and not just make them bearable, but dive through the <a href="https://www.nationalgeographic.com/magazine/2010/08/bahamas-caves-underwater-blue-holes/">toxic clouds</a> and sample nutrient-rich sand beneath.&nbsp The Fuckstorm might exist outside genre, incorporating elements of ambient in their guitar noise and hip hop in their drums.&nbsp Indeed, their choruses sound like high speed drone.&nbsp 
 		<p>I like to imagine that Fuckstorm is what we get when some scrappy Australians get together in a barn and just play music, not a genre.</p>
 		<p>—Lucas Magookas</p><hr>
 		
 		<h2 id="Joyner">Simon Joyner and the Ghosts at Rhizome</h2>
 		<h3>3/9/19</h3>
-		<img src="Github_Images/Simon Joyner at Rhizome.jpg" align="right" width="400px" alt="Simon Joyner and his band at Rhizome">
-		<p>Between his husky vocals and imagist lyrics, Simon Joyner sounds like Lou Reed covering Bob Dylan.&nbsp  <a href="https://www.headheritage.co.uk/unsung/review/2163/">Some</a> have pointed out a Leonard Cohen connection, but that was lost on me.
-		As much as i have to chastise him for so prominently wearing his influences on his sleeve, i have to commend his creation of new sentences.&nbsp  Morning Sun, Slow Down!  Like a children's song (for adults) Joyner tends to anthropomorphize aspects of nature like the seasons, body parts, or the sun.&nbsp  His tenor voice is <em>present</em>.&nbsp  It neither soars high nor dives low for long.&nbsp  They say that people speak at Fa—the fourth on a major scale.&nbsp  Joyner, for his part, navigates the path between singing and Uncle Simon storytime.</p>
+		<img src="https://raw.githubusercontent.com/lcrampton/lcrampton.github.io/master/Github_Images/Simon%20Joyner%20at%20Rhizome.jpg" align="right" width="400px" alt="Simon Joyner and his band at Rhizome">
+		<p>Between his husky vocals and imagist lyrics, Simon Joyner sounds like Lou Reed covering Bob Dylan.&nbsp <a href="https://www.headheritage.co.uk/unsung/review/2163/">Some</a> have pointed out a Leonard Cohen connection, but that was lost on me.
+		As much as i have to chastise him for so prominently wearing his influences on his sleeve, i have to commend his creation of new sentences.&nbsp Morning Sun, Slow Down!  Like a children's song (for adults) Joyner tends to anthropomorphize aspects of nature like the seasons, body parts, or the sun.&nbsp His tenor voice is <em>present</em>.&nbsp It neither soars high nor dives low for long.&nbsp They say that people speak at Fa—the fourth on a major scale.&nbsp Joyner, for his part, navigates the path between singing and Uncle Simon storytime.</p>
 		<p>Each instrument sounded necessary in its place.</p>
 		<p>Pocket Moon, the title track from his forthcoming album, is a dark and lonesome cowboy desert song.</p>
 		<p>—Lucas Magookas</p><hr>
@@ -298,160 +373,136 @@
 		<h2 id="Bill">Big Bill | Gap Year</h2>
 		<h3>29/8/19</h3>
 		<div class="spotify-embed"><iframe src="https://open.spotify.com/embed/album/3qwAusNgxkOXAdvPcv4EMY" width="300" height="175" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe></div>
-		<p>Big Bill has supplied us with a steady drip of singles since 2017's <em>Toast</em>, so i was glad to receive all new tracks on this project.&nbsp  Clocking thirteen minutes, it calls into question the public's attention span and the relevance of the album format.&nbsp  But with interlude and outro, it makes a play in that direction.&nbsp  <em>Gap Year</em> is a snapshot of a transitional period in someone's life.&nbsp  It seeks to convey a few ideas cogently in a short time, and utilizes many hooks to that end.&nbsp  There are no features and no added instrumentation on this project; it is a solitary venture.</p>
+		<p>Big Bill has supplied us with a steady drip of singles since 2017's <em>Toast</em>, so i was glad to receive all new tracks on this project.&nbsp Clocking thirteen minutes, it calls into question the public's attention span and the relevance of the album format.&nbsp But with interlude and outro, it makes a play in that direction.&nbsp <em>Gap Year</em> is a snapshot of a transitional period in someone's life.&nbsp It seeks to convey a few ideas cogently in a short time, and utilizes many hooks to that end.&nbsp There are no features and no added instrumentation on this project; it is a solitary venture.</p>
 		<!--<em>Gap Year</em> represents a pivot from rapping to songwriting.</p>-->
 		<p><em>Gap Year</em> often juxtaposes and conflates the mundane and profound.&nbsp Big Bill takes us from "I bought hella houseplants" to "Find my way" without interstice.&nbsp Details of everyday life serve as synechdoche for the cosmic struggles of man.</p>
 		<p>—Lucas Magookas</p><hr>
 		
 		<h2 id="Amyl">Amyl and the Sniffers at U Street Music Hall</h2>
 		<h3>16/7/19</h3>
-		<img src="Github_Images/Amyl.jpg" align="right" width="400px" alt="Amyl and her Sniffers onstage at U-Hall">
-		<p><a href="https://open.spotify.com/artist/3NqV2DJoAWsjl787bWaHW7">Amyl and the Sniffers</a> delivered their mullet-clad fans a ripping punk show imbued with the fun, sexy confidence of cabaret.&nbsp  Between songs, Amyl shadowboxed and flexed her biceps, Schwarzenegger style.&nbsp  Watching her whip the air before the crowd with the mic's XLR cable, I had to wonder what their stage presence owes to the BDSM community.</p>
+		<img src="https://raw.githubusercontent.com/lcrampton/lcrampton.github.io/master/Github_Images/Amyl.jpg" align="right" width="400px" alt="Amyl and her Sniffers onstage at U-Hall">
+		<p><a href="https://open.spotify.com/artist/3NqV2DJoAWsjl787bWaHW7">Amyl and the Sniffers</a> delivered their mullet-clad fans a ripping punk show imbued with the fun, sexy confidence of cabaret.&nbsp Between songs, Amyl shadowboxed and flexed her biceps, Schwarzenegger style.&nbsp Watching her whip the air before the crowd with the mic's XLR cable, I had to wonder what their stage presence owes to the BDSM community.</p>
 		<p>Between songs, Amyl bantered incomprehensibly in her twangy Outback yelps.</p>
-		<p>Wrenching guitar riffs make the Sniffers notable; each track opened to waves of recognition and enthusiasm.&nbsp  They did not play my favorite song, Gacked On Anger, though.&nbsp  Or did they?  From the ecstatic, inexhaustible pit, Amyl's lyrics got hard to parse and all the riffs sounded vaguely familiar.</p>
+		<p>Wrenching guitar riffs make the Sniffers notable; each track opened to waves of recognition and enthusiasm.&nbsp They did not play my favorite song, Gacked On Anger, though.&nbsp Or did they?&nbsp From the ecstatic, inexhaustible pit, Amyl's lyrics got hard to parse and all the riffs sounded vaguely familiar.</p>
 		<p>—Lucas Magookas</p><hr>
 		
 		<h2 id="XK">XK Scenario at DC9</h2>
 		<h3>29/6/19</h3>
-		<img src="Github_Images/XK Scenario.jpg" align="left" width="300px" alt="XK Scenario onstage at DC9">
-		<p>If you ever wanted to see Rage Against the Machine play a grimy bar, XK Scenario is for you.&nbsp  They wear their influences on their sleeves: the aforementioned Rage, Red Hot Chili Peppers, Bad Brains, et cetera.&nbsp  This was the most aggressive pit to which i have ever been a party.&nbsp I learned what crowd killing is here!</p>
+		<img src="https://raw.githubusercontent.com/lcrampton/lcrampton.github.io/master/Github_Images/XK%20Scenario.jpg" align="left" width="300px" alt="XK Scenario onstage at DC9">
+		<p>If you ever wanted to see Rage Against the Machine play a grimy bar, XK Scenario is for you.&nbsp They wear their influences on their sleeves: the aforementioned Rage, Red Hot Chili Peppers, Bad Brains, et cetera.&nbsp This was the most aggressive pit to which i have ever been a party.&nbsp I learned what crowd killing is here!</p>
 		<p>—Lucas Magookas</p><hr>
 		
 		<br><h2 id="KnifeWife">Knife Wife and Boston Cream at Rhizome</h2>
 		<h3>27/6/19</h3>
-		<img src="Github_Images/Knife Wife at Rhizome.jpg" align="left" width="250px" alt="Knife Wife at Rhizome">
-		<img src="Github_Images/Boston Cream at Rhizome.jpg" align="left" width="250px" alt="Boston Cream at Rhizome">
+		<img src="https://raw.githubusercontent.com/lcrampton/lcrampton.github.io/master/Github_Images/Knife%20Wife%20at%20Rhizome.jpg" align="left" width="250px" alt="Knife Wife at Rhizome">
+		<img src="https://raw.githubusercontent.com/lcrampton/lcrampton.github.io/master/Github_Images/Boston%20Cream%20at%20Rhizome.jpg" align="left" width="250px" alt="Boston Cream at Rhizome">
 		<p><span class="whisper">How old are the Knife Wives?</span></p>
-		<p>Knife Wife's music is moody and simple—like school.&nbsp  Their music sounds a little rough around the edges, but as they go figuring stuff out, they are figuring out some cool stuff.&nbsp  They can pull off grungy solo vox, or they can sing in spooky unisons.
-		</p><p>Their multi-instrumentalism promises flexibility and potential.&nbsp  Repetitive lyrics and repetitive licks, though, seem to subvert critics' longing for complexity.</p>
+		<p>Knife Wife's music is moody and simple—like school.&nbsp Their music sounds a little rough around the edges, but as they go figuring stuff out, they are figuring out some cool stuff.&nbsp They can pull off grungy solo vox, or they can sing in spooky unisons.
+		</p><p>Their multi-instrumentalism promises flexibility and potential.&nbsp Repetitive lyrics and repetitive licks, though, seem to subvert critics' longing for complexity.</p>
 		<span class="whisper">But how old are the Knife Wives?</span>
-		<p>Boston Cream meshes jagged guitar riffs, smooth bass lines, and turbo drums into inviting grooves.&nbsp  Mel and Peach dance like wacky waving inflatable tube people.</p>
+		<p>Boston Cream meshes jagged guitar riffs, smooth bass lines, and turbo drums into inviting grooves.&nbsp Mel and Peach dance like wacky waving inflatable tube people.</p>
 		<p>—Lucas Magookas</p><hr>
 		
 		<h2 id="Tuttle">Molly Tuttle at Pearl Street Warehouse</h2>
 		<h3>17/5/19</h3>
-		<img src="Github_Images/Molly Tuttle at Pearl Street Warehouse.jpg" align="right" width="400px" alt="Tuttle teaching class.">
-		<p>This was my first time attending a show at Pearl Street Warehouse.&nbsp  Neck-length haircuts were profuse on the ladies at this show.&nbsp  Unlike at rock or hip hop shows, Tuttle's banter made this feel relaxed and homely, as though we were at an impromptu jam in somebody's living room.&nbsp  She took time to tell us a cute little story involving Jewel (a country artist whose popularity peaked at the turn of the century).
-		<p>Tuttle, at twenty-five, is immensely talented, yet unassuming.&nbsp  She plays a mean clawhammer—a technique that looks like it combines the Wooten double slap and finger picking on alternating downward and upward strums.&nbsp  When she started ripping out simultaneous bass lines and melodies at supersonic speeds, i could only shake my face around in ecstatic expression and exclaim "She is teaching <em>class</em>!"
-		Tuttle covers a wide range of Americana genres: blues jams, bluegrass ditties, and alternative singer-songwriter.&nbsp  She moves seamlessly from ballads to rippin' guitar solos.&nbsp  Her bandmate, sliding on a Telecaster<sup>®</sup>, often expands the atmosphere of the overall sound.
-		<p>Tuttle's <a href="https://open.spotify.com/album/1w0K4edsnTTxo2p6ZCErUV?si=TO_5i2FKSxarNuoXg4NlSg">new album</a> focuses more energy on songwriting and vocal performance.&nbsp  Though i certainly prefer the bluegrass tracks on which she takes the lead on guitar, i trust her still to deliver well with her pure voice.</p>
+		<img src="https://raw.githubusercontent.com/lcrampton/lcrampton.github.io/master/Github_Images/Molly%20Tuttle%20at%20Pearl%20Street%20Warehouse.jpg" align="right" width="400px" alt="Tuttle teaching class.">
+		<p>This was my first time attending a show at Pearl Street Warehouse.&nbsp Neck-length haircuts were profuse on the ladies at this show.&nbsp Unlike at rock or hip hop shows, Tuttle's banter made this feel relaxed and homely, as though we were at an impromptu jam in somebody's living room.&nbsp She took time to tell us a cute little story involving Jewel (a country artist whose popularity peaked at the turn of the century).</p>
+		<p>Tuttle, at twenty-five, is immensely talented, yet unassuming.&nbsp She plays a mean clawhammer—a technique that looks like it combines the Wooten double slap and finger picking on alternating downward and upward strums.&nbsp When she started ripping out simultaneous bass lines and melodies at supersonic speeds, i could only shake my face around in ecstatic expression and exclaim "She is teaching <em>class</em>!"</p>
+		Tuttle covers a wide range of Americana genres: blues jams, bluegrass ditties, and alternative singer-songwriter.&nbsp She moves seamlessly from ballads to rippin' guitar solos.&nbsp Her bandmate, sliding on a Telecaster<sup>®</sup>, often expands the atmosphere of the overall sound.</p>
+		<p>Tuttle's <a href="https://open.spotify.com/album/1w0K4edsnTTxo2p6ZCErUV?si=TO_5i2FKSxarNuoXg4NlSg">new album</a> focuses more energy on songwriting and vocal performance.&nbsp Though i certainly prefer the bluegrass tracks on which she takes the lead on guitar, i trust her still to deliver well with her pure voice.</p>
 		<p>—Lucas Magookas</p><hr>
 		
 		<h2 id="ExHex">Ex Hex, The Messthetics, and Clear Channel at 9:30 Club</h2>
 		<h3>10/5/19</h3>
-		<img src="Github_Images/Ex Hex at 930.jpg" align="left" width="400px" alt="Ex Hex rocking out on 9:30's stage">
-		<p>Ex Hex is glam rock.&nbsp  You can tell because Wright plays a Gibson Flying V through Marshall stacks, because Harris slams the snare, and because all three are absolutely <em>glamorous</em>.&nbsp  (Timony plays a <a href="https://www.kollguitars.com/news/2019/1/4/exhex">Koll</a>.)  And they shred.&nbsp  It all feels good, like hearing "The Boys Are Back In Town."
+		<img src="https://raw.githubusercontent.com/lcrampton/lcrampton.github.io/master/Github_Images/Ex%20Hex%20at%20930.jpg" align="left" width="400px" alt="Ex Hex rocking out on 9:30's stage">
+		<p>Ex Hex is glam rock.&nbsp You can tell because Wright plays a Gibson Flying V through Marshall stacks, because Harris slams the snare, and because all three are absolutely <em>glamorous</em>.&nbsp (Timony plays a <a href="https://www.kollguitars.com/news/2019/1/4/exhex">Koll</a>.)&nbsp And they shred.&nbsp It all feels good, like hearing "The Boys Are Back In Town."</p>
 		<p>It is so vintage.</p>
-		<p>A stripped-down sound that allows guitar riffs to speak for themselves updates the sound for the twenty-teens.&nbsp  Their melodies seldom strayed far from the root; we take joy in simplicity.</p>
-		<p>The crowd was predominantly women.&nbsp  And the 9:30 club was nearly packed.&nbsp  Ex Hex's grooves held us persistently on the precipice over mosh.</p>
-		<p>This was my first time seeing The Messthetics live, and i like them.&nbsp  And thanks to a 9:30 employee, i snagged Canty's drumstick after the show.</p>
+		<p>A stripped-down sound that allows guitar riffs to speak for themselves updates the sound for the twenty-teens.&nbsp Their melodies seldom strayed far from the root; we take joy in simplicity.</p>
+		<p>The crowd was predominantly women.&nbsp And the 9:30 club was nearly packed.&nbsp Ex Hex's grooves held us persistently on the precipice over mosh.</p>
+		<p>This was my first time seeing The Messthetics live, and i like them.&nbsp And thanks to a 9:30 employee, i snagged Canty's drumstick after the show.</p>
 		<p>—Lucas Magookas</p><hr>
 		
 		<h2 id="mormor">MorMor and Duendita at the Songbyrd Café</h2>
 		<h3>16/4/19</h3>
 		<img src="https://github.com/lcrampton/lcrampton.github.io/blob/master/Github_Images/MorMor.jpg?raw=true" align="right" width="200px" alt="MorMor sings at Songbyrd's Byrd Cage">
 		<img src="https://github.com/lcrampton/lcrampton.github.io/blob/master/Github_Images/Duendita.jpg?raw=true" align="right" width="200px" alt="Duendita sings at Songbyrd's Byrd Cage"><br>
-		<p>Duendita groans like an eighteenth century galleon.&nbsp  She roars like a tiger.&nbsp  She makes her home in the low low (<a href="https://youtu.be/Edr2FI6b3yI?t=18">She's a bass!</a>), but assures you that she can hit the silky high notes when her voice pops up like a periscope out of water.
-		<p>Her delivery overall, like a boxer, is confrontational.&nbsp  The rumble and tumble of SP-404 percussion keeps you off-kilter.&nbsp  Vocal uppercuts soften you, and sly beat drops knock you over.&nbsp  But she is equally respectful.&nbsp  The way she laughs between songs, you could begin to believe that perhaps she is your <em>friend</em>.</p>
-		<p>MorMor is touring with a full band, and it feels like a bit of a jam.&nbsp  Few bands escape their individuals' stylistic aspirations.&nbsp  The drummer smacked the snare with a street-funk sensibility while the other two leaned in and out of the mix.&nbsp  This show was really a team effort: most members pulled double-duty on instruments or mor.&nbsp  They had some sweet solos on the keyboard and guitar.&nbsp  Mr.&nbsp Mor has assembled a talented band here and i am excited to see where the new material goes with a band in mind.
-		<p>I could see the setlist from where i stood, which is, like, helpful, but ruins some of the fun.
-		<p>MorMor takes the side of Al Green and Gallant in the great debate over falsetto in rhythm and blues.&nbsp  His voice, like that of an exotic bird, pierces through the lush foliage of augmented chords.&nbsp  We are not sure where that bird came from, but i hope it goes far.
-		<p>MorMor closed his set with Heaven's Only Wishful.&nbsp  I pulled my earplugs out to let it pass through my skull.&nbsp  Shivers shaking my spine confirmed that i was in the place to which music sometimes takes you.
+		<p>Duendita groans like an eighteenth century galleon.&nbsp She roars like a tiger.&nbsp She makes her home in the low low (<a href="https://youtu.be/Edr2FI6b3yI?t=18">She's a bass!</a>), but assures you that she can hit the silky high notes when her voice pops up like a periscope out of water.</p>
+		<p>Her delivery overall, like a boxer, is confrontational.&nbsp The rumble and tumble of SP-404 percussion keeps you off-kilter.&nbsp Vocal uppercuts soften you, and sly beat drops knock you over.&nbsp But she is equally respectful.&nbsp The way she laughs between songs, you could begin to believe that perhaps she is your <em>friend</em>.</p>
+		<p>MorMor is touring with a full band, and it feels like a bit of a jam.&nbsp Few bands escape their individuals' stylistic aspirations.&nbsp The drummer smacked the snare with a street-funk sensibility while the other two leaned in and out of the mix.&nbsp This show was really a team effort: most members pulled double-duty (or mor) on instruments.&nbsp They had some sweet solos on the keyboard and guitar.&nbsp Mr. Mor has assembled a talented band here and i am excited to see where the new material goes with a band in mind.</p>
+		<p>I could see the setlist from where i stood, which is, like, helpful, but ruins some of the fun.</p>
+		<p>MorMor takes the side of Al Green and Gallant in the great debate over falsetto in rhythm and blues.&nbsp His voice, like that of an exotic bird, pierces through the lush foliage of augmented chords.&nbsp We are not sure where that bird came from, but i hope it goes far.</p>
+		<p>MorMor closed his set with Heaven's Only Wishful.&nbsp I pulled my earplugs out to let it pass through my skull.&nbsp Shivers shaking my spine confirmed that i was in the place to which music sometimes takes you.</p>
 		<p>—Lucas Magookas</p><hr>
 		
 		<h2 id="B&G">Buke and Gase at Comet Ping Pong</h2>
 		<h3>2/4/19</h3>
-		<img src="Github_Images/Buke and Gase.jpg" align="left" width="400px" alt="Buke and Gase perform at Comet"><br>
-		<p>Buke and Gase's inscrutable percussion constructs are sometimes chonk chonky, sometimes nimble.&nbsp  We are never quite ready for those thunks.&nbsp  Over these Aron pours his throbbing Gase lines.&nbsp  Arone's Buke and voice create soaring walls of dissonance that scintillate like Archimedes' mirror ray of destruction.
-		<p>You look at the homemade instruments and hear the vocal yodel, and at times it seems that Buke and Gase owe something to folk music.&nbsp  Are they singing the mountain songs of the chaotic urbane?  Is this the sound of the collective cranium buzz that pervades our modern society?  Merely to be awash in such cacophony feels rebellious.&nbsp  Surely this will repel the administration, or your parents, or your boss, or whoever.
+		<img src="https://raw.githubusercontent.com/lcrampton/lcrampton.github.io/master/Github_Images/Buke%20and%20Gase.jpg" align="left" width="400px" alt="Buke and Gase perform at Comet"><br>
+		<p>Buke and Gase's inscrutable percussion constructs are sometimes chonk chonky, sometimes nimble.&nbsp We are never quite ready for those thunks.&nbsp Over these Aron pours his throbbing Gase lines.&nbsp Arone's Buke and voice create soaring walls of dissonance that scintillate like Archimedes' mirror ray of destruction.</p>
+		<p>You look at the homemade instruments and hear the vocal yodel, and at times it seems that Buke and Gase owe something to folk music.&nbsp Are they singing the mountain songs of the chaotic urbane?&nbsp Is this the sound of the collective cranium buzz that pervades our modern society?&nbsp Merely to be awash in such cacophony feels rebellious.&nbsp Surely this will repel the administration, or your parents, or your boss, or whoever.</p>
 		<p>—Lucas Magookas</p><hr>
 		
 		<h2 id="rubell">Ivanka Vacuuming at Flashpoint</h2>
 		<h3>by Jennifer Rubell</h3>
 		<h3>10/2/19</h3>
 		<img src="https://raw.githubusercontent.com/lcrampton/lcrampton.github.io/master/Github_Images/Ivanka%20Vacuuming.jpg" align="right" width="400px" alt="Ivanka pulling a vacuum in the background of a mound of crumbs"><br>
-		<p>The first thing i thought was "Wow, this vacuum is actually really annoying."  I walked into the exhibit and met a feeling of overwhelming anxiety.&nbsp  I could not quite put my finger on the voyeuristic power dynamic setting me off-kilter but i knew that <em>This is like, weird, man</em>.&nbsp  I felt like i was standing in the execution theater, and it made me really nervous.&nbsp  It made me furrow my brow.</p>
-		<p>Some tactile investigation revealed that the inviting pile of schmutz consisted of dry breadcrumbs.&nbsp  Breadcrumbs?  Breadcrumbs leave a trail...&nbsp  Aha!  These are Mueller's breadcrumbs, made from corruption croutons.&nbsp  i have a thing for the Sisyphus story and Tibetan Buddhist sand art, so i sprinkled some breadcrumbs in a spot right after the Ivanka double vacuumed it.&nbsp  i hope she is having insights about impermanence.&nbsp  For my second toss, i tried to throw some to the back, to mix things up, but they only scattered widely.&nbsp  Crumbs are not particularly aerodynamic.&nbsp  i decided to rest on my laurels and stop at two tosses.
-		<p>Ultimately, this piece accomplishes what it sets out to do.&nbsp  Nothing is more fragile than the image of somebody who has traded in their soul for a brand—that is, to become a brand.&nbsp  You might undermine her integrity with fine points on cable news, but good heavens, do not expose the Brand!  The Brand is her livelihood.&nbsp  The Brand is unique.&nbsp  The Brand withers in ultraviolet light.
-		<p>Fake Ivanka's eyes would occasionally flit up and meet mine.&nbsp  Is this part of the role of Ivanka?  Or is this a betrayal of the piece?  <em>Why is she doing that?  I think she really likes you, man.&nbsp  Find her after the performance and ask her, "So how do you spend the other 22 hours of the day?"</em>
-		I wonder if she ever uses the detachable hose extension.&nbsp  Nobody is supposed to vacuum in high heels.&nbsp  Is she okay?  Hmm.&nbsp  Blink twice if you need help, Ivanka double.
-		<p>But then, i suppose the real Ivanka did the piece a huge favor by tweeting about it.&nbsp  Maybe that is her subtle congratulations, her blessing.&nbsp  The vacuum sounds louder now.&nbsp  You want to stay and fight to understand, but not at the expense of your night, nor your sanity.&nbsp  You look away, you walk on home.&nbsp  You leave Ivanka to her devices.</p>
+		<p>The first thing i thought was "Wow, this vacuum is actually really annoying."  I walked into the exhibit and met a feeling of overwhelming anxiety.&nbsp I could not quite put my finger on the voyeuristic power dynamic setting me off-kilter but i knew that <em>This is like, weird, man</em>.&nbsp I felt like i was standing in the execution theater, and it made me really nervous.&nbsp It made me furrow my brow.</p>
+		<p>Some tactile investigation revealed that the inviting pile of schmutz consisted of dry breadcrumbs.&nbsp Breadcrumbs?&nbsp Breadcrumbs leave a trail...&nbsp Aha!&nbsp These are Mueller's breadcrumbs, made from corruption croutons.&nbsp i have a thing for the Sisyphus story and Tibetan Buddhist sand art, so i sprinkled some breadcrumbs in a spot right after the Ivanka double vacuumed it.&nbsp i hope she is having insights about impermanence.&nbsp For my second toss, i tried to throw some to the back, to mix things up, but they only scattered widely.&nbsp Crumbs are not particularly aerodynamic.&nbsp i decided to rest on my laurels and stop at two tosses.</p>
+		<p>Ultimately, this piece accomplishes what it sets out to do.&nbsp Nothing is more fragile than the image of somebody who has traded in their soul for a brand—that is, to become a brand.&nbsp You might undermine her integrity with fine points on cable news, but good heavens, do not expose the Brand!&nbsp The Brand is her livelihood.&nbsp The Brand is unique.&nbsp The Brand withers in ultraviolet light.</p>
+		<p>Fake Ivanka's eyes would occasionally flit up and meet mine.&nbsp Is this part of the role of Ivanka?&nbsp Or is this a betrayal of the piece?&nbsp <i>Why is she doing that?&nbsp I think she really likes you, man.&nbsp Find her after the performance and ask her, "So how do you spend the other 22 hours of the day?"</i>&nbsp I wonder if she ever uses the detachable hose extension.&nbsp Nobody is supposed to vacuum in high heels.&nbsp Is she okay?&nbsp Hmm.&nbsp Blink twice if you need help, Ivanka double.</p>
+		<p>But then, i suppose the real Ivanka did the piece a huge favor by tweeting about it.&nbsp Maybe that is her subtle congratulations, her blessing.&nbsp The vacuum sounds louder now.&nbsp I want to stay and fight to understand, but not at the expense of my night, nor my sanity.&nbsp I look away, i walk on home.&nbsp I leave Ivanka to her devices.</p>
 		<p>—Lucas Magookas</p><hr>
+		
 		<h2 id="poppy">Poppy at 9:30 Club</h2>
 		<h3>31/1/19</h3>
-		<p>Okay so.&nbsp  This is my second time seeing Poppy play live.&nbsp  Since the Poppy.Computer tour, they have reinvented themselves as a sort of black metal princess force for uncertainty.&nbsp  Madonna comparisons used to be apt; now she is more like, Marilyn Manson.
-		<p>She was clearly not lip-syncing this time, which i like.&nbsp  This was evident in her struggles to hit the high notes on Pop Music.&nbsp  She also battled with Play Destroy's piped-in Grimes vocals—the bar trading and refrains are simply too rapid.&nbsp  Poppy debuted on stage actually playing a <a href="https://dangelicoguitars.com/guitars/premier-series/premier-ss/#DAPSSOTCTCB">pale blue D'angelico</a>.&nbsp  A pair of Marshall stacks flanked the center of the stage, a powerful device to anchor the show in rock and metal tradition.&nbsp  Certainly, the addition of live instrumentation helps bring the show out of the interweb and into the physical realm.
-		<p>They played a lot of old tracks, even taking it back to Everybody Wants To Be Poppy, the first single she released as That Poppy.&nbsp  Still no Lowlife, though.
-		<p>Their costumes appeared rather scruffy; I would think they could at least find better wigs.&nbsp  But i suppose they blew the budget on their eight- by twenty-foot light-emitting diode display and Marshall stacks.
-		<p>This was a predominantly male audience.&nbsp  i find difficulty decoding the psychology of that.&nbsp  Poppy really needs to do something that makes me feel less concerned for her safety.&nbsp  Maybe her staking out of a posture as a non-binary feminist flag-bearer will help balance the fanbase.&nbsp  (The above observation is only my impression and this might vary between cities).
-		<p>Poppy, Titanic Sinclair, and team have an undeniable knack for creating earworms.&nbsp  But i fear that the creative turns they took on <em>Am I A Girl?</em> will derail their satirical mimesis of pop music and multi-storied satire of creative influencer/superfan culture.&nbsp  Moreover, though, this looks and sounds like the music they enjoy making.&nbsp  I want them to be happy more than i want them to have an exhibit in the MoMA.</p>
+		<p>Okay so.&nbsp This is my second time seeing Poppy play live.&nbsp Since the Poppy.Computer tour, they have reinvented themselves as a sort of black metal princess force for uncertainty.&nbsp Madonna comparisons used to be apt; now she is more like, Marilyn Manson.</p>
+		<p>She was clearly not lip-syncing this time, which i like.&nbsp This was evident in her struggles to hit the high notes on Pop Music.&nbsp She also battled with Play Destroy's piped-in Grimes vocals—the bar trading and refrains are simply too rapid.&nbsp Poppy debuted on stage actually playing a <a href="https://dangelicoguitars.com/guitars/premier-series/premier-ss/#DAPSSOTCTCB">pale blue D'angelico</a>.&nbsp A pair of Marshall stacks flanked the center of the stage, a powerful device to anchor the show in rock and metal tradition.&nbsp Certainly, the addition of live instrumentation helps bring the show out of the interweb and into the physical realm.</p>
+		<p>They played a lot of old tracks, even taking it back to Everybody Wants To Be Poppy, the first single she released as That Poppy.&nbsp Still no Lowlife, though.</p>
+		<p>Their costumes appeared rather scruffy; I would think they could at least find better wigs.&nbsp But i suppose they blew the budget on their eight- by twenty-foot light-emitting diode display and Marshall stacks.</p>
+		<p>This was a predominantly male audience.&nbsp i find difficulty decoding the psychology of that.&nbsp Poppy really needs to do something that makes me feel less concerned for her safety.&nbsp Maybe her staking out of a posture as a non-binary feminist flag-bearer will help balance the fanbase.&nbsp (The above observation is only my impression and this might vary between cities).</p>
+		<p>Poppy, Titanic Sinclair, and team have an undeniable knack for creating earworms.&nbsp But i fear that the creative turns they took on <em>Am I A Girl?</em> will derail their satirical mimesis of pop music and multi-storied satire of creative influencer/superfan culture.&nbsp Moreover, though, this looks and sounds like the music they enjoy making.&nbsp I want them to be happy more than i want them to have an exhibit in the MoMA.</p>
 		<p>—Lucas Magookas</p><hr>
 		
 		<h2 id="moctar">Mdou Moctar at Union Stage</h2>
 		<h3>9/1/19</h3>
 		<img src="https://github.com/lcrampton/lcrampton.github.io/blob/master/Github_Images/Mdou%20Moctar%20at%20Union%20Stage.jpg?raw=true" align="left" width="400px" alt="Mdou Moctar at Union Stage">
-		<p>Some have suggested that the Sahara-Sahel regional folk-rock genre faces oversaturation.&nbsp  Can Ali Farka Tourè, Toumani Diabaté, Fatoumata 
-		Diawara, Tinariwen, Rokia Traore, Songhoy Blues, Imarhan, Noura Mint Seymali, and other North African musicians with international acclaim make room 
-		for more to follow in their footsteps?  At least some of the appeal of Kel Tamashek and Desert Groove is its relative inscrutability to Western ears.&nbsp 
-		It could, conceivably, mainstream itself out of novelty.&nbsp  Consider, alternatively, that these styles have transcended the critical mass of extremely 
-		online obscurantists and landed a genuine fandom in the world.&nbsp  Congratulations, then, to the transnational Berber irregular polygon region on 
-		promulgating an uncompromising cultural export the way Jamaica has done with reggae and Mongolia has done with Tuvan throat singing.</p>
-		<p>Mdou Moctar, for his part, showed signs of innovation.&nbsp  These desert groove artists are always playing a balancing act between their open adoration 
-		of Jimi Hendrix and the traditions of their upbringing.&nbsp  Some may feel inclined to say "...&nbsp but Moctar never strays far from his roots."  But he does 
-		stray; Moctar jams in recognizable ways.&nbsp  He personally looks up to Eddie Van Halen, and that comes through in his playing.&nbsp  Melodically, he does not 
-		seem far off from acceptable norms in Western music.&nbsp  Probably because he grew up listening to classic rock.&nbsp  My companion leaned over and made the
-		observation that they sounded like Kansas.&nbsp  The band.&nbsp  We all find what we look for, i suppose.&nbsp  Moctar's shredded riffs, fed through a tube scream,
-		scorch over his rhythm players, who ground the performance in tradition.&nbsp  They took a linear route quite simple at its heart.</p>
-		<p>In Desert Groove, and in Moctar's live performances, the groove follows the kick drum.&nbsp  The snare offers syncopation.&nbsp  But i saw at least one baby 
-		boomer clapping with the snare (the three and the three-and?).&nbsp  Oh and the drummer sped up on numerous occasions, so he either needed a click track 
-		or this was an intentional effect to add to the sound's frenetic charge.</p>
-		<p>It sounded downright nasty.
-		<p>Nasty?
-		<p>Yeah, you know, like when you see guitarists screwing up their faces during a solo, or funk band leaders leaning nearly all the way over?  Nasty.&nbsp  
-		They were playing nasty.&nbsp  Together with the rushing rhythm section, the performance evoked a Youtube video entitled Nasty But Every Time It Gets Nasty
-		It Gets Even Nastier.</p>
+		<p>Some have suggested that the Sahara-Sahel regional folk-rock genre faces oversaturation.&nbsp Can Ali Farka Tourè, Toumani Diabaté, Fatoumata Diawara, Tinariwen, Rokia Traore, Songhoy Blues, Imarhan, Noura Mint Seymali, and other North African musicians with international acclaim make room for more to follow in their footsteps?&nbsp At least some of the appeal of Kel Tamashek and Desert Groove is its relative inscrutability to Western ears.&nbsp It could, conceivably, mainstream itself out of novelty.&nbsp Consider, alternatively, that these styles have transcended the critical mass of extremely online obscurantists and landed a genuine fandom in the world.&nbsp Congratulations, then, to the transnational Berber irregular polygon region on promulgating an uncompromising cultural export the way Jamaica has done with reggae and Mongolia has done with Tuvan throat singing.</p>
+		<p>Mdou Moctar, for his part, showed signs of innovation.&nbsp These desert groove artists are always playing a balancing act between their open adoration of Jimi Hendrix and the traditions of their upbringing.&nbsp Some may feel inclined to say "...&nbsp but Moctar never strays far from his roots."  But he does stray; Moctar jams in recognizable ways.&nbsp He personally looks up to Eddie Van Halen, and that comes through in his playing.&nbsp Melodically, he does not seem far off from acceptable norms in Western music.&nbsp Probably because he grew up listening to classic rock.&nbsp My companion leaned over and made the	observation that they sounded like Kansas.&nbsp The band.&nbsp We all find what we look for, i suppose.&nbsp Moctar's shredded riffs, fed through a tube scream, scorch over his rhythm players, who ground the performance in tradition.&nbsp They took a linear route quite simple at its heart.</p>
+		<p>In Desert Groove, and in Moctar's live performances, the groove follows the kick drum.&nbsp The snare offers syncopation.&nbsp But i saw at least one baby boomer clapping with the snare (the three and the three-and?).&nbsp Oh and the drummer sped up on numerous occasions, so he either needed a click track or this was an intentional effect to add to the sound's frenetic charge.</p>
+		<p>It sounded downright nasty.</p>
+		<p>Nasty?</p>
+		<p>Yeah, you know, like when you see guitarists screwing up their faces during a solo, or funk band leaders leaning nearly all the way over?&nbsp Nasty.&nbsp They were playing nasty.&nbsp Together with the rushing rhythm section, the performance evoked a Youtube video entitled Nasty But Every Time It Gets Nasty It Gets Even Nastier.</p>
 		<p>—Lucas Magookas</p><hr>
 		
 		<h2 id="TC">TC Superstar, Palette, and Model Homes at ~dwell~</h2>
 		<h3>2/11/18</h3>
-		<p>dwell possessed an extra-dank aroma today, which was noticeable from the bottom of the stairs.&nbsp  Summitting the stairs, i noted that drying 
-		cannabis buds would provide tonight's backdrop.</p>
+		<p>dwell possessed an extra-dank aroma today, which was noticeable from the bottom of the stairs.&nbsp Summitting the stairs, i noted that drying cannabis buds would provide tonight's backdrop.</p>
 		<p>Model Homes played.</p>
-		<p>But when TC Superstar pressed play on their SP, the space lit up.&nbsp  TC Superstar used energy beam in a most positive manner, and it was 
-		super-effective.&nbsp  We had even pulled the tire swing out of the way.&nbsp  i do not care how important you think your job is.&nbsp  You need to dance to this band.
-		<p>TC Superstar's lyrics treat the bleakness of the mundane with a bright glibness that disarms their heavy subtext.&nbsp  Unfortunately, songs began 
-		to blend and blur together sonically, but that could indicate a cohesive album and artistic vision.&nbsp  It was a good sound anyway, so please reprise 
-		it.&nbsp  And the project spills out of the confines of sound into physical art and stage performance.&nbsp  TC Superstar exudes something that says "art 
-		installation" at least as much as "rock band."
-		<p>Their standout track used the chorus to hop along a reference to the Toyota Corolla.&nbsp (Ohhhhhhhhhhhhhh.&nbsp  The TC stands for Toyota Corollaaaa.&nbsp  Okay.)
-		<p>Emily and Yuriko, dancers, toed the line between technical prowess and inviting people to ecstatic expressive freedom.&nbsp  At least one amateur 
-		dancer in the room 		marveled at their balance, stamina, and flexibility.&nbsp  We also send props to Connor for sounding good while dancing without 
-		lip-syncing, but more importantly, for wearing a WRGW tee.
-		<p>Palette tied together the night with their subterranean spaced out vocal frenzy.
-		<p>i had fun.&nbsp  i feel good.&nbsp  i feel warm.</p><br>
+		<p>But when TC Superstar pressed play on their SP, the space lit up.&nbsp TC Superstar used energy beam in a most positive manner, and it was super-effective.&nbsp We had even pulled the tire swing out of the way.&nbsp i do not care how important you think your job is.&nbsp You need to dance to this band.</p>
+		<p>TC Superstar's lyrics treat the bleakness of the mundane with a bright glibness that disarms their heavy subtext.&nbsp Unfortunately, songs began to blend and blur together sonically, but that could indicate a cohesive album and artistic vision.&nbsp It was a good sound anyway, so please reprise it.&nbsp And the project spills out of the confines of sound into physical art and stage performance.&nbsp TC Superstar exudes something that says "art 
+		installation" at least as much as "rock band."</p>
+		<p>Their standout track used the chorus to hop along a reference to the Toyota Corolla.&nbsp (Ohhhhhhhhhhhhhh.&nbsp The TC stands for Toyota Corollaaaa.&nbsp Okay.)</p>
+		<p>Emily and Yuriko, dancers, toed the line between technical prowess and inviting people to ecstatic expressive freedom.&nbsp At least one amateur dancer in the room marveled at their balance, stamina, and flexibility.&nbsp We also send props to Connor for sounding good while dancing without lip-syncing, but more importantly, for wearing a WRGW tee.</p>
+		<p>Palette tied together the night with their subterranean spaced out vocal frenzy.</p>
+		<p>i had fun.&nbsp i feel good.&nbsp i feel warm.</p>
 		<p>—Lucas Magookas</p><hr>
+		
 		<h2 id="zula">Zula and Dove Lady at ~dwell~</h2>
 		<h3>19/10/18</h3>
-		<p>dwell is a DIY venue in the Trinidad neighborhood of DC whose exact location is privileged information.&nbsp  Zula's show there felt cozy and warm 
-		and nice.&nbsp  This despite their being from Brooklyn.&nbsp  Maybe i should not be so surprised that a DIY band felt at home in a DIY space.
-		<p>Zula takes influence from many artists, but tries not to wear them on their sleeves.&nbsp  But they had one phrase that would have fit snugly
-		on Talking Heads' <em>1977</em>.&nbsp  Their new material seems a little more Neutral Milk Hotel, a little less Lonerism.&nbsp  It is certainly more 
-		verbose than the work they performed at Above the Bayou back in 2015.
-		<p>It sounds like i have reservations about the direction they are taking.&nbsp  That sounds right.&nbsp  But Zula, in its new incarnation, retains the 
-		essence of Zula that make it fresh and enjoyable.&nbsp  Keep surprising me, Zula.&nbsp  And keep playing shows in DC.</p>
+		<p>dwell is a DIY venue in the Trinidad neighborhood of DC whose exact location is privileged information.&nbsp Zula's show there felt cozy and warm and nice.&nbsp This despite their being from Brooklyn.&nbsp Maybe i should not be so surprised that a DIY band felt at home in a DIY space.</p>
+		<p>Zula takes influence from many artists, but tries not to wear them on their sleeves.&nbsp But they had one phrase that would have fit snugly	on Talking Heads' <i>1977</i>.&nbsp Their new material seems a little more Neutral Milk Hotel, a little less Lonerism.&nbsp It is certainly more verbose than the work they performed at Above the Bayou back in 2015.</p>
+		<p>It sounds like i have reservations about the direction they are taking.&nbsp That sounds right.&nbsp But Zula, in its new incarnation, retains the essence of Zula that make it fresh and enjoyable.&nbsp Keep surprising me, Zula.&nbsp And keep playing shows in DC.</p>
 		<p>—Lucas Magookas</p>
 		<hr>
 		
         <h2 id="tsushi">Tsushimamire at the Songbyrd Café</h2>
 		<h3>15/10/18</h3>
-		<p>Tsuhimamire entered my life on trivia night at the Songbyrd Café.&nbsp  We slid into a fourth place finish while in the next room, people were milling about the way they do in rooms too small to pace—with their heads down looking all around but at nobody.&nbsp But the moment Tsushimamire let out their warm-up noise, a crowd got in formation.&nbsp  i found myself perched on a step, which was uncomfortable; i longed for a pit.</p>
-		<p>They made me wonder what punk rock filtered in to Japan from across the ocean.&nbsp  Were Tsushimamire pulling Minor Threat EPs from the rack?  How old are they, exactly?  Were Tsushimamire pulling Minor Threat CDs from the shelf back in the day?  Maybe i am not giving Japan enough credit.&nbsp  The land of the rising sun has a long and colorful music history of its own, so why would punk rock be an exception?  Tsushimamire, for their part, blurred the line between emulation and innovation.&nbsp  Truthfully, they employed more of the latter.</p>
-		<p>Tsushima's crunchy bass grooves kept every measure interesting.&nbsp  When the bass line followed the guitar, it was never the product of lazy songwriting, but a calculated move to add weight to a phrase.</p>
-		<p>Takagi's percussion was energetic and tireless.&nbsp  Fills were subdued and sparse.&nbsp  Rather, Tsushimamire's drum section contributes urgency and amperage with reliable thudding on the floor tom.&nbsp  The crashes were screwed in really tight though, which i thought was weird.</p>
-		<p>Kono affected her guitar leads with reverb that reminded me of basement jams.&nbsp  Which is kind of how the whole thing feels.&nbsp  Except that their jams do not wander aimlessly.&nbsp  Every riff is that one tastiest of licks you get out of an hour's jam session.</p>
-		<p>Their fast ones ripped and their slower ones chunked hard.&nbsp  One guy asked me if they were Melt-Banana, which i suppose is fair.&nbsp  i try to make everything a Powerpuff Girls thing, but face it, they were all Buttercup.</p> 
+		<p>Tsuhimamire entered my life on trivia night at the Songbyrd Café.&nbsp We slid into a fourth place finish while in the next room, people were milling about the way they do in rooms too small to pace—with their heads down looking all around but at nobody.&nbsp But the moment Tsushimamire let out their warm-up noise, a crowd got in formation.&nbsp i found myself perched on a step, which was uncomfortable; i longed for a pit.</p>
+		<p>They made me wonder what punk rock filtered in to Japan from across the ocean.&nbsp Were Tsushimamire pulling Minor Threat EPs from the rack?&nbsp How old are they, exactly?&nbsp Were Tsushimamire pulling Minor Threat CDs from the shelf back in the day?&nbsp Maybe i am not giving Japan enough credit.&nbsp The land of the rising sun has a long and colorful music history of its own, so why would punk rock be an exception?&nbsp Tsushimamire, for their part, blurred the line between emulation and innovation.&nbsp Truthfully, they employed more of the latter.</p>
+		<p>Tsushima's crunchy bass grooves kept every measure interesting.&nbsp When the bass line followed the guitar, it was never the product of lazy songwriting, but a calculated move to add weight to a phrase.</p>
+		<p>Takagi's percussion was energetic and tireless.&nbsp Fills were subdued and sparse.&nbsp Rather, Tsushimamire's drum section contributes urgency and amperage with reliable thudding on the floor tom.&nbsp The crashes were screwed in really tight though, which i thought was weird.</p>
+		<p>Kono affected her guitar leads with reverb that reminded me of basement jams.&nbsp Which is kind of how the whole thing feels.&nbsp Except that their jams do not wander aimlessly.&nbsp Every riff is that one tastiest of licks you get out of an hour's jam session.</p>
+		<p>Their fast ones ripped and their slower ones chunked hard.&nbsp One guy asked me if they were Melt-Banana, which i suppose sort of fair, but not really.&nbsp I try to make everything a Powerpuff Girls thing, but face it, they are all Buttercup.</p> 
 		<p>—Lucas Magookas</p>
 		<br line-height="4em">
-		
     </body>
 </html>
