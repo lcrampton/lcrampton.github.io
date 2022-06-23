@@ -184,10 +184,30 @@
 			const bVideo = document.getElementById("artVideoB");
 			const cVideo = document.getElementById("artVideoC");
 			aVideo.addEventListener("click", showControls);
+			bVideo.addEventListener("click", showControls);
+			cVideo.addEventListener("click", showControls);
 			function showControls() {
-				aVideo.controls = true;
-				bVideo.controls = true;
-				cVideo.controls = true;
+				if (aVideo.paused == true) {
+					aVideo.controls = true;
+					}
+				else {
+					aVideo.pause();
+					aVideo.controls = false;
+					}
+				if (bVideo.paused == true) {
+					bVideo.controls = true;
+					}
+				else {
+					bVideo.pause();
+					bVideo.controls = false;
+					}
+				if (cVideo.paused == true) {
+					cVideo.controls = true;
+					}
+				else {
+					cVideo.pause();
+					cVideo.controls = false;
+					}
 			};
 		</script>
 	</body>
