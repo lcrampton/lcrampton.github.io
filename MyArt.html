@@ -2,20 +2,20 @@
 <html>
 	<head>
 		<meta charset="utf-8">
-		<title>Original Music</title>
+		<title>My Art</title>
 		<link rel="shortcut icon" href="https://raw.githubusercontent.com/lcrampton/lcrampton.github.io/master/Github_Images/Website%20Favicon.ico">
 		<style>
 			body {
-				padding-left:10%;
-				padding-right:10%;
-				padding-top:1%;
-				background: bone;
+				padding-left: 10%;
+				padding-right: 10%;
+				padding-top: 1%;
+				background: #fefcff;
 				font-family: monospace;	}
 			a {
 				text-decoration: none;
 				color: black;	}
 			a:hover, a:active, a:focus {
-				color: bone;
+				color: #fefcff;
 				background-color: #CD3232;		}
 			h1 {
 				text-align: center;
@@ -42,14 +42,12 @@
 				background-color: #CD7F32;
 				background-image: linear-gradient(90deg, #FDCF32 6%, #CD3232 40%, #CD7F32 80%)	}
 			video{
-				background-color: bone;
+				background-color: #fefcff;
 				height: 360px;
 				width: auto;
 				border: 0px;
-				align: center;
 				margin: 0px;	
-				padding: 0px;	
-				controls;
+				padding: 0px;
 				}
 			nav {
 				letter-spacing: 4px;
@@ -60,18 +58,17 @@
 				text-decoration: none;
 				font-size: 1.25em;
 				color: black;  }
-			nav a:hover {
-				color: #FDCF32;
-				background-color: #CD3232;	}
 				
 			.dropbtn {
-				background-color: bone;
+				background-color: #fefcff;
 				color: black;
 				text-align: justify;
 				font-family: monospace;
 				letter-spacing: 5px;
 				font-size: 1.1em;
 				border: none;	}
+			.dropbtn:hover {
+				color: #fefcff;	}
 			.dropdown {
 				position: relative;
 				display: inline-block;	}
@@ -82,13 +79,17 @@
 				min-width: 175px;
 				z-index: 1;	}
 			.dropdown-content a {
-				color: rgb(256,94,34);
+				color: black;
 				padding: 30px 30px;
 				text-align: left;
 				display: block;	}
-			.dropdown-content a:hover {background-color: #CD3232;	}
+			.dropdown-content a:hover {
+				color: #fefcff;
+				background-color: #CD3232;	}
 			.dropdown:hover .dropdown-content {display: block;}
-			.dropdown:hover .dropbtn {background-color: #CD3232;	}
+			.dropdown:hover .dropbtn {
+				color: #fefcff;
+				background-color: #CD3232;	}
 			
 			.grid-container-odd	{
 				display: grid;
@@ -99,7 +100,6 @@
 				grid-template-columns: auto auto 2px;
 				margin-top: 1.2em;}
 			.grid-item {
-				text-align: center;
 				border-radius: 1.5em;
 				margin: 1.2em;
 				padding: .8em;	}
@@ -116,17 +116,17 @@
 		<nav>
 			<a href="https://lcrampton.github.io">Home</a>
 			<div class="dropdown">
-			<button class="dropbtn">Culture<sub>+</sub></button>
-			<div class="dropdown-content">
-				<a href="https://lcrampton.github.io/Culture.html">Culture Review</a>
-				<a href="https://lcrampton.github.io/concert-calendar.html">Concerts</a>
-				<a href="https://lcrampton.github.io/Food.html">Food</a>
-				<a href="https://lcrampton.github.io/Recipes.html">Cookbook</a>
-			</div>
-			</div>
+				<button class="dropbtn">Culture<sub>+</sub></button>
+				<div class="dropdown-content">
+					<a href="https://lcrampton.github.io/Culture.html">Culture Review</a>
+					<a href="https://lcrampton.github.io/concert-calendar.html">Concerts</a>
+					<a href="https://lcrampton.github.io/Food.html">Food</a>
+					<a href="https://lcrampton.github.io/Recipes.html">Cookbook</a>
+				</div>
+				</div>
 			<div class="dropdown">
-			<button class="dropbtn">Politics<sub>+</sub></button>
-			<div class="dropdown-content">
+				<button class="dropbtn">Politics<sub>+</sub></button>
+				<div class="dropdown-content">
 				<a href="https://lcrampton.github.io/Message.html">The Message</a>
 				<a href="https://lcrampton.github.io/Platform.html">Platform</a>
 			</div>
@@ -153,14 +153,14 @@
 				<div class="grid-item">
 					<p>The Circuit City City</p><br>
 					<div class="bc-embed">
-						<video controls src="https://github.com/lcrampton/lcrampton.github.io/blob/master/Art/Circuit%20City%20Tour%20Export.mp4?raw=true" type="video/mp4">
+						<video id="artVideoA" src="https://github.com/lcrampton/lcrampton.github.io/blob/master/Art/Circuit%20City%20Tour%20Export.mp4?raw=true" type="video/mp4">
 						</video>
 					</div>
 				</div>
 				<div class="grid-item">
 					<p>Covid Test</p><br>
 					<div class="bc-embed">
-						<video controls src="https://github.com/lcrampton/lcrampton.github.io/blob/master/Art/CovidTest.mp4?raw=true" type="video/mp4">
+						<video id="artVideoB" src="https://github.com/lcrampton/lcrampton.github.io/blob/master/Art/CovidTest.mp4?raw=true" type="video/mp4">
 						</video>
 					</div>
 				</div>
@@ -171,13 +171,24 @@
 				<div class="grid-item">
 					<p>Make Tostones, Not War</p><br>
 					<div class="bc-embed">
-						<video controls src="https://github.com/lcrampton/lcrampton.github.io/blob/master/Art/Banana%20Clip%20Animation%203.mp4?raw=true" type="video/mp4">
+						<video id="artVideoC" src="https://github.com/lcrampton/lcrampton.github.io/blob/master/Art/Banana%20Clip%20Animation%203.mp4?raw=true" type="video/mp4">
 						</video>
 					</div>
 				</div>
 				<div class="grid-item colorBlock">
 				</div>
 			</div>
-
+		
+		<script> 
+			const aVideo = document.getElementById("artVideoA");
+			const bVideo = document.getElementById("artVideoB");
+			const cVideo = document.getElementById("artVideoC");
+			aVideo.addEventListener("click", showControls);
+			function showControls() {
+				aVideo.controls = true;
+				bVideo.controls = true;
+				cVideo.controls = true;
+			};
+		</script>
 	</body>
 </html>
