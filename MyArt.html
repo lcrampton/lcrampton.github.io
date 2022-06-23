@@ -15,7 +15,8 @@
 				text-decoration: none;
 				color: black;	}
 			a:hover, a:active, a:focus {
-				background-color: azure;		}
+				color: bone;
+				background-color: #CD3232;		}
 			h1 {
 				text-align: center;
 				font-size: 3em;
@@ -27,6 +28,29 @@
 				font-family: monospace;
 				line-height: 1.2em;	
 				margin-top: 2em;}
+			p	{
+				color: black;
+				text-align: left;
+				font-size: 16px;
+				font-family: monospace;
+				letter-spacing: 3px;
+				line-height: 1.5em;	}
+			hr	{
+				height: 2px;
+				border-radius: 1.5em;
+				border-width: 0px;
+				background-color: #CD7F32;
+				background-image: linear-gradient(90deg, #FDCF32 6%, #CD3232 40%, #CD7F32 80%)	}
+			video{
+				background-color: bone;
+				height: 360px;
+				width: auto;
+				border: 0px;
+				align: center;
+				margin: 0px;	
+				padding: 0px;	
+				controls;
+				}
 			nav {
 				letter-spacing: 4px;
 				text-align: right;
@@ -37,10 +61,11 @@
 				font-size: 1.25em;
 				color: black;  }
 			nav a:hover {
-				background-color: azure;	}
+				color: #FDCF32;
+				background-color: #CD3232;	}
 				
 			.dropbtn {
-				background-color: ivory;
+				background-color: bone;
 				color: black;
 				text-align: justify;
 				font-family: monospace;
@@ -53,7 +78,7 @@
 			.dropdown-content {
 				display: none;
 				position: absolute;
-				background-color: lavender;
+				background-color: #CD7F32;
 				min-width: 175px;
 				z-index: 1;	}
 			.dropdown-content a {
@@ -61,25 +86,28 @@
 				padding: 30px 30px;
 				text-align: left;
 				display: block;	}
-			.dropdown-content a:hover {background-color: azure;	}
+			.dropdown-content a:hover {background-color: #CD3232;	}
 			.dropdown:hover .dropdown-content {display: block;}
-			.dropdown:hover .dropbtn {background-color: azure;	}
-			.section {
-				text-align: center;
-				color: black;
-				margin: 2em;	}
-			.bc-embed {
-				text-align: center;	}
+			.dropdown:hover .dropbtn {background-color: #CD3232;	}
 			
-			.grid-container	{
+			.grid-container-odd	{
 				display: grid;
-				grid-template-columns: auto auto auto;
+				grid-template-columns: 2px auto auto;
+				margin-top: 1.2em;}
+			.grid-container-even	{
+				display: grid;
+				grid-template-columns: auto auto 2px;
 				margin-top: 1.2em;}
 			.grid-item {
+				text-align: center;
 				border-radius: 1.5em;
-				background-image: linear-gradient(90deg, BlanchedAlmond 40%, bisque 80%);
-				margin: 20px;
+				margin: 1.2em;
 				padding: .8em;	}
+			.colorBlock {
+				background-image: linear-gradient(0deg, #F0AF32 6%, #CD3232 40%, #CD7F32 80%);
+				margin: 0px;
+				padding: 0px;
+				border-radius: 0px;	}
 				
 		</style>
 	</head>
@@ -119,7 +147,37 @@
 		<hr>
 
 		<h2>Three-Dimensional Projects</h2>
-		
+			<div class="grid-container-odd">
+				<div class="grid-item colorBlock">
+				</div>
+				<div class="grid-item">
+					<p>The Circuit City City</p><br>
+					<div class="bc-embed">
+						<video controls src="https://github.com/lcrampton/lcrampton.github.io/blob/master/Art/Circuit%20City%20Tour%20Export.mp4?raw=true" type="video/mp4">
+						</video>
+					</div>
+				</div>
+				<div class="grid-item">
+					<p>Covid Test</p><br>
+					<div class="bc-embed">
+						<video controls src="https://github.com/lcrampton/lcrampton.github.io/blob/master/Art/CovidTest.mp4?raw=true" type="video/mp4">
+						</video>
+					</div>
+				</div>
+			</div>
+			<div class="grid-container-even">
+				<div class="grid-item">
+				</div>
+				<div class="grid-item">
+					<p>Make Tostones, Not War</p><br>
+					<div class="bc-embed">
+						<video controls src="https://github.com/lcrampton/lcrampton.github.io/blob/master/Art/Banana%20Clip%20Animation%203.mp4?raw=true" type="video/mp4">
+						</video>
+					</div>
+				</div>
+				<div class="grid-item colorBlock">
+				</div>
+			</div>
 
 	</body>
 </html>
