@@ -18,16 +18,17 @@
 				color: #fefcff;
 				background-color: #CD3232;		}
 			h1 {
-				text-align: center;
+				text-align: left;
 				font-size: 3em;
 				letter-spacing: 18px;
 				font-family: monospace;
 				line-height: 2em;	}
 			h2 {
-				text-align: center;
+				text-align: left;
 				font-family: monospace;
 				line-height: 1.2em;	
-				margin-top: 2em;}
+				margin-top: 2em;
+				margin-bottom: 1.2em;}
 			p	{
 				color: black;
 				text-align: left;
@@ -37,6 +38,8 @@
 				line-height: 1.5em;	}
 			hr	{
 				height: 2px;
+				width: 40%;
+				float: left;
 				border-radius: 1.5em;
 				border-width: 0px;
 				background-color: #CD7F32;
@@ -45,9 +48,11 @@
 				background-color: #fefcff;
 				height: 360px;
 				width: auto;
-				border: 0px;
-				margin: 0px;	
-				padding: 0px;
+				}
+			img{
+				background-color: #fefcff;
+				height: 360px;
+				width: auto;
 				}
 			nav {
 				letter-spacing: 4px;
@@ -93,11 +98,11 @@
 			
 			.grid-container-odd	{
 				display: grid;
-				grid-template-columns: 2px auto auto;
+				grid-template-columns: 1px auto auto;
 				margin-top: 1.2em;}
 			.grid-container-even	{
 				display: grid;
-				grid-template-columns: auto auto 2px;
+				grid-template-columns: auto auto 1px;
 				margin-top: 1.2em;}
 			.grid-item {
 				border-radius: 1.5em;
@@ -144,22 +149,24 @@
 
 		<h1>My Art</h1>
 		
-		<hr>
-
-		<h2>Three-Dimensional Projects</h2>
+		<hr><br>
+		<section>
+			<h2>Three-Dimensional Projects</h2>
 			<div class="grid-container-odd">
 				<div class="grid-item colorBlock">
 				</div>
 				<div class="grid-item">
-					<p>The Circuit City City</p><br>
-					<div class="bc-embed">
+					<p>The Circuit City City</p>
+					<p>2021-2022</p>
+					<div>
 						<video id="artVideoA" src="https://github.com/lcrampton/lcrampton.github.io/blob/master/Art/Circuit%20City%20Tour%20Export.mp4?raw=true" type="video/mp4">
 						</video>
 					</div>
 				</div>
 				<div class="grid-item">
-					<p>Covid Test</p><br>
-					<div class="bc-embed">
+					<p>Covid Test</p>
+					<p>2022</p>
+					<div>
 						<video id="artVideoB" src="https://github.com/lcrampton/lcrampton.github.io/blob/master/Art/CovidTest.mp4?raw=true" type="video/mp4">
 						</video>
 					</div>
@@ -167,10 +174,17 @@
 			</div>
 			<div class="grid-container-even">
 				<div class="grid-item">
+					<p>Pineapple</p>
+					<p>2022</p>
+					<div>
+						<video id="artVideoD" src="https://github.com/lcrampton/lcrampton.github.io/blob/master/Art/Pineapple.mp4?raw=true" type="video/mp4">
+						</video>
+					</div>
 				</div>
 				<div class="grid-item">
-					<p>Make Tostones, Not War</p><br>
-					<div class="bc-embed">
+					<p>Make Tostones, Not War</p>
+					<p>2022</p>
+					<div>
 						<video id="artVideoC" src="https://github.com/lcrampton/lcrampton.github.io/blob/master/Art/Banana%20Clip%20Animation%203.mp4?raw=true" type="video/mp4">
 						</video>
 					</div>
@@ -178,15 +192,36 @@
 				<div class="grid-item colorBlock">
 				</div>
 			</div>
-		
+		</section>
+		<section>
+			<h2>Two-Dimensional Projects</h2>
+			<div class="grid-container-odd">
+				<div class="grid-item colorBlock">
+				</div>
+				<div class="grid-item">
+					<p>Overton Distension</p>
+					<p>2022</p>
+					<img src="https://github.com/lcrampton/lcrampton.github.io/blob/master/Art/Overton%20Distension%20Cover.png?raw=true">
+				</div>
+				<div class="grid-item">
+					<p>I cannot see you smile.</p>
+					<p>2020</p>
+					<div>
+						<img src="https://github.com/lcrampton/lcrampton.github.io/blob/master/Art/I%20Cannot%20See%20You%20Smile%20cover%20art.png?raw=true">
+					</div>
+				</div>
+			</div>
+		</section>
 		<script> 
 			const aVideo = document.getElementById("artVideoA");
 			const bVideo = document.getElementById("artVideoB");
 			const cVideo = document.getElementById("artVideoC");
-			aVideo.addEventListener("click", showControls);
-			bVideo.addEventListener("click", showControls);
-			cVideo.addEventListener("click", showControls);
-			function showControls() {
+			const dVideo = document.getElementById("artVideoD");
+			aVideo.addEventListener("click", showControlsA);
+			bVideo.addEventListener("click", showControlsB);
+			cVideo.addEventListener("click", showControlsC);
+			dVideo.addEventListener("click", showControlsD);
+			function showControlsA() {
 				if (aVideo.paused == true) {
 					aVideo.controls = true;
 					}
@@ -194,6 +229,8 @@
 					aVideo.pause();
 					aVideo.controls = false;
 					}
+				};
+			function showControlsB() {
 				if (bVideo.paused == true) {
 					bVideo.controls = true;
 					}
@@ -201,6 +238,8 @@
 					bVideo.pause();
 					bVideo.controls = false;
 					}
+				};
+			function showControlsC() {
 				if (cVideo.paused == true) {
 					cVideo.controls = true;
 					}
@@ -208,7 +247,16 @@
 					cVideo.pause();
 					cVideo.controls = false;
 					}
-			};
+				};
+			function showControlsD() {
+				if (dVideo.paused == true) {
+					dVideo.controls = true;
+					}
+				else {
+					dVideo.pause();
+					dVideo.controls = false;
+					}
+				};
 		</script>
 	</body>
 </html>
