@@ -2,118 +2,130 @@
 <html>
 	<head>
 		<meta charset="utf-8">
-		<title>My Art</title>
+		<title>Crampton: Rèsumè</title>
 		<link rel="shortcut icon" href="https://raw.githubusercontent.com/lcrampton/lcrampton.github.io/master/Github_Images/Website%20Favicon.ico">
 		<style>
 			body {
-				padding-left: 10%;
-				padding-right: 10%;
-				padding-top: 1%;
-				background: #fefcff;
-				font-family: monospace;	}
+				padding: 10%;
+				background: lavender;
+				font-family: calibri, sans-serif;	}
+				
+			ul {
+				font-family: calibri, sans-serif;
+				list-style: square;
+				text-align: justify;
+				margin-top: 0px;
+				margin-bottom: 25px;
+				padding-right: 20%;	}
+			p {
+				font-family: calibri, sans-serif;
+				margin-bottom: 5px;	}
 			a {
-				text-decoration: none;
-				color: black;	}
-			a:hover, a:active, a:focus {
-				color: #fefcff;
-				background-color: #CD3232;		}
-			h1 {
-				text-align: left;
-				font-size: 3em;
-				letter-spacing: 18px;
-				font-family: monospace;
-				line-height: 2em;	}
-			h2 {
-				text-align: left;
-				font-family: monospace;
-				line-height: 1.2em;	
-				margin-top: 2em;
-				margin-bottom: 1.2em;}
-			p	{
 				color: black;
-				text-align: left;
-				font-size: 16px;
-				font-family: monospace;
-				letter-spacing: 3px;
-				line-height: 1.5em;	}
-			hr	{
-				height: 2px;
-				width: 40%;
-				float: left;
-				border-radius: 1.5em;
-				border-width: 0px;
-				background-color: #CD7F32;
-				background-image: linear-gradient(90deg, #FDCF32 6%, #CD3232 40%, #CD7F32 80%)	}
-			video{
-				background-color: #fefcff;
-				height: 360px;
-				width: auto;
+				text-decoration: none;
 				}
-			img{
-				background-color: #fefcff;
-				height: 360px;
-				width: auto;
+			a:hover, a:active, a:focus {
+				background-color: rgb(160,256,200);
 				}
+			h1 {
+				text-align: center;
+				font-family: Century, georgia, serif;
+				text-decoration: underline sienna dotted;
+				font-style: italic;				}
+			h1 a {
+				text-decoration: underline sienna dotted;
+				font-family: Century, georgia, serif;	}
+			h2 {
+				text-align: center;
+				font-family: Century, georgia, serif;	}
+			h3 {
+				font-family: Century, georgia, serif;	}
+			h4  {
+				text-align: center;	
+				font-family: Century, georgia, serif;
+				color: black;	}
+			table {
+				font-family: calibri, sans-serif;	}
+			img { 
+				margin-left: 20px;	}
 			nav {
 				letter-spacing: 4px;
 				text-align: right;
-				font-family: monospace;
+				font-family: Century, georgia, serif;
 				list-style: none;  }
 			nav a {
 				text-decoration: none;
 				font-size: 1.25em;
-				color: black;  }
-				
+				color: sienna;  }
+			nav a:hover {
+				background-color: rgb(160,256,200);	}
 			.dropbtn {
-				background-color: #fefcff;
-				color: black;
+				background-color: lavender;
+				color: sienna;
 				text-align: justify;
-				font-family: monospace;
+				font-family: Century, Georgia, serif;
 				letter-spacing: 5px;
 				font-size: 1.1em;
 				border: none;	}
-			.dropbtn:hover {
-				color: #fefcff;	}
 			.dropdown {
 				position: relative;
 				display: inline-block;	}
 			.dropdown-content {
 				display: none;
 				position: absolute;
-				background-color: #CD7F32;
+				background-color: rgb(246, 256, 242);
 				min-width: 175px;
 				z-index: 1;	}
 			.dropdown-content a {
-				color: black;
+				color: sienna;
 				padding: 30px 30px;
 				text-align: left;
 				display: block;	}
-			.dropdown-content a:hover {
-				color: #fefcff;
-				background-color: #CD3232;	}
+			.dropdown-content a:hover {background-color: rgb(240,240,240);	}
 			.dropdown:hover .dropdown-content {display: block;}
-			.dropdown:hover .dropbtn {
-				color: #fefcff;
-				background-color: #CD3232;	}
-			
-			.grid-container-odd	{
-				display: grid;
-				grid-template-columns: 1px auto auto;
-				margin-top: 1.2em;}
-			.grid-container-even	{
-				display: grid;
-				grid-template-columns: auto auto 1px;
-				margin-top: 1.2em;}
-			.grid-item {
-				border-radius: 1.5em;
-				margin: 1.2em;
-				padding: .8em;	}
-			.colorBlock {
-				background-image: linear-gradient(0deg, #F0AF32 6%, #CD3232 40%, #CD7F32 80%);
-				margin: 0px;
-				padding: 0px;
-				border-radius: 0px;	}
+			.dropdown:hover .dropbtn {background-color: rgb(160,256,200);	}
+			.location {
+				float: right;
+				}
+			.date {
+				float: right;
+				}
+			.position {
+				font-style: italic;
+				}
+			.section {
+				text-align: center;
+				color: sienna;
+				margin: 2em;
+				}
 				
+			.rightFigure { 
+				float: right;
+				position: relative; 
+				overflow: hidden;
+			}
+			.rightFigCaption { 
+				position: absolute; 
+				background: rgba(0,0,0,0.75); 
+				color: white; 
+				padding: 10px 20px; 
+				opacity: 0;
+				bottom: 0; 
+				right: -30%;
+				-webkit-transition: all 0.6s ease;
+				-moz-transition:    all 0.6s ease;
+				-o-transition:      all 0.6s ease;
+			}
+			.rightFigure:hover figcaption {
+				opacity: 1;
+				right: 0;
+			}
+			
+			#techtable {
+				line-height: 1.4em;	}
+			#techtable td {
+				padding-right: 12px;	}
+			
 		</style>
 	</head>
 	<body>
@@ -121,17 +133,17 @@
 		<nav>
 			<a href="https://lcrampton.github.io">Home</a>
 			<div class="dropdown">
-				<button class="dropbtn">Culture<sub>+</sub></button>
-				<div class="dropdown-content">
+			<button class="dropbtn">Culture<sub>+</sub></button>
+			<div class="dropdown-content">
 					<a href="https://lcrampton.github.io/Culture.html">Culture Review</a>
-					<a href="https://lcrampton.github.io/concert-calendar.html">Concerts</a>
-					<a href="https://lcrampton.github.io/Food.html">Food</a>
-					<a href="https://lcrampton.github.io/Recipes.html">Cookbook</a>
-				</div>
-				</div>
+				<a href="https://lcrampton.github.io/concert-calendar.html">Concerts</a>
+				<a href="https://lcrampton.github.io/Food.html">Food</a>
+				<a href="https://lcrampton.github.io/Recipes.html">Cookbook</a>
+			</div>
+			</div>
 			<div class="dropdown">
-				<button class="dropbtn">Politics<sub>+</sub></button>
-				<div class="dropdown-content">
+			<button class="dropbtn">Politics<sub>+</sub></button>
+			<div class="dropdown-content">
 				<a href="https://lcrampton.github.io/Message.html">The Message</a>
 				<a href="https://lcrampton.github.io/Platform.html">Platform</a>
 			</div>
@@ -145,118 +157,186 @@
 				<a href="https://lcrampton.github.io/Rèsumè.html">Rèsumè</a>
 				<a href="https://lcrampton.github.io/Contact.html">Contact</a>
 			</div>
-		</nav><br><br>
-
-		<h1>My Art</h1>
+		</nav>
 		
-		<hr><br>
-		<section>
-			<h2>Three-Dimensional Projects</h2>
-			<div class="grid-container-odd">
-				<div class="grid-item colorBlock">
-				</div>
-				<div class="grid-item">
-					<p>The Circuit City City</p>
-					<p>2021-2022</p>
-					<div>
-						<video id="artVideoA" src="https://github.com/lcrampton/lcrampton.github.io/blob/master/Art/Circuit%20City%20Tour%20Export.mp4?raw=true" type="video/mp4">
-						</video>
-					</div>
-				</div>
-				<div class="grid-item">
-					<p>Covid Test</p>
-					<p>2022</p>
-					<div>
-						<video id="artVideoB" src="https://github.com/lcrampton/lcrampton.github.io/blob/master/Art/CovidTest.mp4?raw=true" type="video/mp4">
-						</video>
-					</div>
-				</div>
-			</div>
-			<div class="grid-container-even">
-				<div class="grid-item">
-					<p>Pineapple</p>
-					<p>2022</p>
-					<div>
-						<video id="artVideoD" src="https://github.com/lcrampton/lcrampton.github.io/blob/master/Art/Pineapple.mp4?raw=true" type="video/mp4">
-						</video>
-					</div>
-				</div>
-				<div class="grid-item">
-					<p>Make Tostones, Not War</p>
-					<p>2022</p>
-					<div>
-						<video id="artVideoC" src="https://github.com/lcrampton/lcrampton.github.io/blob/master/Art/Banana%20Clip%20Animation%203.mp4?raw=true" type="video/mp4">
-						</video>
-					</div>
-				</div>
-				<div class="grid-item colorBlock">
-				</div>
-			</div>
-		</section>
-		<section>
-			<h2>Two-Dimensional Projects</h2>
-			<div class="grid-container-odd">
-				<div class="grid-item colorBlock">
-				</div>
-				<div class="grid-item">
-					<p>Overton Distension</p>
-					<p>2022</p>
-					<img src="https://github.com/lcrampton/lcrampton.github.io/blob/master/Art/Overton%20Distension%20Cover.png?raw=true">
-				</div>
-				<div class="grid-item">
-					<p>I cannot see you smile.</p>
-					<p>2020</p>
-					<div>
-						<img src="https://github.com/lcrampton/lcrampton.github.io/blob/master/Art/I%20Cannot%20See%20You%20Smile%20cover%20art.png?raw=true">
-					</div>
-				</div>
-			</div>
-		</section>
-		<script> 
-			const aVideo = document.getElementById("artVideoA");
-			const bVideo = document.getElementById("artVideoB");
-			const cVideo = document.getElementById("artVideoC");
-			const dVideo = document.getElementById("artVideoD");
-			aVideo.addEventListener("click", showControlsA);
-			bVideo.addEventListener("click", showControlsB);
-			cVideo.addEventListener("click", showControlsC);
-			dVideo.addEventListener("click", showControlsD);
-			function showControlsA() {
-				if (aVideo.paused == true) {
-					aVideo.controls = true;
-					}
-				else {
-					aVideo.pause();
-					aVideo.controls = false;
-					}
-				};
-			function showControlsB() {
-				if (bVideo.paused == true) {
-					bVideo.controls = true;
-					}
-				else {
-					bVideo.pause();
-					bVideo.controls = false;
-					}
-				};
-			function showControlsC() {
-				if (cVideo.paused == true) {
-					cVideo.controls = true;
-					}
-				else {
-					cVideo.pause();
-					cVideo.controls = false;
-					}
-				};
-			function showControlsD() {
-				if (dVideo.paused == true) {
-					dVideo.controls = true;
-					}
-				else {
-					dVideo.pause();
-					dVideo.controls = false;
-					}
-				};
-		</script>
+<h1>Lucas Crampton</h1>
+<!--<h2>Washington, DC</h2>-->
+		
+<div class="section">_____</div>
+		
+<h3>EDUCATION</h3>
+<p>The George Washington University, Elliott School of International Affairs	<span class="location">Washington, DC</span><br>
+Bachelor of Arts International Affairs, Global Public Health concentration, Sustainability minor	<span class="date">2014-2017</span><br>
+University Honors Program | Presidential Scholarship | Overall GPA: 3.5 | Major GPA: 3.8 | Cum Laude <br>
+Coursework: Econometrics; Rising Africa; Global Climate Change; Int’l Political Economy; Humanitarianism<br>
+CIEE Study Abroad - Gaborone Arts and Sciences at University of Botswana	<span class="date">July-December 2016</span></p>
+
+<div class="section">_____</div>
+
+<h3>EXPERIENCE</h3>
+<p>
+<a href="https://www.turnoutpac.org/">Progressive Turnout Project</a>			<span class="location">Allentown, PA</span><br>
+<span class="position">Campaign Fellow</span>												<span class="date">August 2022-</span><br></p>
+<ul>
+	<li>Campaign for <a href="https://www.pahouse.com/schlossberg">Mike Schlossberg</a> in Pennsylvania's 132nd state house district.</li>
+</ul>
+
+<p>
+<a href="https://www.nickmillerforpa.com/">Nick Miller for PA State Senate</a>			<span class="location">Allentown, PA</span><br>
+<span class="position">Field Director</span>												<span class="date">March-May 2022</span><br></p>
+<ul>
+	<li>Strategized to collect ballot petition signatures under abbreviated petitioning period, collected ballot petition signatures door-to-door, managed field volunteers</li>
+	<li>Segmented voter lists and turfs in NGP VAN, the DNC’s proprietary voter database</li>
+	<li>Nick <a href="https://www.heraldtribune.com/elections/results/race/2022-05-17-state_senate-D-PA-39660/">won</a> his primary by 40 votes, or 0.2%.</li>
+</ul>
+
+<p>
+<a href="https://www.sunnyforuppermac.com/">Sunny Ghai for Upper Macungie Township Supervisor</a>			<span class="location">Fogelsville, PA</span><br>
+<span class="position">Campaign Volunteer</span>												<span class="date">September 2021-October 2021</span><br></p>
+<ul>
+<li>Canvassed potential voters door-to-door, managed SMS mass-messaging, requested elections records</li>
+<li>Sunny <a href="https://www.mcall.com/news/elections/results/">won</a> by 224 votes, or 3.8%.</li>
+</ul>
+
+<p><a href="https://www.kidney.org/">National Kidney Foundation</a>		<span class="location">Washington, DC</span><br>
+<span class="position">Community Outreach Coordinator</span>			<span class="date">February 2019-July 2021</span><br></p>
+<ul>
+<li>Composed Pardot email blasts—including monthly newsletters, program announcements, and events marketing—that reached up to 3,500 people.&nbsp Utilized html skills to edit emails from the backend.</li>
+<li>Pivoted programs to maintain momentum against kidney disease while tracking spread of and response to Covid-19.&nbsp Informed decisions on event cancellations and protocols</li>
+<li>Managed and input data including accounts payable and receivable in eRequester and Salesforce</li>
+<li>Planned <a href="https://kidneydunkdc.org/">Wizards Organ Donation Awareness Tournament</a>, a charity 3-v-3 tournament at Capital One Arena</li>
+<li>Planned <a href="https://www.kidney.org/events/social-event/2021-congressional-reception">Congressional Reception</a> that recognized champions of organ donation.&nbsp Kept reception webpage updated with sponsor and speaker information</li>
+</ul>
+
+<p><a href="https://thebrandguild.com/">The Brand Guild</a>		<span class="location">Washington, DC</span><br>	<span class="date">September 2014-August 2021</span>
+<span class="position">Contractor (intermittent work)</span><br></p>
+<ul>
+<li>Ensured smooth running of events: checked in guests, controled crowds, placed signage and activities, tended fires, ran promotional tables, attended to performers and vendors, placed furniture, problem-solved
+</ul>
+
+<p>
+Robert Half OfficeTeam			<span class="location">Washington, DC</span><br>
+<span class="position">Events Support at National Kidney Foundation</span>			<span class="date">September 2018-February 2019</span><br></p>
+<ul>
+<li>Wrote grants for, mapped, and organized the Kidney Walk; marketed on community calendars and web spaces</li>
+<li>Solicited donations, planned for <a href="https://kidneyballdc.org/">Kidney Ball</a> silent auction; learned GiveSmart platform, assisted with run-of-show</li>
+</ul>
+
+<p>
+Avila Catering			<span class="location">Washington, DC</span><br>
+<span class="position">Cook and Driver</span>			<span class="date">March-June 2018</span><br></p>
+<ul>
+<li>Executed events on site, including setup, plating, problem-solving, loading, and managing servers
+<li>Prepared and re-warmed foods in large quantities while maintaining quality and monitoring safety
+<li>Troubleshot communications and workflow system on Trello.com, providing supervisors with constructive feedback</ul>
+
+<p>Range by Bryan Voltaggio		<span class="location">Washington, DC</span><br>
+<span class="position">Line Cook/Tournant</span>		<span class="date">Sept 2017-March 2018</span><br></p>
+<ul>
+<li>Rotated around stations, worked cleanly and quickly under pressure, prepared appealing and delicious food
+<li>Pastry: produced, prepared, and plated breads and desserts
+<li>Raw Bar: shucked oysters quickly and thoroughly, cooked and handled shellfish safely, plated cheese and charcuterie boards, produced cured charcuterie sausages
+<li>Pizza/Salad: cook Neapolitan-style pizzas in wood and gas oven, assemble aesthetically pleasing salads</ul>
+
+<p>GWU Division of Operations		<span class="location">Washington, DC</span><br>
+<span class="position">Campaign GW Intern</span> 	<span class="date">September 2014-May 2017</span><br></p>
+<ul>
+<li>Informed students and parents at tabling events about university’s sustainability practices
+<li>Communicated and collaborated with peers to encourage sustainable behavior among student body
+<li>Planned events, including Earth Hour Concert, and coordinated twenty-seven student volunteers 
+<li>Edited monthly update that reaches the inboxes of over eighteen thousand students, staff, and faculty
+</ul>
+
+<p>GW Solar Institute		<span class="location">Washington, DC</span><br>
+<span class="position">Solar Scholar – Undergraduate Research Intern</span>     <span class="date">January-July 2016</span><br></p>
+<ul>
+<li>Formulated public policy recommendations to encourage adoption of solar energy
+<li>Designed infographic illustrating electricity subsidies’ effects on solar power adoption
+<li>Conducted qualitative and quantitative research on community solar installations on brownfield sites and related issues utilizing LexisNexis, databases, spreadsheets, and industry reports
+<li>Gathered and analyzed data from government databases on technology, pricing, and program costs
+</ul>
+
+<p>American National Standards Institute		<span class="location">Washington, DC</span><br>
+<span class="position">Environmental Accreditation Intern</span>		<span class="date">July-August 2015</span><br></p>
+<ul>
+<li>Research Conformity Assessment Body (CAB) procedures and requirements
+<li>Prepare briefings for Greenhouse Gas Validation/Verification Accreditation Committee meeting
+<li>Evaluate similarities between ISO and UNFCCC standards for CABs and Designated Operating Entities
+</ul>
+
+<p>Alternative Breaks		<span class="location">Ecuador and Guatemala</span><br>
+<span class="position">Trip Participant</span>						<span class="date">September 2014-March 2017</span><br></p>
+<ul>
+<li>Contributed to sustainable construction of K-12 school in rural Guatemala
+<li>Remained culturally sensitive and learned about local customs and history
+<li>Participated with ten students in weekly meetings to develop fundraising efforts and organize trips
+<li>Responded to community needs in partnership with Tandana and Long Way Home Foundations</ul>
+<p><span class="position">Trip Leader</span><span class="date">April 2015-May 2016</span><br>
+		<span class="location">Tahlequah, Oklahoma</span></p>
+<ul>
+<li>Worked with bilingual Head Start program to preserve Cherokee culture
+<li>Fundraised $8,000 through letter-writing, grant applications, profit-shares, and bake sales
+<li>Selected, coordinated, and supervised a dozen participants at weekly meetings and on service sites
+</ul>
+
+<p>WRGW radio		<span class="location">Washington, DC</span><br>	<span class="date">September 2014-May 2017</span>
+<span class="position">Show Host and Production Team</span><br></p>
+<ul>
+	<li>Spoke on-air and operated mixing board for weekly international music show
+	<li>Produced brief audio clips using Adobe Audition to advertise shows and events
+	<li>Mixed vocals and live instruments at live open-mic night and deejayed other student events
+</ul>
+
+<p>2012 Obama Election Campaign	<span class="location">Allentown, PA</span><br>	
+<span class="position">Volunteer</span><span class="date">Summer-Fall 2012</span></p>
+<ul>
+	<li>Contacted voters over the phone and in person to influence opinions and gather data
+	<li>Engaged attendees at Michelle Obama rally speech
+</ul>
+
+<div class="section">_____</div>
+
+<h3>SKILLS</h3>
+	<figure class="rightFigure">
+		<img src="https://raw.githubusercontent.com/lcrampton/lcrampton.github.io/master/Github_Images/Travel-Graphic.png" width="600px" align="right" alt="bubbles showing Lucas' travel paths">
+		<figcaption class="rightFigCaption">Lucas' travel paths 2015-21</figcaption>
+	</figure>
+<p><strong><a href="https://www.duolingo.com/profile/lccrampton">Languages</a></strong><br>
+Spanish – Professional Working Proficiency<br>
+Portuguese – Limited Working Proficiency</p>
+<p><strong>Certifications</strong><br>
+Adult First Aid, AED, and CPR by the American Red Cross (August 2015-2017)<br>
+ServSafe Food Manager by Premier Food Safety (April 2018-2022)
+</p>
+<p><strong>Travel</strong><br>
+<ul>
+	<li>Led five peers on a ten-day trip from Gaborone through Johannesburg, Eswatini (then Swaziland), southern Mozambique (Maputo and Tofo Beach), and back</li>
+	<li>Traveled solo throughout Namibia for ten days, reaching Windhoek, Swakopmund, Sesriem/the Sossusvlei, and Walvis Bay</li>
+	<li>Authored travel guide sheets for each country, with an emphasis on safety</li>
+	<li>Budget backpacked solo for two months from Panama to Mexico <!--<span class="date">October-December 2021</span>--></li>
+</ul></p>
+
+<div class="section">_____</div>
+
+<h3>TECHNICAL</h3>
+<table id="techtable">
+	<tbody>
+		<tr><td align="right">Statistical Packages</td> <td>SAS, R, STATA</td></tr>
+		<tr><td align="right">Programming Exposure</td> <td>html, CSS, JavaScript</td></tr>
+		<tr><td align="right">Digital Audio Workstations</td> <td>Adobe Audition, ProTools</td></tr>
+		<tr><td align="right">Graphical</td> <td>Blender, Canva, Photopea</td></tr>
+		<tr><td align="right">Social Media</td> <td>Twitter, <a href="https://www.linkedin.com/in/cramptonlucas/">LinkedIn</a>, <a href="https://www.instagram.com/circuitcityyy/">Instagram</a>, Facebook, <a href="https://magookas.bandcamp.com/">Bandcamp</a></td></tr>
+		<tr><td align="right">Audio Equipment</td> <td>interfaces, microphones, mixers, PA systems, speakers, amplifiers</td></tr>
+	</tbody>
+</table>
+	
+<div class="section">_____</div>
+
+<h3>FIND ME ELSEWHERE</h3>
+<h4><a href="https://www.linkedin.com/in/cramptonlucas/">LinkedIn</a></h4>
+<h4><a href="https://circuitcity.bandcamp.com/">Bandcamp</a></h4>
+<h4><a href="https://magookas.bandcamp.com/">Other Bandcamp</a></h4>
+<h4><a href="https://lucascrapple.bandcamp.com/">Other Other Bandcamp</a></h4>
+		
 	</body>
 </html>
