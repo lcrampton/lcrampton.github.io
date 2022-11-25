@@ -2,126 +2,55 @@
 <html>
     <head>
         <meta charset="utf-8">
-        <title>Lucas: A Living Being</title>
-		<link rel="shortcut icon" href="https://raw.githubusercontent.com/lcrampton/lcrampton.github.io/master/Github_Images/Website%20Favicon.ico">
+        <title>The Message</title>
+		<link rel="shortcut icon" href="Github_Images/Website Favicon.ico">
         <style>
             body {
 				margin: 10%;
-				background: rgb(255, 235, 150);		}
+				background: rgb(150, 235, 256);
+				font-family: monospace;			}
 			h1 {
-				font-family: Heraldsquare Regular, garamond, Georgia, Times New Roman, serif;
-				font-size: 2.9em;	}
-			h2 {
-				font-family: Heraldsquare Regular, garamond, Georgia, Times New Roman, serif;
+				font-family: monospace;
+				font-size: 2.5em; }
+			table {
 				font-size: 2em;	}
-			h3 {
-				font-family: Heraldsquare Regular, garamond, Georgia, Times New Roman, serif;
-				font-size: 1.5em;	}
-			h4 {
-				font-family: Heraldsquare Regular, garamond, Georgia, Times New Roman, serif;
-				font-size: 1.25em;	}
 			p {
-				margin-left: 5%;
-				margin-right: 5%;
-				text-indent: 15px;
-				text-align: justify;
-				line-height: 1.25em;
-				font-family: Century, Georgia, serif;		}
+				margin-left: 2%;
+				font-family: Century, Georgia, serif;			}
 			p a {
 				text-decoration: none;
 				color: sienna; }
-			p a:hover {
-				background-color: rgb(160,256,200);		}
-			ul {
-				margin-left: 5%;
-				font-family: Century, Georgia, serif;	}
-			ul a {
-				text-decoration: none;
-				color: sienna;  }
-			ul a:hover {
-				background-color: rgb(160,256,200);	}
-			table	{
-				margin-left: 5%;
-				margin-right: 5%;
-				text-indent: 15px;
-				text-align: justify;
-				font-family: Century, Georgia, serif;	}
+			p a:hover, a:active, a:focus {
+				background-color: rgb(200,256,160);
+				}
 			table a {
 				text-decoration: none;
 				color: sienna; }
-			table a:hover	{
-				background-color: rgb(160,256,200);	}
-			img {
-				box-shadow: 10px 5px 5px gray;	}
+			table a:hover, a:active, a:focus {
+				background-color: rgb(200,256,160);		}
+			ul a:hover, a:active, a:focus {
+				background-color: rgb(200,256,160);				}
+			ul {
+				font-family: Century, Georgia, Times New Roman, serif;
+				margin-left: 3%;
+                list-style: square;				}
+			ul a {
+				text-decoration: none;
+				color: sienna; }
 			nav {
 				letter-spacing: 4px;
 				text-align: right;
 				list-style: none;  }
 			nav a {
 				text-decoration: none;
-				font-size: 1.25em;
+				margin-left: 8px;
+				font-family: Century, Georgia, serif;
+				font-size: 1.1em;
 				color: sienna;  }
 			nav a:hover {
-				background-color: rgb(160,256,200);	}
-				figure { 
-				margin-left: 0%;
-				display: block; 
-				float: left;
-				position: relative; 
-				overflow: hidden;
-			}
-			
-			.rightFigure { 
-				margin-bottom: 20px;
-				margin-left: 20px;	
-				display: block; 
-				float: right;
-				position: relative; 
-				overflow: hidden;
-			}
-			.rightFigCaption { 
-				position: absolute; 
-				background: rgba(0,0,0,0.75); 
-				color: white; 
-				padding: 10px 20px; 
-				opacity: 0;
-				bottom: 0; 
-				right: -30%;
-				-webkit-transition: all 0.6s ease;
-				-moz-transition:    all 0.6s ease;
-				-o-transition:      all 0.6s ease;
-			}
-			.rightFigure:hover figcaption {
-				opacity: 1;
-				right: 0;
-			}
-			.leftFigure { 
-				margin-bottom: 20px;
-				margin-left: 20px;	
-				display: block; 
-				float: left;
-				position: relative; 
-				overflow: hidden;
-			}
-			.leftFigCaption { 
-				position: absolute; 
-				background: rgba(0,0,0,0.75); 
-				color: white; 
-				padding: 10px 20px; 
-				opacity: 0;
-				bottom: 0; 
-				left: -30%;
-				-webkit-transition: all 0.6s ease;
-				-moz-transition:    all 0.6s ease;
-				-o-transition:      all 0.6s ease;
-			}
-			.leftFigure:hover figcaption {
-				opacity: 1;
-				left: 0;
-			}
-			
+				background-color: rgb(256,206,50);	}
 			.dropbtn {
-				background-color: rgb(255, 235, 150);
+				background-color: rgb(150, 235, 256);
 				color: sienna;
 				text-align: justify;
 				font-family: Century, Georgia, serif;
@@ -134,7 +63,7 @@
 			.dropdown-content {
 				display: none;
 				position: absolute;
-				background-color: lightgrey;
+				background-color: rgb(200, 245, 256);
 				min-width: 175px;
 				z-index: 1;	}
 			.dropdown-content a {
@@ -142,13 +71,12 @@
 				padding: 30px 30px;
 				text-align: left;
 				display: block;	}
-			.dropdown-content a:hover {background-color: rgb(160,256,200);	}
+			.dropdown-content a:hover {background-color: rgb(256,206,50);	}
 			.dropdown:hover .dropdown-content {display: block;}
-			.dropdown:hover .dropbtn {background-color: rgb(160,256,200);	}
-			.bc-embed {
-				float: left;
-				margin-right: 20px; }
-			.temp_hide { color: rgb(256, 236, 151);	}
+			.dropdown:hover .dropbtn {background-color: rgb(256,206,50);	}
+			.pics {
+				align: center;	}
+			
         </style>
     </head>
     <body>
@@ -156,217 +84,46 @@
 		<nav>
 			<a href="https://lcrampton.github.io">Home</a>
 			<div class="dropdown">
-				<button class="dropbtn">Culture<sub>+</sub></button>
-				<div class="dropdown-content">
-					<a href="https://lcrampton.github.io/Culture.html">Culture Review</a>
-					<a href="https://lcrampton.github.io/concert-calendar.html">Concerts</a>
-					<a href="https://lcrampton.github.io/Food.html">Food</a>
-					<a href="https://lcrampton.github.io/Recipes.html">Cookbook</a>
-				</div>
+			<button class="dropbtn">Culture<sub>+</sub></button>
+			<div class="dropdown-content">				
+				<a href="https://lcrampton.github.io/Culture.html">Music</a>
+				<a href="https://lcrampton.github.io/concert-calendar.html">Concerts</a>
+				<a href="https://lcrampton.github.io/Food.html">Food</a>
+				<a href="https://lcrampton.github.io/Recipes.html">Cookbook</a>
+			</div>
 			</div>
 			<div class="dropdown">
-				<button class="dropbtn">Politics<sub>+</sub></button>
-				<div class="dropdown-content">
-					<a href="https://lcrampton.github.io/Message.html">The Message</a>	
-					<a href="https://lcrampton.github.io/Platform.html">Platform</a>
-				</div>
+			<button class="dropbtn">Politics<sub>+</sub></button>
+			<div class="dropdown-content">
+				<a href="https://lcrampton.github.io/Message.html">The Message</a>
+				<a href="https://lcrampton.github.io/Platform.html">Platform</a>
+			</div>
 			</div>
 			<div class="dropdown">
-				<button class="dropbtn">About<sub>+</sub></button>
-				<div class="dropdown-content">
+			<button class="dropbtn">About<sub>+</sub></button>
+			<div class="dropdown-content">
 				<a href="https://lcrampton.github.io/story.html">Story</a>
 				<a href="https://lcrampton.github.io/MyMusic.html">Original Music</a>
 				<a href="https://lcrampton.github.io/MyArt.html">Original Art</a>
 				<a href="https://lcrampton.github.io/Rèsumè.html">Rèsumè</a>
 				<a href="https://lcrampton.github.io/Contact.html">Contact</a>
-				</div>
 			</div>
 		</nav>
         
-<h1>The Story So Far</h1>
-        
-        <figure class="rightFigure">
-			<img src="https://raw.githubusercontent.com/lcrampton/lcrampton.github.io/master/Github_Images/Lucas%20Pittsburgh%20Botanical.jpg" width="400px" alt="Lucas in Pittsburgh, PA.  VG Money took this picture.">
-			<figcaption class="rightFigCaption">Lucas in Pittsburgh, PA.&nbsp VG Money took this picture.</figcaption>
-		</figure>
+	<h1>Messages</h1>
+	<hr>
+	<table>
+		<tr><td class="date">16.11.22 | </td><td><a href="https://lcrampton.github.io/Messages/Election2022.html">Elections In Pennsylvania - 2022</a></td></tr>
+		<tr><td class="date">&nbsp9.&nbsp8.22 | </td><td><a href="https://lcrampton.github.io/Messages/Rain.html">Rainwater Is Unsafe To Drink</a></td></tr>
+		<tr><td class="date">27.&nbsp5.22 | </td><td><a href="https://lcrampton.github.io/Messages/Primary2022.html">Primaries in Pennsylvania - 2022</a></td></tr>
+		<tr><td class="date">&nbsp9.&nbsp4.22 | </td><td><a href="https://lcrampton.github.io/Messages/Ukraine2.html">Russian Troops Target Civilians in Ukraine</a></td></tr>
+		<tr><td class="date">&nbsp4.&nbsp3.22 | </td><td><a href="https://lcrampton.github.io/Messages/Ukraine.html">Putin May Groznyfy Ukraine</a></td></tr>
+		<tr><td class="date">30.&nbsp9.21 | </td><td><a href="https://lcrampton.github.io/Messages/MilleyNuclearWeapons.html">General Milley and Civilian Control of Nuclear Weapons</a></td></tr>
+		<tr><td class="date">&nbsp1.&nbsp9.21 | </td><td><a href="https://lcrampton.github.io/Messages/ClimateFatalism.html">Climate Fatalism and Free Will</a></td></tr>
+		<tr><td class="date">14.&nbsp1.21 | </td><td><a href="https://lcrampton.github.io/Messages/TheCapitol.html">The Capitol</a></td></tr>
+		<tr><td class="date">22.&nbsp8.20 | </td><td><a href="https://lcrampton.github.io/Messages/Statues.html">Statues</a></td></tr>
+		<tr><td class="date">&nbsp8.&nbsp8.20 | </td><td><a href="https://lcrampton.github.io/Messages/Masks.html">Masks</a></td></tr>
+	</table>
 		
-	<h2></h2>
-		<p>The year is <span id="thisYear">two thousand twenty-two</span>.&nbsp Howdy.&nbsp My name is Lucas.&nbsp <!--At some point we stop "going home" and start "visiting our parents."&nbsp--> I lived in the District of Columbia—where people ostensibly make policy—for six years.&nbsp It is Chocolate City, Hollywood for nerds, the smallest big city this side of the Mississippi, where the Mumbo sauce flows freely.&nbsp Now i do not live anywhere.</p>
-		<p>I grew up near Allentown, Pennsylvania.&nbsp I left for DC first to study, then to find work.&nbsp The Allentown area is an American microcosm, with declining industry, consolidating agriculture, booming warehousing, some high-technology, split politics, and immigration.&nbsp As a commercial pilot's son who moved towns twice, i used to find difficulty calling it "home" with a great deal of confidence.&nbsp But after twelve years nestled in the Appalachians, it earned the appellation.&nbsp When once i talked down on it, i now defend Allentown earnestly from verbal attack in the mean streets.&nbsp I shoot down pejoratives with statistical flak, historical gunfire, and anecdotal torpedoes.&nbsp Allentown is my family.&nbsp Nobody talks about her like that (except me).</p>
-		<p>I studied Global Health and Sustainability at the George Washington University.&nbsp When i graduated, i lived with my parents for a few months and	made <a href="https://ifbm.bandcamp.com/album/the-bibimbap-bop">The Bibimbap Bop</a> with Big Bill.</p>
-		<p>When the energy grew too restless, i packed a couple bags and took a bus back to Washington.&nbsp There, i began cooking at a restaurant owned by a celebrity chef.&nbsp After six months, i left to protest poor and unethical new management.&nbsp The restaurant folded ten days later.&nbsp I switched to a catering start-up.&nbsp My time there indulged my work ethic and tested my physical and mental endurance.&nbsp Prominently, i recall loading thirty-kilogram CaterGators up a steep hill into a van in a steady downpour while a rivulet flowed through the holes in my shoes.&nbsp Some people do this every week for decades.&nbsp I lasted three and a half months.</p>
-		
-		<div class="bc-embed"><iframe style="border: 0; width: 100%; height: 120px;" src="https://bandcamp.com/EmbeddedPlayer/album=367508234/size=large/bgcol
-		=ffffff/linkcol=de270f/tracklist=false/artwork=small/track=1124246603/transparent=true/" seamless><a 
-		href="http://ifbm.bandcamp.com/album/the-bibimbap-bop">The Bibimbap Bop by Investment Fraud Bingo Monday</a></iframe></div>
-		
-		<p>By July of 2018, i felt the need to make moves into the office world of Washington, to continue chasing the dream.&nbsp College was my springboard to enhance my power to make the world a better place.&nbsp The time i spent in kitchens and schlepping food was time i could do little to ameliorate the condition of the world's most vulnerable or to slow anthropogenic climate change.&nbsp So i leapt.&nbsp Without a job lined up, i amicably quit my catering job.&nbsp I dusted off the suit and passed out rèsumès.&nbsp After a few weeks, i became...an office temporary!&nbsp At least i was on the right ladder, though, even if i remained at the bottom rung.</p>
-		<p>My temporary workings bounced me around a few mailing assistant positions downtown before i landed at a long-term (three months) assignment at the <a href="https://www.kidney.org/">National Kidney Foundation</a> Serving the National Capital Area.&nbsp I worked on organizing their walk and gala events.&nbsp Also, they liked my writing enough to let me compose segments for their monthly newsletter.&nbsp As my termination date would grow nearer, they would extend my assignment.&nbsp This continued as they encouraged me to apply to the full-time Community Outreach Coordinator position.</p>
-		<p>And that is what i did!&nbsp Nearly two years after graduation, i had landed a real job that required a degree.&nbsp That walk took a long time—longer than i imagined while sitting in the library or the residence hall.&nbsp Whoever you are, wherever you are going, keep your eye on the future and never stop pushing.&nbsp Reflect on your strategy and work cleverly.&nbsp You are not above anything.&nbsp Have the patience to let your work speak for itself.&nbsp There are ten thousand lessons in peeling shrimp.</p>
-		<p>I worked that job longer than i thought i would, but i suppose the pandemic dashed everyone's plans.&nbsp I quit at the end of July, not realizing i was part of "The Great Resignation."&nbsp Now the future is a black box; every day is a mystery.</p>
-		<p>Lately, i have gotten political.&nbsp I helped my neighbor run for Township Supervisor in 2021—and we won.&nbsp Through that, i met a state representative, who offered work as a field director in a state senate primary.&nbsp We won that primary, and i rejoined the local Democratic effort attached to a state representative running for re-election in his newly-drawn district.&nbsp We won there, too, and <a href="https://lcrampton.github.io/Messages/Election2022.html">won a lot</a> across Pennsylvania.</p>
-		
-		<h2>College</h2>
-		<p>College is useful for challenging your beliefs, granting an ethical education, and sampling true intellectual rigor.&nbsp Is it the place to learn <em>skills</em>, like html or Spanish?&nbsp No.&nbsp A classroom with grades, career ramifications, and social pressures is not necessarily the nurturing, forgiving, open environment to quickly pick up hard skills.&nbsp You can learn these for free on the Internet.&nbsp In a world oversaturated with information, do yourself a favor and pick up some of the practical signals.</p>
-		<p>Universities are excellent for teaching you how to form opinions and arguments, and teaching you what is a reasonable standard of proof.&nbsp They are excellent for challenging your principles, and instilling a durable curiosity.</p>
-		<p>In 2019, an older colleague asked me if i had had fun in college.&nbsp When i hesitated, she said "Wow, really?"&nbsp Do most people have a lot of fun at college?&nbsp I suppose so.&nbsp And she seems kind of a southern belle-type, so there is that augmenting the gap in fun-having.&nbsp There are few richer environments—intellectually, socially, architecturally—than American universities.&nbsp And we make them rich to <em>en</em>rich the people who attend them.&nbsp That much is clear, but perhaps we gloss over how uniquely strange it is to form these societal microcosms in which everyone is the same age.</p>
-		<p>Maybe i missed it because I was in a years-long state of anxious paranoia.&nbsp I always had unfinished work, so i always felt like i was forgetting something.&nbsp I certainly began burning out during my fourth semester.&nbsp I would look at my partially-written papers and quickly avert my gaze, seek temporary refuge in some media, and slowly spiral into helplessness.&nbsp I once spent eight hours on a five-hundred word paper.&nbsp I do not have ADHD—ADHD is a congenital condition, and i had not always been that way.&nbsp This was a new deficit in focus due to unmitigated, undertreated depression and anxiety.&nbsp People who claimed to have a lot of spare time in college (and i do not doubt that they did) amazed me.</p>
-		<p>I would advise young folks in the college application process to start job-hunting first.&nbsp Look at job postings, whether they are something you want to do or not.&nbsp Then trace out your college tenure.&nbsp Three or four years, minus breaks, is not as long as it sounds.&nbsp Your career is forever.&nbsp <em><sub>But, Lucas...</sub></em> Forever.</p>
-		<!--<p>If i had not attended or completed college, i would likely be cooking in some restaurant.&nbsp I would have had to start back in the deli section of the grocery store, but moved as quickly and often as i could to the fryer at a wings place, then maybe running the stove, and then maybe snag a garde manger position at a nice restaurant.&nbsp From there, it is a straight shot over the course of a few years to the stove and sous chef.&nbsp I would have begun in spring 2014, and it is conceivable that by 2021, with the right work ethic, i could have made it.&nbsp Though this assumes that i jump over people.</p>-->
-			
-		<h2>Southern Africa</h2>
-		<p>In 2016, i took a sixteen-hour plane ride to Gaborone, Botswana for a semester abroad.&nbsp This is something i had really wanted to do, but it is also something we just do.&nbsp Doubt began swirling even before my plane ride and compounded after i landed.&nbsp Why was i here?&nbsp What was i to do with no language to learn and a bleak semi-arid zone stretched out before me?&nbsp I planned a trip east toward Mozambique, hoping that would be the cure, but ten to sixteen men jumped us in Johannesburg.&nbsp I ended up in a pretty dark place—an angry, despondent, anxious place—for a lot of that trip.&nbsp Even so, there are few elations like those of ziplining across gorges in Eswatini's Malolotja National Park, or spilling from an eight-hour cramped bus ride onto the pristine white sand of Tofo Beach.&nbsp Life can be a wild ride sometimes.</p>
-		
-		<figure class="rightFigure">
-			<img src="https://raw.githubusercontent.com/lcrampton/lcrampton.github.io/master/Github_Images/Red%20Dunes%20in%20Namibia.JPG" width="400px" alt="red dunes in the Sossusvlei">
-			<figcaption class="rightFigCaption">red dunes in the Sossusvlei</figcaption>
-		</figure>
-		
-		<p>My mood started clearing up in the second half of my stay, perhaps because it was coming to a close, perhaps because it is exceedingly difficult to frown while tracking rhinoceroses.&nbsp But i also made a ten-day excursion into Namibia.&nbsp <!--Donald Trump won the presidency and the motherfucking Republican party took the House and Senate while i was on the Atlantic coast in Swakopmund, which sullied an otherwise rapturous trip.&nbsp -->Namibia utterly changed me.&nbsp The Earth is a magnificent place.&nbsp I asked myself if the sky looks bigger in Africa; it is difficult to explain because it is difficult to comprehend.&nbsp Standing in the Sossusvlei, or sitting six feet from flamingos in Walvis Bay, or watching a thunderstorm tumble over the mountains around Windhoek and overtake you, you cannot shake the sense that this planet will one day rise up around you and swallow whole everything humanity holds dear.&nbsp The sun beats down.&nbsp The frigid ocean rolls in and out.&nbsp The wind blows orange sand across your arms and legs, scrubbing away the old you.</p>
-		
-		<h2>Pittsburgh</h2>
-		<p>I visited Pittsburgh in October 2018.&nbsp Pittsburgh is a neat city with blue collar vibes and educated energy.&nbsp At least several people of whom you have heard have origins in Pittsburgh: Rachel Carson, Andy Warhol, Mister Rogers, Mac Miller.&nbsp It is also the setting of the 1983 box-office smash <em>Flashdance</em>.&nbsp You might consider it the Grand Rapids of Pennsylvania.&nbsp While there, i had the opportunity to go for a couple runs.&nbsp Always run on vacation; these parts are some of the most memorable—not for being the best parts, but for the brain chemistry.&nbsp And what a way to explore a place.&nbsp Anyway, my man VG Money took me around town and showed me the Andy Warhol Museum, the botanical gardens, and some hip spots for pierogies and izakaya.</p>
-		
-		<h2>Tenallytown</h2>
-		<p>Tenleytown was home for nearly two years.&nbsp I watched seasons turn around the trees and schools and churches there.&nbsp The setting sun painted Fort Reno gold, scarlet, and orange.&nbsp The radio towers always blinked but never flinched.</p>
-		<p>I hope never to forget the characters of Tenley:</p>
-		<ul><li>Poodle Man</li>
-			<li><a href="http://mlesko.net/">Matthew Lesko</a></li>
-			<li>Black Man with Pit Bull</li>
-			<li>Nanny Wit Da Fanny</li></ul>
-		<p>A part of me hopes they will remember me.&nbsp Or at least think on occasion, "Whatever happened to that handsome runner?"&nbsp We are irreversibly tied to the geographic areas we and our forefathers inhabit, and i expect to make returns, both by obligation and accident.</p>
-		
-		<h2>Brightwood</h2>
-		<figure class="rightFigure">
-			<img src="https://raw.githubusercontent.com/lcrampton/lcrampton.github.io/master/Github_Images/Bobby%20at%20617.jpg" align="right" width="300px" alt="Bobby (dog) in our back yard">
-			<figcaption class="rightFigCaption">Bobby (dog) in our back yard</figcaption>
-		</figure>
-		<p>I lived in Petworth for a spell.&nbsp Then i lived in Glover Park for a triple spell.&nbsp Then i lived in Brightwood for a septuple spell.</p>
-		<p>Brightwood strikes an eclectic tone, in multiple ways.&nbsp It has a lot of different kinds of architecture and housing for a range of income groups.&nbsp There are low-income apartments on Georgia and Colorado Avenues, mansions on sixteenth street, aging wacky standalones and fresh luxury dwellings in Takoma, and series of duplexii on the cross-streets.&nbsp Black and white, cat and dog rub shoulders.&nbsp We spent so much time looking at our lawns that we forgot we lived in the shadow of DC's Eiffel Tower.</p>
-		<p>Here is where i weathered a pandemic and learned about <strong>mutual aid</strong>.&nbsp We had our four-legged friend, Bobby, over for a few days.</p>
-		
-		<h2>Walkabout</h2>
-		<p>I have always wondered what would happen if i started walking.&nbsp I had planned to try this for years, but a pandemic thwarted me when it became most possible.&nbsp Following a year and a half of postponement, i tried it in spite of everything.</p>
-		<p>I left Fogelsville in the middle of August with no reservations, but i was running low on antidepressants.&nbsp I made it most of the way to Reading before the sun began to set, and i caught a ride from a friendly couple in a minivan.&nbsp I stayed the night under and around the pagoda in a chilling drizzle.&nbsp I woke and walked halfway to Pottstown, and a man in a white utility van picked me up.&nbsp He dropped me a few blocks from the transit station and told me "You'll probably be okay."&nbsp I utilized public transit from there to downtown Philadelphia, where i slept on a college campus.&nbsp Transit took me—slowly—from there to Washington, DC, where i met a friend and recouped a little rest.</p>
-		<figure class="leftFigure">
-			<img src="https://raw.githubusercontent.com/lcrampton/lcrampton.github.io/master/Github_Images/Walkabout%20Lucas.jpg" align="right" width="300px" alt="Lucas on Walkabout">
-			<figcaption class="leftFigCaption">Lucas on Walkabout</figcaption>
-		</figure>
-		<p>A light rail and bus got me to Lorton, where i found a nice construction site with swivel chairs to stretch out for a night.&nbsp It was Saturday night, so i figured no construction crew would show up early on a Sunday, and i could sleep with impunity at least until morning.&nbsp Nevertheless, shoveling sounds put the fear of discovery in me before 0800.&nbsp I slinked out and around the back, stepped into shin-deep mud, and hopped the fence.</p>
-		<p>Lorton happens to be the northern terminus of the daily Auto Train to Orlando.&nbsp Unfortunately, i did not know that at the time.&nbsp I walked south near the rails and watched the northbound train roll slowly into the station in the morning.&nbsp I walked a lot that day, and ended up along I-95 with a thumb out.&nbsp Harold (name changed) picked me up, and the evening was still young.&nbsp He bought me chili at the Hard Times Cafe, took me to a car meet, and dropped me in Richmond the next day and made sure i got on a bus.&nbsp This series of buses is where my rope ran out.&nbsp I fled the road for my aunt in Atlanta, and flew back to Newark after ten days on walkabout.</p>
-		<p>I needed a mental tune-up.&nbsp I told someone "I am not done," and i was not.&nbsp I volunteered briefly at an animal shelter.&nbsp My father and i embraced anti-lawn action and buried swathes of his lawn in cardboard and compost.&nbsp I also got therapy.&nbsp I spent two months convalescing and helping my neighbor flip a local elected office for more responsive local governance.&nbsp We happened to win our race, and the exposure to local politics was itself an education.
-		</p>
-		
-		<h2>Backpacking Solo In Central America</h2>
-			<figure class="rightFigure">
-				<iframe width="560" height="315" src="https://www.youtube.com/embed/jr3D6byMeuw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-			<figcaption class="rightFigCaption">Lucas jumps into Lake Atitlán.</figcaption>
-			</figure>
-		<p>I landed in Panama City on Halloween; my gate agent at Newark Liberty International had dressed as Dracula.&nbsp In Panama, i would seek out nonprofits that needed volunteers, and continue searching in Costa Rica.&nbsp This would ultimately prove fruitless.&nbsp But travel is the teacher of all subjects, professor in all departments.&nbsp There is no wasting time on the road.</p>
-		<p>I worked my way from Panama City to Mexico City over the course of the next two months.&nbsp At La Fortuna, Costa Rica, i swam in a volcanic crater.&nbsp In Granada, Nicaragua, i ran the dance floor late into the night.&nbsp Before leaving Nicaragua, i got lost on Volcán Telica, but stumbled through wild brush to watch the sun set.&nbsp In Honduras, i spoke with Axel in La Tigra National Park, and assured him that if he learned English, his hair would not turn blond.&nbsp In San Salvador, i watched intently while ladies prepared pupusas, then budged in and formed them with my own hands.&nbsp In Guatemala (for the second time), i made Canadian friends around Lake Atitlán and jumped off a cliff.&nbsp In Mexico, i took a boat ride through a magnificent canyon and ate a chili-fried grasshopper.</p>
-		
-		<h2>Being Back</h2>
-		<p>Twenty twenty-one was a year of displacement and interstice; 2022 continues in that spirit, but i hope to settle soon.</p>
-		<p>Soon after returning to the United States, Omicron kicked into top gear.&nbsp I traveled to Nashville during New Year's, and somewhere along the way, the virus caught me.&nbsp Despite two Johnson-and-Johnson vaccines, it made me cough a dry cough, gave me a migraine, and submerged my sinuses.&nbsp But i slept long sleeps, and it mostly cleared up within ten days—mostly.&nbsp As of the middle of February, i still could not smell much for long.&nbsp By now, i believe my sense of smell is back, but many scents smell <em>different</em>.</p>
-		<p>By now, the people for whom i was most worried about contracting the virus have contracted the virus, and survived.&nbsp I want to say it is over, but it is not; i am still afraid of catching the damn thing again.&nbsp Excuse my French.&nbsp But certainly we who acted in the collective interest and masked, distanced, avoided gatherings, and got vaccinated have earned the privilege of ire towards those who did not, and prolonged and deepened this pandemic.&nbsp I survived coronavirus disease 2019, and i was able to work from home, and, frankly, did okay during the last two years.&nbsp But i will never be twenty-five again.&nbsp Maybe i did not want to spend that youth building puzzles or watching television on warm Saturday nights.&nbsp I had envisioned that part of my life differently, and deferred that vision.&nbsp I would have liked to meet new people.</p>
-		<p>But such are personal gripes—merely socio-cultural.&nbsp We cannot forget the <span id="CovidGlobalDeaths">6,318,588</span> people lying dead from the disease.&nbsp Or the countless other disturbances in the global socio-economic fabric of life.&nbsp Without doubt, political considerations, gullibility, and callousness have exacerbated this omnicrisis.
-		</p>
-		
-		<h2>Chicago</h2>
-		<figure class="leftFigure">
-			<img src="https://github.com/lcrampton/lcrampton.github.io/blob/master/Github_Images/Chicago.jpg?raw=true" align="right" width="400px" alt="Chicago seen from the north along the shore of Lake Michigan">
-			<figcaption class="leftFigCaption">See the lovely lakes.</figcaption>
-		</figure>
-		<p>I visited Chicago in June 2022.&nbsp I was there to help Big Bill move, but also to see Chicago for the first time and to party.</p>
-		<p>Upon arrival, I quickly began hearing about the Chi-town's faults and shortcomings as a city: it is too spread out, it lacks a scene, the transit system leaves something to be desired.&nbsp A moniker of "Big Detroit" might prove apt.&nbsp And the whole city had a smell about it, which i assume came off the lake.&nbsp But maybe i have been out of town for too long.</p>
-		<p>We took a refreshing dip in the lake and stumbled headfirst into a <a href="http://chicagonakedride.org/basics">naked bike ride</a> that first night.&nbsp I went for a little run and discovered the beaches, a real asset.&nbsp The Chicago pride parade proceeded across my path home.&nbsp A friendly man leaned out in front of me and wished me a "Happy Pride, you pretty bitch."&nbsp Pride parades are a good thing.&nbsp One can neither arrive overdressed nor underdressed.&nbsp Only humanity and comfort are possible there.&nbsp Perhaps Chicago soaks up alternative people and LGBT people from the surrounding areas.&nbsp This concentration of counter-culture is another asset.</p>
-		<p>Could i live in Chicago?&nbsp It is probably not for me.&nbsp But i had a good time there and i have family and friends there.&nbsp I left some things undone—primarily partying—so i would like to complete the circuit and <a href="https://www.youtube.com/watch?v=G6aTwKNSwGU">light it up</a>.</p>
-		
-	<br><br>
-	<h1>Themes</h1>
-		
-		<h2>Buddhism</h2>
-		<p>Eastern philosophy came into my life at a young age via the martial arts.&nbsp My senseis emphasized the ethical and philosophical sides of the martial arts, inspired especially by Bruce Lee.&nbsp It was far from enough to become strong.&nbsp Without direction, you will run all of your strength off the path.&nbsp They did not want a couple hundred Cobra Kai running around testing all of their strikes and holds on other teens and children, because they were good people (and that would create...liabilities).&nbsp Nearly as often as they instructed us how to quickly break wrists and inflict acute pain, they guided us in group chats toward the modest way of the peaceful warrior and intelligent self-defense.</p>
-		<p>It caught on with me, and i <a href="http://www.buddhanet.net/pdf_file/scrndhamma.pdf">read</a> <a href="https://terebess.hu/zen/101ZenStones.pdf">some</a> <a href="https://www.goodreads.com/book/show/514210.The_Way_of_Zen">books</a>.&nbsp The wisdom in it rings true.&nbsp The first Noble Truth—that life entails suffering; that you will encounter aging, sickness, and death; that <em>shit happens</em>—grows increasingly salient as one enters adulthood and as the twenty-first century world unfolds and unravels.&nbsp <!--Life is going to hit us with many blows.-->
-		<p>Maybe i am not a <em>Buddhist</em>.&nbsp I do not really buy into reincarnation or anything supernatural.&nbsp If everything is impermanent and there is no self, what is reincarnated?&nbsp But where in the core of the system is a mention of reincarnation?&nbsp It does not appear explicitly in the Noble Truths, nor the marks of existence, nor in the prescriptive Eightfold Path.&nbsp The Buddha set out to solve the problem of <em>dukkha</em>—existential suffering.&nbsp He did not set out to uncover the mysteries of the universe.&nbsp He was primarily interested in helping us remove the arrows from our chests.</p>
-		<p>We will end our lives with nothing, and we can uncover our own liberation if we learn to desire nothing.&nbsp 
-		</p>
-		
-		<h2>Atheism</h2>
-		<p>I grew up in Methodist churches thinking often about God and Jesus of Nazareth.&nbsp I have known what it is like to fear God and admire the Bible.</p>
-		<p>The claims of the Christian faith began to really unravel for me, honestly, with my first exposure to the most commonly-cited arguments and counter-arguments for and against the existence of God as presented in <a href="https://www.thriftbooks.com/w/50-philosophy-ideas-you-really-should-know-ideas-you-really-need-to-know_ben-dupr_ben-dupre/267324/item/12545176/?mkwid=W0CF7rqG%7cdc&pcrid=76897251305754&pkw=&pmt=be&slid=&product=12545176&plc=&pgrid=1230353754879173&ptaid=pla-4580496733720783&utm_source=bing&utm_medium=cpc&utm_campaign=Bing+Shopping+%7c+History+%7c+LOW&utm_term=&utm_content=W0CF7rqG%7cdc%7cpcrid%7c76897251305754%7cpkw%7c%7cpmt%7cbe%7cproduct%7c12545176%7cslid%7c%7cpgrid%7c1230353754879173%7cptaid%7cpla-4580496733720783%7c&msclkid=d66c855fa60b1cc848c7e427096dcd0b#idiq=12545176&edition=7893922"><em>Fifty Philosophy Ideas You Really Need To Know</em></a>.&nbsp I kept thinking about the cosmological argument.&nbsp Atheists have a tough time trying to explain the origins of reality.&nbsp But theists have an exponentially more difficult time explaining the contradictions and assumptions implicit in their position.</p>
-		<p>Unfortunately, a lot of public atheists come across as belligerent assholes, who double down on that pattern in an attempt to profit from their atheism.&nbsp We do benefit from a public atheist intelligentsia, but an attitude of superiority could repel people, or might at least help explain the lack of community among atheists.&nbsp The unaffiliated (who are not necessarily atheist) are the fastest-growing religious group in the United States, but they and their interests are grossly underrepresented in the halls of power.&nbsp To any extent there is an atheist community, it appears fractured and dispersed.</p>
-		<p>To any burgeoning skeptic, i would say</p>
-			<ul>
-				<li>Keep applying your skepticism.&nbsp Seeking the truth vigorously will not lead you astray.</li>
-				<li>Be prepared to question your beliefs again.&nbsp There are theists more intelligent than you, and you will probably hear compelling arguments for theism in your lifetime.&nbsp Entertaining these arguments can make you a better-informed atheist.</li>
-				<li>Life can seem absurd without divine purpose, and that can get difficult.&nbsp Make sure you take care of your brain.&nbsp Replace that Sunday morning or Friday evening worship with something meaningful to you, and ideally social.&nbsp You can volunteer or work at a time most Christians would not!</li>
-				<li>Life will also get better once you shed the delusions of supernaturalism.&nbsp Naturalist explanations will become more intuitive.&nbsp You will not have to worry about how other people behave, or a divine karmic scorekeeper, or an omniscient entity reading your thoughts.&nbsp The reasons the world is as it is will become clearer.&nbsp When you understand that not everything happens for a reason, and that human consciousness is incomplete and accidental, you know that the future contains multitudes.&nbsp You can collapse those possible futures into fewer, better ones.&nbsp The arc of justice is unwritten.&nbsp God will not deliver your hopes and dreams.&nbsp No deity will step in to turn back climate change.&nbsp Prayer will not care for your community, and it is certainly not a health plan.</li>
-			</ul>
-		
-		<h2>Running</h2>
-		<p>I began running competitively in eighth grade.&nbsp It keeps me sane and offers a little taste of <a href="https://www.youtube.com/watch?v=b-iGZPtWXzE">wild</a> living.&nbsp Moving quickly on one's feet potentiates freedom.&nbsp I know that at any given moment, i can put several miles between myself and my point of origination within an hour, should the need arise.</p>
-		<p>Our ancestors in the African savannah likely utilized persistence hunting methods to acquire protein.&nbsp Our bodies are at least somewhat attuned to running long distances in hot weather.&nbsp We sweat unlike any other animal.</p>
-		<p>Here are my personal records:</p>
-		<table>
-			<tr><td><a href="https://runsignup.com/Race/Results/86044/IndividualResult/2022#U47246100">50 mile</a></td><td>8:53:56</td><td>2022</td></tr>
-			<tr><td><a href="https://events.hakuapp.com/events/1405901239e66d083c42/live_tracking_results?registration_number=C0669F7BDBBE">marathon</a></td><td>3:28:30</td><td>2019</td></tr>
-			<tr><td><a href="https://pa.milesplit.com/athletes/pro/2209646/stats">5k</a></td><td>17:19</td><td>2013</td></tr>
-			<tr><td><a href="https://pa.milesplit.com/athletes/pro/2209646/stats">two mile</a></td><td>10:15</td><td>2014</td></tr>
-			<tr><td><a href="https://pa.milesplit.com/athletes/pro/2209646/stats">one mile</a></td><td>5:01</td><td>2013</td></tr>
-		</table>
-		
-		<h3>Marine Corps Marathon</h3>
-		<p>I ran the Marine Corps Marathon on October 27, 2019.&nbsp Through an intermittent deluge, i clocked 3:28:30.&nbsp I am not satisfied with this, but i am proud of hitting the pavement and pushing through what i pushed through.&nbsp I felt almost all emotions during this race: ecstatic hope that it would go well, animosity towards stroller-pushers, and despair at falling short of my goal.&nbsp But i proved that i could finish a marathon.&nbsp And learned the meaning of muscle soreness.</p>
-		
-		<h3>JFK Fifty Mile</h3>
-		<p>On November 21, 2020, i completed the JFK 50-mile.&nbsp It was a long run, but fun.&nbsp The first third takes you up a mountain broadside, which had people walking.&nbsp It tops out five and a half miles in at a radio tower, then continues along the Appalachian Trail as it undulates along the ridgeline.&nbsp So it really busts your quadriceps early.&nbsp On the mountainous terrain, i met the first of the memorable characters who would accompany me that day.&nbsp A runner i came to refer to as "<a href="http://jackquinnsrunners.com/">Jack Quinn</a>" slipped by at one point, and i hitched my fortunes to him, following closely until the aid station at the foot of the trail.&nbsp I passed a man in his fifties or sixties who replied to my "Scootin' by on ya left" with "I am an old man just trying to finish."&nbsp You and me both, sir.</p>
-		<p>I want to shout out the spectators and cheerleaders who added their energy whenever they could.&nbsp I began to recognize one lady in black, and she began to recognize me as well; her boo must have been just behind me, but she was notable for waving a buff around, and i began to think of her as my friend.&nbsp Some spectators i only had the pleasure of passing once, including a very big dog at the exit of the Appalachian Trail section.&nbsp I said "Ooh, big dog."&nbsp I must have had a bit of a smile going on, because several people told me about it.&nbsp When pressed at one time, i was able to say, "I am smiling for the puppy!" and pointed to a young golden retriever.&nbsp Around Harper's Ferry, somebody pointed to me and said what sounded like "Nice beer."&nbsp I tried to connect the dots between beer and my Allentown Wounded Warrior 5k shirt for several minutes, then realized that he said "Nice beard."&nbsp Around mile forty-six, four ladies sat on their front porch, watching racers pass.&nbsp One called out to me, "I like your ball-et," presumably a portmanteau of "wallet" and "testicles" referring to my <a href="https://spibelt.com/">SPIbelt</a>.&nbsp Her friend declared "She's single!" and i waved.</p>
-		<p>In the final few hundred meters i began to accelerate, finding that i still had some gas in the tank.&nbsp A lady caught up to me, but i poured on more, not allowing her to pull away.&nbsp We sped toward the <a href="https://runsignup.com/Race/Results/86044/IndividualResult/xSgM?resultSetId=229343#U47246100">finish</a>, locked in a matching pace.&nbsp "Come oonnn!" i yelled.&nbsp We crossed simultaneously, and the announcer declared, "Lucas and Aimee, crossing the finish together!"</p>
-		<p>I am not sure if there is a runners community the same way there is a bus-driver community or a cyclist community or a DIY community.&nbsp On one hand, they are extremely supportive in these circumstances, volunteering and cheering and checking on people who fall.&nbsp But running can also be highly solitary during training.&nbsp And if you cut someone off, step on heels, or pull some other shenanigans (especially around start and finish lines), you will know someone's wrath.</p>
-		<p>I am not in it for the community, so much as the sense of freedom and unparalleled sights.&nbsp At Harper's Ferry, my run coincided with a train crossing the river and bending up north into West Virginia, where country scenes morphed from that historic town with its ramshackle wood rowhomes to people's properties along the river at the termini of dirt roads.&nbsp We heard a dog bark at his human's chainsaw as it swam in the river and he trimmed down a snag.&nbsp We saw barns and boats and nice little sandbars.&nbsp The scarlet leaves of maples along the canal hummed with radiance against seas of decomposing leaves and dark, mossy shale subject to tectonic uplift.&nbsp When i rubbed my eyes after mile twenty-five, my vision got purplish and spotty, so i tried to refrain from that.&nbsp People lose toenails and see things that are not there during ultrathons and long cycling tours.&nbsp I experienced neither, but i did spend a long moment watching a robed skeletal being with a scythe on a rocky bluff resolve into a twisted tree trunk.</p>
-		<p>At one middle aid station, a fellow runner requested and received ibuprofen.&nbsp That seemed like cheating to me.&nbsp I thought the point was to compete to push through the pain, to test your mental fortitude?&nbsp If we can use ibuprofen, what else can we bring to improve our race?&nbsp Whiskey?&nbsp Opiates?&nbsp Amphetamines?&nbsp Clearly not, but if these would get asterisked, why not stick an asterisk next to users of ibuprofen?&nbsp Okay, i suppose ibuprofen is not really <em>cheating</em>.&nbsp Giving an ultimatum to drop out or push through for unanticipated joint and ligament pain could be inordinately cruel and ageist (sexist in the case of menstrual cramps).&nbsp My position, for now, is that is fine, but to those who eschew all painkillers through their ultrathon: an extra cheers to you.</p>
-		
-		<figure class="rightFigure">
-			<img src="https://raw.githubusercontent.com/lcrampton/lcrampton.github.io/master/Github_Images/Assateague%20Seal.jpg" align="right" width="400px" alt="a seal vibing">
-			<figcaption class="rightFigCaption">a vibing seal</figcaption>
-		</figure>
-		
-		<h3>Running the Length of Assateague Island</h3>
-		<p>In March 2021, my roommates and I took a trip out to Assateague National Seashore.&nbsp Over the days there, an idea began to take shape in my mind, fed on me, and grew more powerful.&nbsp We had seen plenty around Chincoteague, but i wanted to see the island—the whole island.</p>
-		<p>My roommates were gracious enough to agree to drop me at the south entrance in the morning, chill for a while, and drive up to the northern entrance to meet me.&nbsp The (about) fifty kilometers took me (roughly) four hours to cover.&nbsp Along the way, i encountered wild horses, a fox, and a seal, who was a real chiller.&nbsp I spent too much time staring at the seal.&nbsp A mulched trail runs along the first third of the island, and spills onto the wild beach.&nbsp At low tide, it is wide and firm.&nbsp Towards the end of the line, i saw Ocean City rise over the horizon.
-		</p>
-		
-		<h3>JFK Fifty Mile For a Second Time</h3>
-		<p>I knew i wanted to do this race in under nine hours some day.&nbsp Six days before the race, i signed up.&nbsp I felt the need to chalk one up for Lucas.&nbsp I cut eleven minutes and one second from my previous time, with which i am not overjoyed, but satisfied.&nbsp Some day, i intend to run this race again.</p>
-		<p>Early in the race, in the first two miles out of Boonsboro, we seemed to awaken a deer, who ran along the treeline and then out into the road and the people on it, knocking over several.&nbsp I recalled a legend that this had happened to a girl at Pennsylvania's state cross country meet.&nbsp I said to myself "That can happen," and carried on.&nbsp A guy wearing shorts and a tank appeared to have pulled off for medical aid along the trail section; he was shivering inside a wool emergency blanket.&nbsp The race this year was significantly colder than when i ran it in 2020.&nbsp My teeth chattered on the start line, and until a few miles in.&nbsp And yeah, the car was cold the night before.&nbsp I would be excited to see how i would do on this course with a night's sleep in a <em>bed</em>.</p>
-		<p>My friend from college who lives in the area surprised me at the finish line, which was sweet.</p>
-		
-		<br line-height="4em">
-		
-		<script>
-			
-			const d = new Date();
-			let year = d.getFullYear();
-			var yearOnesInWords = '';
-			var yearTensInWords = '';
-			
-			var onesPlace = ['','-one','-two','-three','-four','-five','-six','-seven','-eight','-nine']; 
-			var teensPlace = ['ten','eleven','twelve','thirteen', 'fourteen','fifteen','sixteen','seventeen','eighteen',		'nineteen'];
-			var tensPlace = ['twenty','thirty','forty','fifty','sixty','seventy','eighty','ninety']; 
-			var s = year%10;
-			yearOnesInWords = onesPlace[s];
-			s = Math.floor((year-2000) / 10) - 2;
-			yearTensInWords = tensPlace[s];
-			
-			console.log(s);
-			console.log(yearOnesInWords);
-		
-			var yearInWords = "two thousand " + yearTensInWords + yearOnesInWords;
-			document.getElementById("thisYear").innerHTML = yearInWords;
-			
-			console.log(yearInWords);
-		</script>
     </body>
-	
 </html>
