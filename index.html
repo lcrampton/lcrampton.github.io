@@ -21,13 +21,14 @@
 				text-decoration: none;	}
             h1 a:hover, a:active, a:focus {
                 text-decoration: underline sienna dotted;}
-            h4  {
+			button {
                 text-align: center;
                 font-family: Century, georgia, serif;
-				font-size: 1.5em;				}	
-			h4 a {
-                text-decoration: none;	}
-			h4 a:hover, a:active, a:focus {
+				font-size: 1.5em;
+				background: none;
+				border: none;
+			}	
+			button:hover, button:active, button:focus {
                 background: red;	}
 				
 			section {
@@ -42,9 +43,13 @@
 			}
 			
 			.grid-container	{
-				display: grid;
-				grid-template-columns: auto auto auto;
-				align: center;
+				width: 50vw;
+				padding-top: 20px;
+				padding-bottom: 20px;
+				display: flex;
+				flex-flow: row wrap;
+				justify-content: space-evenly;
+				gap: 40px 20px;
 				background-color: transparent;
 				background-image: linear-gradient(180deg, #ff6600, #ff6600)
 					,linear-gradient(225deg, #ff6600, #ff6600)
@@ -70,8 +75,6 @@
 			
 			.topic	{
 				color: #ffdc00;
-				margin: 20px;
-				padding: 20px;
 				padding: 1rem 2rem;
 				}
 			.topic a {
@@ -103,8 +106,15 @@
 				scroll-behavior: smooth;
 				scroll-snap-type: y mandatory;
 			}
+			#home {
+				position: absolute;
+				background: rgb(232, 256, 236);
+				z-index: 1;
+			}
 			#menu {
+				position: absolute;
 				background: rgb(24,0,20);
+				z-index: 0;
 			}
 						
         </style>
@@ -115,7 +125,7 @@
 	<div id="wrapper">
 		<section id="home">
 			<a href="https://lcrampton.github.io/story.html"><h1>Lucas Crampton</h1></a>
-			<h4><a href="#menu">|||</h4></a>
+			<button onclick="flipMenu()" id="MenuButton" alt="open menu">|||</button>
 		</section>
 		
 		<section id="menu">
@@ -129,9 +139,20 @@
 				<a class="topic" href="https://lcrampton.github.io/Platform.html">Platform</a>
 				<a class="topic" href="https://lcrampton.github.io/Message.html">The Message</a>
 				<a class="topic" href="https://lcrampton.github.io/MyMusic.html">Original Music</a>
+				<a class="topic" href="https://lcrampton.github.io/MyArt.html">Original Art</a>
 			</div>
 		</section>
 	</div>
+
+	<script>
+		function flipMenu() {
+			document.getElementById("menu").style.zIndex = "1";
+			document.getElementById("home").style.zIndex = "0";
+		};
+		
+		document.getElementById("MenuButton").style.cursor = "pointer";
+		
+	</script>
 
     </body>
 </html>
