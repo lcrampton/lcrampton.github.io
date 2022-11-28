@@ -27,6 +27,7 @@
 				font-size: 1.5em;
 				background: none;
 				border: none;
+				cursor: pointer;
 			}	
 			button:hover, button:active, button:focus {
                 background: red;	}
@@ -37,8 +38,8 @@
 				align-items: center;
 				justify-content: center;
 				text-align: center;
-				width: 100vw;
-				height: 100vh;
+				width: 105vw;
+				height: 105vh;
 				scroll-snap-align: center;
 			}
 			
@@ -109,12 +110,15 @@
 			#home {
 				position: absolute;
 				background: rgb(232, 256, 236);
-				z-index: 1;
+				opacity: 1;
+				transition: opacity 2s;
 			}
 			#menu {
 				position: absolute;
 				background: rgb(24,0,20);
-				z-index: 0;
+				opacity: 0;
+				visibility: hidden;
+				transition: all 2s;
 			}
 						
         </style>
@@ -146,11 +150,59 @@
 
 	<script>
 		function flipMenu() {
-			document.getElementById("menu").style.zIndex = "1";
-			document.getElementById("home").style.zIndex = "0";
+			document.getElementById("menu").style.opacity = "1";
+			document.getElementById("menu").style.visibility = "visible";
+			document.getElementById("home").style.opacity = "0";
 		};
 		
-		document.getElementById("MenuButton").style.cursor = "pointer";
+		/*function shuffle(ranNums) {
+			var i = ranNums.length, j = 0, temp;
+
+			while (i--) {
+
+				j = Math.floor(Math.random() * (i+1));
+
+				// swap randomly chosen element with current element
+				temp = ranNums[i];
+				ranNums[i] = ranNums[j];
+				ranNums[j] = temp;
+
+			}
+
+			return ranNums;
+			if (ranNums === 1) {
+				document.getElementById("grid-container").innerHTML += 
+				 '<a class="topic" href="https://lcrampton.github.io/Story.html">Story</a>';
+			} else if (ranNums === 2) {
+				document.getElementById("grid-container").innerHTML += 
+				  '<a class="topic" href="https://lcrampton.github.io/Rèsumè.html">Résumé</a>';
+			} else if (ranNums === 3) {
+				document.getElementById("grid-container").innerHTML += 
+				  '<a class="topic" href="https://lcrampton.github.io/concert-calendar.html">Concerts</a>';
+			} else if (ranNums === 4) {
+				document.getElementById("grid-container").innerHTML += 
+				  '<a class="topic" href="https://lcrampton.github.io/Culture.html">Culture Review</a>';
+			} else if (ranNums === 5) {
+				document.getElementById("grid-container").innerHTML += 
+				  '<a class="topic" href="https://lcrampton.github.io/Food.html">Food</a>';
+			} else if (ranNums === 6) {
+				document.getElementById("grid-container").innerHTML += 
+				  '<a class="topic" href="https://lcrampton.github.io/Recipes.html">Cookbook</a>';
+			} else if (ranNums === 7) {
+				document.getElementById("grid-container").innerHTML += 
+				  '<a class="topic" href="https://lcrampton.github.io/Platform.html">Platform</a>';
+			} else if (ranNums === 8) {
+				document.getElementById("grid-container").innerHTML += 
+				  '<a class="topic" href="https://lcrampton.github.io/Message.html">The Message</a>';
+			} else {
+				document.getElementById("grid-container").innerHTML += 
+				  '<a class="topic" href="https://lcrampton.github.io/MyMusic.html">Original Music</a>';
+			}
+
+			console.log(ranNums);
+		}
+
+		var ranNums = shuffle([1,2,3,4,5,6,7,8,9]);*/
 		
 	</script>
 
