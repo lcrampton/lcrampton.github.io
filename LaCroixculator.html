@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Luh Cwah</title>
+<link rel="shortcut icon" href="https://raw.githubusercontent.com/lcrampton/lcrampton.github.io/master/Github_Images/Website%20Favicon.ico">
+        <style>
+            body {
+				height: 100vh;
+				overflow: hidden;
+					background: rgb(232, 256, 236);
+				transition: background 1.5s;}
+				button {
+					text-align: center;
+					font-family: Century, georgia, serif;
+				font-size: 1.5em;
+				background: none;
+				border: none;
+				cursor: pointer;
+				}
+				button:hover, button:active, button:focus {
+                background: red;}
+        </style>
+
+    </head>
+    <body>
+
+<button onclick="laCroixulator()" id="drinkButton" alt="sssssip">Croixculate!</button>
+
+<div id="formwrap">
+	<form id="submissionForm" autocomplete="off" onsubmit="return laCroixulator()">
+		<label for="noPurchased">How many you need?</label>
+		<input type="number" id="noPurchased" name="noPurchased"><br>
+		<label>What do they have?<label><br>
+			<input type="checkbox" id="flavor1" name="flavor1" value="pamplemousse">
+			<label for="flavor1">pamplemousse</label><br>
+			<input type="checkbox" id="flavor2" name="flavor2" value="tangerine">
+			<label for="flavor2">tangerine</label><br>
+			<input type="checkbox" id="flavor3" name="flavor3" value="guava">
+			<label for="flavor3">guava</label><br>
+			<input type="checkbox" id="flavor4" name="flavor4" value="lime">
+			<label for="flavor4">lime</label><br>
+			<input type="checkbox" id="flavor5" name="flavor5" value="keyLime">
+			<label for="flavor5">key lime</label><br>
+			<input type="checkbox" id="flavor6" name="flavor6" value="lemon">
+			<label for="flavor6">lemon</label><br>
+			<input type="checkbox" id="flavor7" name="flavor7" value="passionfruit">
+			<label for="flavor7">passionfruit</label><br>
+			<input type="checkbox" id="flavor8" name="flavor8" value="raspCranberry">
+			<label for="flavor8">rasp-cranberry</label><br>
+			<input type="checkbox" id="flavor9" name="flavor9" value="beachPlum">
+			<label for="flavor9">beach plum</label><br>
+			<input type="checkbox" id="flavor10" name="flavor10" value="peachPear">
+			<label for="flavor10">peach pear</label><br>
+			<input type="checkbox" id="flavor11" name="flavor11" value="pastèque">
+			<label for="flavor11">pastèque</label><br>
+			<input type="checkbox" id="flavor12" name="flavor12" value="berry">
+			<label for="flavor12">berry</label><br>
+			<input type="checkbox" id="flavor13" name="flavor13" value="limoncello">
+			<label for="flavor13">limoncello</label><br>
+			<input type="checkbox" id="flavor14" name="flavor14" value="coconut">
+			<label for="flavor14">coconut</label><br>
+			<input type="checkbox" id="flavor15" name="flavor15" value="blackRaspberry">
+			<label for="flavor15">black raspberry</label><br>
+		
+		<input type="submit" value="Drink Up!" id="bigButton">
+		
+	</form>
+	<button onClick="clearSelection()">clear</button>
+	<script>function clearSelection() {
+		const x = document.getElementById("laCroutPut");
+		x.getElementsByTagName("li").remove;
+	}
+	</script>
+</div>
+
+	<ul id="laCroutPut">
+	</ul>
+
+    </body>
+
+<script>
+	
+	function laCroixulator() {
+		
+		const casesToOrder = document.getElementById("noPurchased").value;
+		console.log(casesToOrder);
+		
+		for (i=0; i<casesToOrder; i++) {
+			const randomNumber = Math.floor(Math.random()*(19+16));
+			console.log(randomNumber);
+
+			if (randomNumber<7 && document.getElementById("flavor1").checked) {
+				const node = document.createElement("li");
+				const textnode = document.createTextNode("pamplemousse");
+				node.appendChild(textnode);
+				document.getElementById("laCroutPut").appendChild(node);
+			} else if (7 <= randomNumber && randomNumber < 8 && document.getElementById("flavor2").checked) {
+				const node = document.createElement("li");
+				const textnode = document.createTextNode("tangerine");
+				node.appendChild(textnode);
+				document.getElementById("laCroutPut").appendChild(node);
+			} else if (8<= randomNumber && randomNumber < 12 && document.getElementById("flavor3").checked) {
+				const node = document.createElement("li");
+				const textnode = document.createTextNode("guava São Paulo");
+				node.appendChild(textnode);
+				document.getElementById("laCroutPut").appendChild(node);
+			} else if (12<= randomNumber && randomNumber < 14 && document.getElementById("flavor4").checked) {
+				const node = document.createElement("li");
+				const textnode = document.createTextNode("lime");
+				node.appendChild(textnode);
+				document.getElementById("laCroutPut").appendChild(node);
+			} else if (14<= randomNumber && randomNumber < 16 && document.getElementById("flavor5").checked) {
+				const node = document.createElement("li");
+				const textnode = document.createTextNode("key lime");
+				node.appendChild(textnode);
+				document.getElementById("laCroutPut").appendChild(node);
+			} else if (16<= randomNumber && randomNumber < 18 && document.getElementById("flavor6").checked) {
+				const node = document.createElement("li");
+				const textnode = document.createTextNode("lemon");
+				node.appendChild(textnode);
+				document.getElementById("laCroutPut").appendChild(node);
+			} else if (18<= randomNumber && randomNumber < 22 && document.getElementById("flavor7").checked) {
+				const node = document.createElement("li");
+				const textnode = document.createTextNode("passionfruit");
+				node.appendChild(textnode);
+				document.getElementById("laCroutPut").appendChild(node);
+			} else if (22<= randomNumber && randomNumber < 23 && document.getElementById("flavor8").checked) {
+				const node = document.createElement("li");
+				const textnode = document.createTextNode("rasp-cranberry");
+				node.appendChild(textnode);
+				document.getElementById("laCroutPut").appendChild(node);
+			} else if (23<= randomNumber && randomNumber < 24 && document.getElementById("flavor9").checked) {
+				const node = document.createElement("li");
+				const textnode = document.createTextNode("beach plum");
+				node.appendChild(textnode);
+				document.getElementById("laCroutPut").appendChild(node);
+			} else if (24<= randomNumber && randomNumber < 28 && document.getElementById("flavor10").checked) {
+				const node = document.createElement("li");
+				const textnode = document.createTextNode("peach-pear");
+				node.appendChild(textnode);
+				document.getElementById("laCroutPut").appendChild(node);
+			} else if (8<= randomNumber && randomNumber < 30 && document.getElementById("flavor11").checked) {
+				const node = document.createElement("li");
+				const textnode = document.createTextNode("pastèque");
+				node.appendChild(textnode);
+				document.getElementById("laCroutPut").appendChild(node);
+			} else if (30<= randomNumber && randomNumber < 31 && document.getElementById("flavor12").checked) {
+				const node = document.createElement("li");
+				const textnode = document.createTextNode("berry");
+				node.appendChild(textnode);
+				document.getElementById("laCroutPut").appendChild(node);
+			} else if (31<= randomNumber && randomNumber < 32 && document.getElementById("flavor13").checked) {
+				const node = document.createElement("li");
+				const textnode = document.createTextNode("limoncello");
+				node.appendChild(textnode);
+				document.getElementById("laCroutPut").appendChild(node);
+			} else if (32<= randomNumber && randomNumber < 33 && document.getElementById("flavor14").checked) {
+				const node = document.createElement("li");
+				const textnode = document.createTextNode("coconut");
+				node.appendChild(textnode);
+				document.getElementById("laCroutPut").appendChild(node);
+			} else if (33<= randomNumber && randomNumber < 34 && document.getElementById("flavor15").checked) {
+				const node = document.createElement("li");
+				const textnode = document.createTextNode("black raspberry");
+				node.appendChild(textnode);
+				document.getElementById("laCroutPut").appendChild(node);
+			} else {
+				i--;
+			}
+		}
+		return false;
+	}
+</script>
+
+</html>
