@@ -8,30 +8,38 @@
             body {
 				height: 100vh;
 				overflow: hidden;
-					background: rgb(232, 256, 236);
-				transition: background 1.5s;}
-				button {
-					text-align: center;
-					font-family: Century, georgia, serif;
+				background: rgb(232, 256, 236);
+				transition: background 1.5s;
+			}
+			h1 {
+				font-family: Heraldsquare Regular, garamond, Georgia, Times New Roman, serif;
+				text-decoration: underline;			}
+			button {
+				text-align: center;
+				font-family: Century, georgia, serif;
 				font-size: 1.5em;
 				background: none;
 				border: none;
 				cursor: pointer;
-				}
-				button:hover, button:active, button:focus {
-                background: red;}
+			}
+			button:hover, button:active, button:focus {
+                background: red;
+			}
+			#formwrap {
+				margin-left: 5%;
+			}
         </style>
 
     </head>
     <body>
 
-<button onclick="laCroixulator()" id="drinkButton" alt="sssssip">Croixculate!</button>
+<h1>Croixculate!</h1>
 
 <div id="formwrap">
 	<form id="submissionForm" autocomplete="off" onsubmit="return laCroixulator()">
-		<label for="noPurchased">How many you need?</label>
-		<input type="number" id="noPurchased" name="noPurchased"><br>
-		<label>What do they have?<label><br>
+		<label for="noPurchased">How many do you need?</label>
+		<input type="number" id="noPurchased" name="noPurchased"><br><br>
+		<label>What do they have?<label><br><br>
 			<input type="checkbox" id="flavor1" name="flavor1" value="pamplemousse">
 			<label for="flavor1">pamplemousse</label><br>
 			<input type="checkbox" id="flavor2" name="flavor2" value="tangerine">
@@ -67,10 +75,8 @@
 		
 	</form>
 	<button onClick="clearSelection()">clear</button>
-	<script>function clearSelection() {
-		const x = document.getElementById("laCroutPut");
-		x.getElementsByTagName("li").remove;
-	}
+	<script>
+		
 	</script>
 </div>
 
@@ -169,6 +175,13 @@
 				i--;
 			}
 		}
+		return false;
+	}
+	
+	function clearSelection() {
+		const x = document.getElementById("laCroutPut");
+		x.innerHTML = "";
+		document.getElementById("noPurchased").value = 0;
 		return false;
 	}
 </script>
