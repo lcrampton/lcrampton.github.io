@@ -70,6 +70,8 @@
 			<label for="flavor14">coconut</label><br>
 			<input type="checkbox" id="flavor15" name="flavor15" value="blackRaspberry">
 			<label for="flavor15">black raspberry</label><br>
+			<input type="checkbox" id="flavor16" name="flavor16" value="strawberryPeach">
+			<label for="flavor16">strawberry peach</label><br>
 		
 		<input type="submit" value="Drink Up!" id="bigButton">
 		
@@ -169,6 +171,11 @@
 			} else if (33<= randomNumber && randomNumber < 34 && document.getElementById("flavor15").checked) {
 				const node = document.createElement("li");
 				const textnode = document.createTextNode("black raspberry");
+				node.appendChild(textnode);
+				document.getElementById("laCroutPut").appendChild(node);
+			} else if (34<= randomNumber && randomNumber < 37 && document.getElementById("flavor16").checked) {
+				const node = document.createElement("li");
+				const textnode = document.createTextNode("strawberry peach");
 				node.appendChild(textnode);
 				document.getElementById("laCroutPut").appendChild(node);
 			} else {
